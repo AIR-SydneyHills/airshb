@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Navbar from '../components/navbar.astro'
+import Jumbotron from '../components/jumbotron.astro'
+import CardGrid from '../components/cardgrid.astro'
+import Footer from '../components/footer.astro'
+import config from '../config'
+---
+
+<Layout title={'Welcome to ' + config.site_name}>
+  <Navbar />
+  <main class="bg-white dark:bg-gray-900">
+    <Jumbotron />
+    <CardGrid />
+  </main>
+  <Footer />
+</Layout>
