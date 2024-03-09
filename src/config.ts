@@ -1,6 +1,6 @@
 const config = {
-  site_name: 'Astro Flowbite',
-  site_desc: 'This is a minimal Astro starter with Flowbite and Astro Icon.',
+  site_name: 'AIR Sydney Hills',
+  site_desc: 'Australian Independent Retirees Sydney Hills Branch',
   nav_menu: [
     // {
     //   item: 'Home',
@@ -8,19 +8,19 @@ const config = {
     // },
     {
       name: 'About',
-      link: '#'
+      link: '/about'
     },
     {
-      name: 'Services',
-      link: '#'
+      name: 'Terms',
+      link: '/terms'
     },
     {
-      name: 'Pricing',
-      link: '#'
+      name: 'Privacy',
+      link: '/privacy'
     },
     {
       name: 'Contact',
-      link: '#'
+      link: '/contact'
     }
   ]
 }

@@ -1,12 +1,13 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
 import config from '../config'
+import logo from '../media/logo.png'
 ---
 
 <nav class="border-gray-200 bg-white dark:bg-gray-900">
   <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <Icon class="my-4" size={32} name="logos:astro-icon" />
+      <Image src={logo} alt="Logo" height={50} />
       <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
         >{config.site_name}</span
       >
@@ -40,7 +41,7 @@ import config from '../config'
       >
         <li>
           <a
-            href="#"
+            href="/"
             class="block rounded bg-blue-700 px-3 py-2 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500"
             aria-current="page">Home</a
           >
