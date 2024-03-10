@@ -1,8 +1,8 @@
 import { defineCollection } from 'astro:content'
 import { rssSchema } from '@astrojs/rss'
 
-const blog = defineCollection({
+const meetings = defineCollection({
   schema: rssSchema
 })
 
-export const collections = { blog }
+export const collections = { meetings }

@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import Navbar from '../../components/navbar.astro'
+import Footer from '../../components/footer.astro'
+
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const meetings = await getCollection('meetings')
+  return meetings.map((meeting) => ({
+    params: { slug: meeting.slug },
+    props: { meeting: meeting }
+  }))
+}
+
+// 2. When it's time to render, you can get the entry directly from the prop
+const { meeting } = Astro.props
+const { Content } = await meeting.render()
+---
+
+<Layout title={meeting.data.title || ''}>
+  <Navbar />
+  <main class="format format-yellow mx-auto my-8 max-w-screen-xl lg:format-lg">
+    <!-- <h1>{meeting.data.title}</h1>
+    <p class="italic">{meeting.data.description}</p> -->
+    <Content />
+  </main>
+  <Footer />
+</Layout>

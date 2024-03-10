@@ -5,9 +5,10 @@ import Footer from '../components/footer.astro'
 
 const { frontmatter } = Astro.props
 ---
+
 <Layout title={frontmatter.title}>
   <Navbar />
-  <main class="mx-auto max-w-screen-xl format lg:format-lg format-yellow my-8">
+  <main class="format format-yellow mx-auto my-8 max-w-screen-xl lg:format-lg">
     <slot />
   </main>
   <Footer />
