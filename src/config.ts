@@ -8,19 +8,19 @@ const config = {
     },
     {
       name: 'About',
-      link: '/about'
+      link: '/about/'
     },
     {
       name: 'Terms',
-      link: '/terms'
+      link: '/terms/'
     },
     {
       name: 'Privacy',
-      link: '/privacy'
+      link: '/privacy/'
     },
     {
       name: 'Contact',
-      link: '/contact'
+      link: '/contact/'
     }
   ]
 }
