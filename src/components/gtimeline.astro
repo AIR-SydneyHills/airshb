@@ -4,6 +4,8 @@ const allMeetings = await getCollection('meetings')
 const meetings = allMeetings.sort((a, b) =>
   a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
 )
+const now = new Date()
+let latest = true
 ---
 
 <section class="bg-white dark:bg-gray-900">
@@ -27,7 +29,7 @@ const meetings = allMeetings.sort((a, b) =>
     </div>
     <ol class="relative mx-auto max-w-screen-xl border-s border-gray-200 dark:border-gray-700">
       {
-        meetings.map((meeting, i) => (
+        meetings.map(meeting => (
           <li class="mb-10 ms-6">
             <span class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-orange-300 ring-8 ring-white dark:bg-orange-900 dark:ring-orange-900">
               <svg
@@ -42,12 +44,12 @@ const meetings = allMeetings.sort((a, b) =>
             </span>
             <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
               {meeting.data.title}
-              {i == 0 && (
+              {latest && meeting.data.pubDate && meeting.data.pubDate < now && !(latest = false) && (
                 <span class="me-2 ms-3 rounded bg-orange-100 px-2.5 py-0.5 text-sm font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">
                   Latest
                 </span>
               )}
-              {meeting.data.pubDate && meeting.data.pubDate > new Date() && (
+              {meeting.data.pubDate && meeting.data.pubDate > now && (
                 <span class="me-2 ms-3 rounded bg-orange-300 px-2.5 py-0.5 text-sm font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">
                   Upcoming
                 </span>
