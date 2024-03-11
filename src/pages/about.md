@@ -23,7 +23,7 @@ Want to find out more? **Join now**.
 
 AIR aims to advance and protect the interests and well-being of our members by promoting the importance of independence and freedom of choice.
 
-If you want to be proactive about your retirement planning, improve your financial literacy, and create new friendships it’s never too early to join AIR. 
+If you want to be proactive about your retirement planning, improve your financial literacy, and create new friendships it’s never too early to join AIR.
 
 Interested? Want to find out more? **Join now**.
 
@@ -33,11 +33,11 @@ Independence is crucial to a long and enriching life. Independence means freedom
 
 Freedom to choose your:
 
-* Financial arrangements
-* Health care
-* Lifestyle
-* Aged care
-* Employment possibilities
-* Accommodation options.
+- Financial arrangements
+- Health care
+- Lifestyle
+- Aged care
+- Employment possibilities
+- Accommodation options.
 
 Want to find out more? **Join now**.

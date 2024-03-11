@@ -8,8 +8,14 @@ const { frontmatter } = Astro.props
 
 <Layout title={frontmatter.title}>
   <Navbar />
-  <main class="format format-yellow mx-auto my-8 max-w-screen-xl lg:format-lg">
-    <slot />
+  <main class="bg-white pb-16 pt-8 antialiased dark:bg-gray-900 lg:pb-24 lg:pt-16">
+    <div class="mx-auto flex max-w-screen-xl justify-between px-4">
+      <article
+        class="format format-sm format-blue mx-auto w-full max-w-2xl dark:format-invert sm:format-base lg:format-lg"
+      >
+        <slot />
+      </article>
+    </div>
   </main>
   <Footer />
 </Layout>

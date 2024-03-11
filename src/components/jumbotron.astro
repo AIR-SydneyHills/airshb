@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
-import heroimage from '../media/retirementahead.jpg'
+import { Icon } from 'astro-icon/components'
+import heroimage from '../assets/retirementahead.jpg'
 ---
 
 <section class="bg-white dark:bg-gray-900">
@@ -19,22 +20,19 @@ import heroimage from '../media/retirementahead.jpg'
       <p
         class="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"
       >
-        We regularly have a variety of interesting speakers/topics for our members and visitors. We
-        hold 2 meetings on the 1st Friday of every month from February 2024 at the Beecroft
-        Presbyterian Church Hall at 6a Welham St, Beecroft commencing at 10:45am.
+        AIR advances the interests of over 50’s who are, or plan to be, fully or partly self-funded
+        retirees.
       </p>
       <p
         class="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"
       >
-        The first meeting covers a range of topics including Health, Aged Care, Travel, Technology,
-        Retirement services, etc. After some refreshments, our second meeting at 12:30pm covers
-        financial and investment topics including Superannuation, Retirement income, Investment
-        Markets, Financial Trends, etc. If you are retired or approaching retirement, come along,
-        meet new friends and receive about useful information to help your retirement.
+        We regularly have a variety of interesting speakers/topics for our members and visitors. We
+        hold 2 meetings on the 1st Friday of every month from February 2024 at the Beecroft
+        Presbyterian Church Hall at 6a Welham St, Beecroft commencing at 10:45am.
       </p>
       <a
         href="http://independentretirees.com"
-        class="dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg bg-yellow-500 px-5 py-3 text-center text-base font-medium text-white hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300"
+        class="mr-3 inline-flex items-center justify-center rounded-lg bg-orange-500 px-5 py-3 text-center text-base font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
       >
         AIR National website
         <svg
@@ -48,11 +46,15 @@ import heroimage from '../media/retirementahead.jpg'
             clip-rule="evenodd"></path></svg
         >
       </a>
-      <a
-        href="https://www.facebook.com/independentretirees"
-        class="inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-      >
-        Facebook page
+      <a href="https://www.facebook.com/independentretirees">
+        <Icon
+          class="mr-3 inline-flex items-center justify-center"
+          size={32}
+          name="logos:facebook"
+        />
+      </a>
+      <a href="https://au.linkedin.com/company/australian-independent-retirees">
+        <Icon class="inline-flex items-center justify-center" size={96} name="logos:linkedin" />
       </a>
     </div>
     <div class="hidden lg:col-span-5 lg:mt-0 lg:flex">

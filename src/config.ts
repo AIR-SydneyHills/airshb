@@ -2,10 +2,10 @@ const config = {
   site_name: 'AIR Sydney Hills',
   site_desc: 'Australian Independent Retirees Sydney Hills Branch',
   nav_menu: [
-    // {
-    //   item: 'Home',
-    //   link: '#'
-    // },
+    {
+      name: 'Home',
+      link: '/'
+    },
     {
       name: 'About',
       link: '/about'
