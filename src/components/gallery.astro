@@ -8,10 +8,10 @@ interface Props {
 const { images } = Astro.props
 ---
 
-<div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
+<div class="columns-1 gap-8 lg:columns-2">
   {
     images.map((image) => (
-      <div class="h-auto max-w-full">
+      <div>
         <Image class="rounded-lg" src={image} alt={image.src} />
       </div>
     ))
