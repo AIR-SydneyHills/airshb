@@ -1,33 +1,39 @@
 ---
+import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
-import Layout from '../../layouts/Layout.astro'
-import Navbar from '../../components/navbar.astro'
-import Footer from '../../components/footer.astro'
+import Layout from '../../layouts/blog.astro'
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const meetings = await getCollection('meetings')
-  return meetings.map((meeting) => ({
+  const meetings = await getCollection('meeting')
+  return meetings.map((meeting, i) => ({
     params: { slug: meeting.slug },
-    props: { meeting: meeting }
+    props: {
+      meeting,
+      prev: i > 0 ? meetings[i - 1] : undefined,
+      next: i < meetings.length - 1 ? meetings[i + 1] : undefined
+    }
   }))
 }
 
+export interface Props {
+  meeting: CollectionEntry<'meeting'>
+  prev: CollectionEntry<'meeting'>
+  next: CollectionEntry<'meeting'>
+}
+
+// 2. When its time to render, you can get the entry directly from the prop
+const { meeting, prev, next } = Astro.props
+
 // 2. When it's time to render, you can get the entry directly from the prop
-const { meeting } = Astro.props
-const { Content } = await meeting.render()
+const { Content, remarkPluginFrontmatter } = await meeting.render()
+let fixedpost = meeting
+const rfrontmatter = remarkPluginFrontmatter as CollectionEntry<'blog'>['data']
+if (rfrontmatter) {
+  fixedpost.data.minutesRead = rfrontmatter.minutesRead
+}
 ---
 
-<Layout title={meeting.data.title || ''}>
-  <Navbar />
-  <main class="bg-white pb-16 pt-8 antialiased dark:bg-gray-900 lg:pb-24 lg:pt-16">
-    <div class="mx-auto flex max-w-screen-xl justify-between px-4">
-      <article
-        class="format format-sm format-blue mx-auto w-full max-w-2xl dark:format-invert sm:format-base lg:format-lg"
-      >
-        <Content />
-      </article>
-    </div>
-  </main>
-  <Footer />
+<Layout post={fixedpost} {prev} {next}>
+  <Content />
 </Layout>

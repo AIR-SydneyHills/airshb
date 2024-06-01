@@ -1,64 +1,75 @@
 ---
+import { getCollection } from 'astro:content'
 import { Image } from 'astro:assets'
-import { Icon } from 'astro-icon/components'
-import heroimage from '../assets/retirementahead.jpg'
+import { FeaturedImage } from '../config'
+
+const social = await getCollection('social')
 ---
 
-<section class="bg-white dark:bg-gray-900">
-  <div class="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
-    <div class="mr-auto place-self-center lg:col-span-7">
+<section class='bg-white dark:bg-gray-900'>
+  <div class='grid mx-auto max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 xl:gap-0 lg:py-16'>
+    <div class='mr-auto place-self-center lg:col-span-7'>
       <h1
-        class="max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl"
+        class='max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-orange-500'
       >
         Australian Independent Retirees (AIR)
       </h1>
       <h2
-        class="mb-4 max-w-2xl text-2xl font-extrabold leading-none tracking-tight dark:text-white md:text-3xl xl:text-4xl"
+        class='mb-4 max-w-2xl text-2xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-4xl dark:text-white'
       >
         Sydney Hills Branch
       </h2>
       <p
-        class="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"
+        class='mb-6 max-w-2xl text-gray-500 font-light lg:mb-8 lg:text-xl md:text-lg dark:text-gray-400'
       >
         AIR advances the interests of over 50’s who are, or plan to be, fully or partly self-funded
         retirees.
       </p>
       <p
-        class="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"
+        class='mb-6 max-w-2xl text-gray-500 font-light lg:mb-8 lg:text-xl md:text-lg dark:text-gray-400'
       >
         We regularly have a variety of interesting speakers/topics for our members and visitors. We
         hold 2 meetings on the 1st Friday of every month from February 2024 at the Beecroft
         Presbyterian Church Hall at 6a Welham St, Beecroft commencing at 10:45am.
       </p>
       <a
-        href="http://independentretirees.com"
-        class="mr-3 inline-flex items-center justify-center rounded-lg bg-orange-500 px-5 py-3 text-center text-base font-medium text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
+        href='http://independentretirees.com'
+        class='mr-3 inline-flex items-center justify-center rounded-lg bg-orange-600 px-5 py-3 text-center text-base text-white font-medium hover:bg-orange-300 hover:text-orange-800 focus:ring-4 focus:ring-orange-300'
       >
         AIR National website
         <svg
-          class="-mr-1 ml-2 h-5 w-5"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+          class='ml-2 h-5 w-5 -mr-1'
+          fill='currentColor'
+          viewBox='0 0 20 20'
+          xmlns='http://www.w3.org/2000/svg'
           ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
+            fill-rule='evenodd'
+            d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
+            clip-rule='evenodd'></path></svg
         >
       </a>
-      <a href="https://www.facebook.com/independentretirees">
-        <Icon
-          class="mr-3 inline-flex items-center justify-center"
-          size={32}
-          name="logos:facebook"
-        />
-      </a>
-      <a href="https://au.linkedin.com/company/australian-independent-retirees">
-        <Icon class="inline-flex items-center justify-center" size={96} name="logos:linkedin" />
-      </a>
+      <span class='mt-2 inline-flex grow justify-center lg:ml-auto lg:mt-0 lg:justify-end'>
+        {
+          social.map((s) =>
+            s.data.link ? (
+              <a
+                href={s.data.link}
+                class='ml-3 text-orange-600 dark:text-orange-500 hover:text-orange-300 dark:hover:text-orange-300'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                <div class={'h-8 w-8 i-bi-' + s.data.icon} />
+                <span class='sr-only'>{s.data.name}</span>
+              </a>
+            ) : (
+              ''
+            )
+          )
+        }
+      </span>
     </div>
-    <div class="hidden lg:col-span-5 lg:mt-0 lg:flex">
-      <Image src={heroimage} alt="Retirement Ahead" />
+    <div class='hidden lg:col-span-5 lg:mt-0 lg:flex'>
+      <Image src={FeaturedImage} alt='Retirement Ahead' />
     </div>
   </div>
 </section>

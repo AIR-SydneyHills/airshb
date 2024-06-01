@@ -1,21 +1,30 @@
 ---
-import Layout from './Layout.astro'
-import Navbar from '../components/navbar.astro'
-import Footer from '../components/footer.astro'
+import Base from '../layouts/base.astro'
+import PageHero from '../components/pagehero.astro'
+import type { CollectionEntry } from 'astro:content'
+
+export interface Props {
+  frontmatter: CollectionEntry<'page'>['data']
+}
 
 const { frontmatter } = Astro.props
 ---
 
-<Layout title={frontmatter.title}>
-  <Navbar />
-  <main class="bg-white pb-16 pt-8 antialiased dark:bg-gray-900 lg:pb-24 lg:pt-16">
-    <div class="mx-auto flex max-w-screen-xl justify-between px-4">
-      <article
-        class="format format-sm format-blue mx-auto w-full max-w-2xl dark:format-invert sm:format-base lg:format-lg"
+<Base {frontmatter}>
+  <main class='dark:bg-gray-900'>
+    <article class='post'>
+      <header>
+        <PageHero
+          title={frontmatter.title!}
+          description={frontmatter.description}
+          image={frontmatter.image}
+        />
+      </header>
+      <section
+        class='lg:prose-xl mx-auto my-8 max-w-screen-lg px-4 prose prose-gray lg:px-0 dark:prose-invert'
       >
         <slot />
-      </article>
-    </div>
+      </section>
+    </article>
   </main>
-  <Footer />
-</Layout>
+</Base>

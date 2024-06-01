@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import Base from '../layouts/base.astro'
+import PageHero from '../components/pagehero.astro'
+import { DefaultImage } from '../config'
+
+const frontmatter: CollectionEntry<'page'>['data'] = {
+  title: '404: Not found',
+  description: "You just hit a route that doesn't exist... the sadness.",
+  image: DefaultImage
+}
+---
+
+<Base frontmatter={frontmatter}>
+  <header>
+    <PageHero
+      title={frontmatter.title!}
+      description={frontmatter.description}
+      image={DefaultImage}
+    />
+  </header>
+</Base>

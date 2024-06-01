@@ -1,19 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Navbar from '../components/navbar.astro'
+import type { CollectionEntry } from 'astro:content'
+import { SiteMetadata } from '../config'
+import Base from '../layouts/base.astro'
 import Jumbotron from '../components/jumbotron.astro'
 import GTimeline from '../components/gtimeline.astro'
 import CTA from '../components/cta.astro'
-import Footer from '../components/footer.astro'
-import config from '../config'
+import image from '../assets/site/retirementahead.jpg'
+
+const frontmatter: CollectionEntry<'page'>['data'] = {
+  title: SiteMetadata.title,
+  description: SiteMetadata.description,
+  image: image
+}
 ---
 
-<Layout title={'Welcome to ' + config.site_name}>
-  <Navbar />
-  <main class="bg-white dark:bg-gray-900">
+<Base frontmatter={frontmatter}>
+  <main class='bg-white dark:bg-gray-900'>
     <Jumbotron />
     <GTimeline />
   </main>
   <CTA />
-  <Footer />
-</Layout>
+  <div class='bg-white p-24 dark:bg-black md:p-12'></div>
+</Base>
