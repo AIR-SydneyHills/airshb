@@ -124,7 +124,11 @@ const tags = Array.from(tagmap.values())
 
 <Base frontmatter={frontmatter}>
   <header>
-    <PageHero title={frontmatter.title!} description={frontmatter.description} image={DefaultImage} />
+    <PageHero
+      title={frontmatter.title!}
+      description={frontmatter.description}
+      image={DefaultImage}
+    />
   </header>
   <main class='mt-10 dark:bg-gray-900'>
     <div
