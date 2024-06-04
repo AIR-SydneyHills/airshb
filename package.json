@@ -22,7 +22,7 @@
     "@iconify-json/logos": "^1.1.42",
     "@julr/unocss-preset-forms": "^0.1.0",
     "@types/alpinejs": "^3.13.10",
-    "@typescript-eslint/parser": "^7.11.0",
+    "@typescript-eslint/parser": "^7.12.0",
     "@unocss/eslint-config": "^0.60.4",
     "@unocss/reset": "^0.60.4",
     "alpinejs": "^3.14.0",
