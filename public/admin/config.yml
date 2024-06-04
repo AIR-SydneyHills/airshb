@@ -18,5 +18,5 @@ collections:
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Image", name: "image", widget: "image", allow_multiple: false, equired: false }
-      - { label: "Additional Images", name: "images", widget: "list", field: "image", required: false }
+      - { label: "Additional Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" }, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
