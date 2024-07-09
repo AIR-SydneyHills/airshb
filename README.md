@@ -1,7 +1,7 @@
 # AIR Sydney Hills Branch
 
 Australian Independent Retirees Sydney Hills Branch website. Based on [Astro Blog](https://github.com/ChristineTham/astro-blog).
-
+Transferred to AIR-SydneyHills 9 July 2024
 Uses:
 
 - [Astro](https://astro.build/)
