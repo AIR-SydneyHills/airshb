@@ -13,7 +13,8 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
   image: image
 }
 ---
-<script slot='in-head' src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script slot='in-head' src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
 <Base frontmatter={frontmatter}>
   <main class='bg-white dark:bg-gray-900'>
     <Jumbotron />
@@ -22,14 +23,14 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
   <CTA />
   <div class='bg-white p-24 dark:bg-black md:p-12'></div>
   <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/'
+          })
+        }
+      })
+    }
+  </script>
 </Base>
