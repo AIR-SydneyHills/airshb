@@ -15,7 +15,7 @@ export default defineConfig({
       noExternal: ['swiper']
     }
   },
-  site: 'https://airshb.netlify.app',
+  site: 'https://airsydneyhills.netlify.app',
   integrations: [UnoCSS({
     injectReset: true // or a path to the reset file
   }), sitemap(), alpinejs(), robotsTxt()],

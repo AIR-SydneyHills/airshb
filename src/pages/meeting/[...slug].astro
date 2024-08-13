@@ -5,7 +5,10 @@ import Layout from '../../layouts/blog.astro'
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const meetings = await getCollection('meeting')
+  const meetings = await getCollection('meeting', ({ data }) => {
+  return data.draft !== true
+})
+
   return meetings.map((meeting, i) => ({
     params: { slug: meeting.slug },
     props: {

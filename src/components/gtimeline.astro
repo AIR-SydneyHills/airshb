@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content'
-const allMeetings = await getCollection('meeting')
+const allMeetings = await getCollection('meeting', ({ data }) => {
+  return data.draft !== true
+})
 const meetings = allMeetings.sort((a, b) =>
   a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
 )
@@ -52,7 +54,7 @@ let latest = true
                     Latest
                   </span>
                 )}
-              {meeting.data.pubDate && meeting.data.pubDate > now && (
+              {meeting.data.pubDate && (meeting.data.pubDate > now) && (
                 <span class='me-2 ms-3 rounded bg-orange-600 px-2.5 py-0.5 text-sm text-gray-200 font-medium dark:bg-orange-600 dark:text-gray-200'>
                   Upcoming
                 </span>
