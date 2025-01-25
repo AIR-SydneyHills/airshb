@@ -1,8 +1,11 @@
 ---
 import type { CollectionEntry } from 'astro:content'
+import { getCollection } from 'astro:content'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
 import Jumbotron from '../components/jumbotron.astro'
+import NextMeeting from '../components/nextmeeting.astro'
+import LatestArticles from '../components/latestarticles.astro'
 import GTimeline from '../components/gtimeline.astro'
 import CTA from '../components/cta.astro'
 import image from '../assets/site/retirementahead.jpg'
@@ -12,16 +15,28 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
   description: SiteMetadata.description,
   image: image
 }
+
+const posts = await getCollection('blog', (post) => !post.data.draft)
+const latestPosts = posts.sort((a, b) => +b.data.pubDate! - +a.data.pubDate!)
+
+const allMeetings = await getCollection('meeting', (meeting) => !meeting.data.draft)
+const meetings = allMeetings.sort((a, b) =>
+  a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
+)
+const now = new Date()
+let latest = true
 ---
 
-<script slot='in-head' src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
+<script slot="in-head" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <Base frontmatter={frontmatter}>
-  <main class='bg-white dark:bg-gray-900'>
+  <main class="bg-white dark:bg-gray-900">
     <Jumbotron />
-    <GTimeline />
+    <NextMeeting />
+    <LatestArticles posts={latestPosts} />
+    <GTimeline meetings={meetings} />
   </main>
   <CTA />
-  <div class='bg-white p-24 dark:bg-black md:p-12'></div>
+  <div class="bg-white p-24 dark:bg-black md:p-12"></div>
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', (user) => {

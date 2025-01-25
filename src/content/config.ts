@@ -16,6 +16,7 @@ const blog = defineCollection({
       minutesRead: z.string().optional()
     })
 })
+
 const meeting = defineCollection({
   schema: ({ image }) =>
     rssSchema.extend({
@@ -24,6 +25,13 @@ const meeting = defineCollection({
       images: z.array(image()).optional(),
       gallery: z.string().optional(),
       minutesRead: z.string().optional()
+    })
+})
+
+const next = defineCollection({
+  schema: ({ image }) =>
+    rssSchema.extend({
+      draft: z.boolean().optional()
     })
 })
 
@@ -74,6 +82,7 @@ const social = defineCollection({
 export const collections = {
   blog,
   meeting,
+  next,
   page,
   category,
   author,

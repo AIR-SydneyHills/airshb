@@ -9,5 +9,9 @@
     "prettier.documentSelectors": ["**/*.astro"],
     "[astro]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdownlint.config": {
+      "MD033": false
     }
   }
+  
