@@ -23,11 +23,16 @@ const allMeetings = await getCollection('meeting', (meeting) => !meeting.data.dr
 const meetings = allMeetings.sort((a, b) =>
   a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
 )
-const now = new Date()
-let latest = true
+
+declare global {
+  interface Window {
+    netlifyIdentity: any
+  }
+}
 ---
 
-<script slot="in-head" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script is:inline slot="in-head" src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
 <Base frontmatter={frontmatter}>
   <main class="bg-white dark:bg-gray-900">
     <Jumbotron />
@@ -39,7 +44,7 @@ let latest = true
   <div class="bg-white p-24 dark:bg-black md:p-12"></div>
   <script>
     if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', (user) => {
+      window.netlifyIdentity.on('init', (user: string) => {
         if (!user) {
           window.netlifyIdentity.on('login', () => {
             document.location.href = '/admin/'

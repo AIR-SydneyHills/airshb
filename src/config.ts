@@ -38,6 +38,7 @@ export { default as DefaultImage } from './assets/site/retirementahead.jpg'
 export const NavigationLinks = [
   { name: 'Home', href: '' },
   { name: 'About', href: 'about' },
+  { name: 'Articles', href: 'blog' },
   { name: 'Terms', href: 'terms' },
   { name: 'Privacy', href: 'privacy' },
   { name: 'Contact', href: 'contact' }

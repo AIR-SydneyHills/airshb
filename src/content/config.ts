@@ -29,10 +29,9 @@ const meeting = defineCollection({
 })
 
 const next = defineCollection({
-  schema: ({ image }) =>
-    rssSchema.extend({
-      draft: z.boolean().optional()
-    })
+  schema: rssSchema.extend({
+    draft: z.boolean().optional()
+  })
 })
 
 const page = defineCollection({

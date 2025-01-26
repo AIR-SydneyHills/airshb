@@ -11,17 +11,15 @@ let latest = true
 
 <section class="bg-white dark:bg-gray-900">
   <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
-    <div class="mx-auto mb-8 max-w-screen-sm text-center lg:mb-16">
-      <h2
-        class="mb-4 text-3xl text-gray-900 font-extrabold tracking-tight lg:text-4xl dark:text-white"
-      >
+    <div class="mx-auto mb-8 lg:mb-16">
+      <h2 class="mb-4 text-2xl text-orange-800 font-extrabold md:text-4xl dark:text-orange-200">
         Past Meetings
       </h2>
       <p class="mb-4 text-gray-500 font-light sm:text-xl dark:text-gray-400">
         The following is a summary of previous meetings and their topics.
       </p>
     </div>
-    <ol class="relative mx-auto max-w-screen-xl border-s border-gray-200 dark:border-gray-700">
+    <ol class="relative border-s border-gray-200 px-4 dark:border-gray-700 lg:px-6">
       {
         meetings.map((meeting) => (
           <li class="mb-10 ms-8">
@@ -56,10 +54,10 @@ let latest = true
             </p>
             <a
               href={`${import.meta.env.BASE_URL}meeting/${meeting.slug}`}
-              class="inline-flex items-center border border-gray-200 rounded-lg bg-white px-4 py-2 text-sm text-gray-900 font-medium focus:z-10 dark:border-gray-600 dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 focus:text-yellow-700 hover:text-yellow-700 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+              class="inline-flex rounded-md bg-orange-100 p-2 text-sm text-orange-700 dark:bg-orange-900 hover:bg-orange-200 dark:text-orange-300 dark:hover:bg-orange-800"
             >
               <svg
-                class="me-2.5 h-3.5 w-3.5"
+                class="mr-2 h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -67,7 +65,7 @@ let latest = true
               >
                 <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
                 <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
-              </svg>{' '}
+              </svg>
               Read More
             </a>
           </li>

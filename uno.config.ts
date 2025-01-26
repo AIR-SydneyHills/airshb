@@ -6,7 +6,6 @@ import {
   presetTypography,
   presetUno
 } from 'unocss'
-import { presetForms } from '@julr/unocss-preset-forms'
 
 export default defineConfig({
   presets: [
@@ -19,7 +18,6 @@ export default defineConfig({
     }),
     presetAttributify(), // required when using attributify mode
     presetUno(), // required
-    presetForms(),
     presetTypography()
   ],
   safelist: [

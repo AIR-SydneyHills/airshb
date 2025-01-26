@@ -12,10 +12,6 @@ export interface Props {
 
 const { post } = Astro.props
 
-let cat = await getEntry('category', 'general')
-if (post.data.categories) {
-  cat = await getEntry(post.data.categories[0])
-}
 let author = await getEntry('author', 'default')
 if (post.data.author) {
   author = await getEntry(post.data.author)
@@ -47,19 +43,20 @@ if (post.data.author) {
         post.data.pubDate && (
           <span class="mr-6 flex items-center">
             <div class="i-heroicons-calendar-days mr-1 h-6 w-6" />
-            {new Date(post.data.pubDate).toLocaleString('en-AU')}
+            {new Date(post.data.pubDate).toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })}
           </span>
         )
       }
     </div>
   </address>
-  <p class="mb-6 text-xl font-light italic">
+  <Tags tags={post.data.tags} />
+  <p class="my-6 text-xl font-light italic">
     {post.data.description}
   </p>
   {
     post.data.image && (
-      <figure>
-        <Image class="mx-auto max-w-screen-lg" src={post.data.image} alt={post.data.title!} />
+      <figure class="mx-auto px-4 lg:max-w-screen-md">
+        <Image class="rounded-lg" src={post.data.image} alt={post.data.title!} />
       </figure>
     )
   }
