@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 import Layout from '../../layouts/blog.astro'
 
 // 1. Generate a new path for every collection entry
@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   })
 
   return meetings.map((meeting, i) => ({
-    params: { slug: meeting.slug },
+    params: { id: meeting.id },
     props: {
       meeting,
       prev: i > 0 ? meetings[i - 1] : undefined,
@@ -29,7 +29,7 @@ export interface Props {
 const { meeting, prev, next } = Astro.props
 
 // 2. When it's time to render, you can get the entry directly from the prop
-const { Content, remarkPluginFrontmatter } = await meeting.render()
+const { Content, remarkPluginFrontmatter } = await render(meeting)
 let fixedpost = meeting
 const rfrontmatter = remarkPluginFrontmatter as CollectionEntry<'blog'>['data']
 if (rfrontmatter) {

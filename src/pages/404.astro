@@ -13,10 +13,6 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
 
 <Base frontmatter={frontmatter}>
   <header>
-    <PageHero
-      title={frontmatter.title!}
-      description={frontmatter.description}
-      image={DefaultImage}
-    />
+    <PageHero frontmatter={frontmatter} />
   </header>
 </Base>

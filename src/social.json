@@ -1,0 +1,20 @@
+[
+  {
+    "id": "email",
+    "name": "Email",
+    "link": "mailto:airsydneyhills@gmail.com",
+    "icon": "envelope"
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "link": "https://www.facebook.com/independentretirees",
+    "icon": "facebook"
+  },
+  {
+    "id": "linkedIn",
+    "name": "LinkedIn",
+    "link": "https://au.linkedin.com/company/australian-independent-retirees",
+    "icon": "linkedin"
+  }
+]

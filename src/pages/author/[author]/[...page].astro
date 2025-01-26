@@ -49,9 +49,9 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
 
   return authors.flatMap((author) => {
     return paginate(
-      posts.filter((post) => post.data.author!.slug == author.slug),
+      posts.filter((post) => post.data.author!.id == author.id),
       {
-        params: { author: author.slug },
+        params: { author: author.id },
         pageSize: PAGE_SIZE
       }
     )
@@ -61,7 +61,7 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
 
 <Base frontmatter={frontmatter}>
   <header>
-    <PageHero title={frontmatter.title!} description={frontmatter.description} image={DefaultImage}>
+    <PageHero frontmatter={frontmatter}>
       <Image
         src={detail!.data.image}
         alt={detail!.data.title}

@@ -1,8 +1,8 @@
 ---
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 
 const next = (await getCollection('next', (next) => !next.data.draft))[0]
-const { Content } = await next.render()
+const { Content } = await render(next)
 ---
 
 <section class="bg-white dark:bg-gray-900">

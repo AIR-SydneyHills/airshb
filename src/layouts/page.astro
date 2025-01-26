@@ -14,11 +14,7 @@ const { frontmatter } = Astro.props
   <main class="dark:bg-gray-900">
     <article class="post">
       <header>
-        <PageHero
-          title={frontmatter.title!}
-          description={frontmatter.description}
-          image={frontmatter.image}
-        />
+        <PageHero frontmatter={frontmatter} />
       </header>
       <section
         class="lg:prose-xl mx-auto my-8 max-w-screen-lg px-4 prose prose-gray lg:px-0 dark:prose-invert"

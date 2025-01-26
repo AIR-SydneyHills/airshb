@@ -31,11 +31,11 @@ if (post.data.author) {
         post.data.author && (
           <span class="mr-6 flex items-center">
             <Image
-              src={author.data.image}
-              alt={author.data.title}
+              src={author!.data.image! as ImageMetadata}
+              alt={author!.data.title}
               class="mr-2 h-10 w-10 rounded-full object-cover"
             />
-            {author.data.title}
+            {author!.data.title}
           </span>
         )
       }

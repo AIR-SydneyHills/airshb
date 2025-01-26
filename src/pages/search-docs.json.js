@@ -10,12 +10,12 @@ let documents = await Promise.all(
   posts.map(async (post) => {
     const author = await getEntry(post.data.author)
     return {
-      url: import.meta.env.BASE_URL + 'blog/' + post.slug,
+      url: import.meta.env.BASE_URL + 'blog/' + post.id,
       title: post.data.title,
       description: post.data.description,
       author: `${author.data.title} (${author.data.contact})`,
       pubDate: post.data.pubDate,
-      categories: post.data.categories.map((category) => category.slug),
+      categories: post.data.categories.map((category) => category.id),
       tags: post.data.tags
     }
   })
@@ -23,7 +23,7 @@ let documents = await Promise.all(
 documents = documents.concat(
   meetings.map((meeting) => {
     return {
-      url: import.meta.env.BASE_URL + 'meeting/' + meeting.slug,
+      url: import.meta.env.BASE_URL + 'meeting/' + meeting.id,
       title: meeting.data.title,
       description: meeting.data.description
     }

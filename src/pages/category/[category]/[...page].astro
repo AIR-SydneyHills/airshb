@@ -40,10 +40,10 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
     return paginate(
       posts.filter(
         (post) =>
-          category && post.data.categories!.map((category) => category.slug).includes(category.slug)
+          category && post.data.categories!.map((category) => category.id).includes(category.id)
       ),
       {
-        params: { category: category.slug },
+        params: { category: category.id },
         pageSize: PAGE_SIZE
       }
     )
@@ -53,11 +53,7 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
 
 <Base frontmatter={frontmatter}>
   <header>
-    <PageHero
-      title={frontmatter.title!}
-      description={frontmatter.description}
-      image={detail!.data.image}
-    >
+    <PageHero frontmatter={frontmatter}>
       <PaginateControl base={currentPage} page={page} />
     </PageHero>
   </header>

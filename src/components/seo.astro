@@ -15,7 +15,10 @@ import type {
 import { SiteMetadata, DefaultImage, LogoImage } from '../config'
 
 export interface Props {
-  frontmatter: CollectionEntry<'page'>['data'] | CollectionEntry<'blog'>['data']
+  frontmatter:
+    | CollectionEntry<'page'>['data']
+    | CollectionEntry<'blog'>['data']
+    | CollectionEntry<'meeting'>['data']
 }
 
 const { frontmatter } = Astro.props
@@ -31,7 +34,7 @@ const image = await getImage({
 })
 const logo = LogoImage
 const publishDate = frontmatter.pubDate || SiteMetadata.buildTime
-const author = frontmatter.author ? frontmatter.author.slug : 'Astro Blog'
+const author = SiteMetadata.org.email
 const openGraph = {
   basic: {
     title: frontmatter.title!,
@@ -49,8 +52,7 @@ const openGraph = {
   },
   article: {
     author: author,
-    publishedTime: SiteMetadata.buildTime.toISOString(),
-    tags: frontmatter.tags
+    publishedTime: SiteMetadata.buildTime.toISOString()
   }
 }
 const twitter = {
@@ -175,7 +177,6 @@ const article: WithContext<Article> = {
   datePublished: publishDate.toISOString(),
   description: frontmatter.description,
   headline: frontmatter.title,
-  keywords: frontmatter.tags && frontmatter.tags.join(', '),
   image: {
     '@type': 'ImageObject',
     url: new URL(image.src, Astro.url).toString()
