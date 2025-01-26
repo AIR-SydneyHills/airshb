@@ -12,7 +12,6 @@ const blog = defineCollection({
       author: reference('author').optional(),
       image: image().optional(),
       images: z.array(image()).optional(),
-      gallery: z.string().optional(),
       categories: z.array(reference('category')).optional(),
       tags: z.array(z.string()).optional(),
       minutesRead: z.string().optional()
@@ -26,7 +25,6 @@ const meeting = defineCollection({
       draft: z.boolean().optional(),
       image: image().optional(),
       images: z.array(image()).optional(),
-      gallery: z.string().optional(),
       minutesRead: z.string().optional()
     })
 })
@@ -49,7 +47,6 @@ const page = defineCollection({
       author: reference('author').optional(),
       image: image().optional(),
       images: z.array(image()).optional(),
-      gallery: z.string().optional(),
       tags: z.array(z.string()).optional()
     })
 })
@@ -58,6 +55,7 @@ const category = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/category' }),
   schema: ({ image }) =>
     z.object({
+      draft: z.boolean().optional(),
       title: z.string(),
       description: z.string(),
       image: image()
@@ -68,6 +66,7 @@ const author = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/author' }),
   schema: ({ image }) =>
     z.object({
+      draft: z.boolean().optional(),
       title: z.string(),
       description: z.string(),
       image: image(),

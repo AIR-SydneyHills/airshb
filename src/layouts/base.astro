@@ -3,7 +3,6 @@ import type { CollectionEntry } from 'astro:content'
 import SEO from '../components/seo.astro'
 import Header from '../components/header.astro'
 import Footer from '../components/footer.astro'
-import Gallery from '../components/gallery.astro'
 import Images from '../components/images.astro'
 
 export interface Props {
@@ -51,7 +50,6 @@ const { frontmatter } = Astro.props
   <body class="dark:bg-gray-900">
     <Header />
     <slot />
-    {frontmatter.gallery && <Gallery folder={frontmatter.gallery} />}
     {frontmatter.images && <Images images={frontmatter.images} />}
     <slot name="before-footer" />
     <Footer />
