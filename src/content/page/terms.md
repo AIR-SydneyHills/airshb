@@ -1,5 +1,6 @@
 ---
 title: Terms and Conditions of Use
+image: ../../assets/site/logo-wide.jpg
 ---
 
 The Australian Independent Retirees (A.I.R.) Limited expressly disclaims all warranties, express or implied, including, but not limited to the implied warranties of quality or accuracy or merchantability and fitness for a particular purpose. Use of the information on this site and on these pages is at the user’s sole risk.

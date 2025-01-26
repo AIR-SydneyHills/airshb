@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+image: ../../assets/site/logo-wide.jpg
 ---
 
 The Australian Independent Retirees (A.I.R.) Limited is committed to providing quality services to you and has adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act).

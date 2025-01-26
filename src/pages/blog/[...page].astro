@@ -7,7 +7,7 @@ import Base from '../../layouts/base.astro'
 import PageHero from '../../components/pagehero.astro'
 import BlogRoll from '../../components/blogroll.astro'
 import PaginateControl from '../../components/paginatecontrol.astro'
-import { DefaultImage } from '../../config'
+import DefaultImage from '../../assets/images/articles.jpg'
 
 export interface Props {
   page: Page<CollectionEntry<'blog'>>
@@ -17,9 +17,9 @@ const { page } = Astro.props
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   title:
-    'Blog' +
+    'Our Articles' +
     (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),
-  description: 'View our articles.',
+  description: 'View articles written by our members and speakers at meetings.',
   image: DefaultImage
 }
 

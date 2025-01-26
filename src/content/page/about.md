@@ -1,5 +1,6 @@
 ---
 title: About Us
+image: ../../assets/site/logo-wide.jpg
 ---
 
 ## Who is AIR?
