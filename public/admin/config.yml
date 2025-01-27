@@ -15,6 +15,138 @@ slug:
   sanitize_replacement: "-"
 
 collections:
+  - name: "files"
+    label: "Files"
+    description: "Configuration files"
+    files:
+      - name: "next"
+        label: "Next Meeting"
+        file: "src/content/next/meeting.md"
+        fields:
+          - label: "Draft"
+            name: "draft"
+            widget: "boolean"
+            default: false
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Date of Meeting"
+            name: "pubDate"
+            widget: "datetime"
+          - label: "Description"
+            name: "description"
+            widget: "string"
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            required: false
+  - name: "articles" # Used in routes, e.g., /admin/collections/blog
+    label: "Articles" # Used in the UI
+    label_singular: "Article"
+    folder: "src/content/blog" # The path to the folder where the documents are stored
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      - label: Author
+        name: author
+        widget: relation
+        collection: authors
+        value_field: "{{slug}}"
+        search_fields: [title]
+        display_fields: [title]
+        multiple: false
+        required: false
+        filters:
+          - field: draft
+            values: [false]
+        hint: "Select author of article."
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date of Meeting"
+        name: "pubDate"
+        widget: "datetime"
+      - label: "Description"
+        name: "description"
+        widget: "string"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Additional Images"
+        name: "images"
+        widget: "list"
+        hint: "This will be displayed as a photo gallery at the end of the text."
+        required: false
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
+      - label: Categories
+        name: categories
+        widget: relation
+        collection: categories
+        value_field: "{{slug}}"
+        search_fields: [title]
+        display_fields: [title]
+        multiple: true
+        required: false
+        filters:
+          - field: draft
+            values: [false]
+        hint: "Select one or more category for the article."
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        hint: "Enter one or more tags for the article, separated by commas."
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+  - name: "meeting" # Used in routes, e.g., /admin/collections/blog
+    label: "Meetings" # Used in the UI
+    label_singular: "Meeting"
+    folder: "src/content/meeting" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    preview_path_date_field: "pubDate"
+    preview_path: "meeting/{{filename}}.{{extension}}"
+    slug: "{{year}}-{{month}}-{{day}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date of Meeting"
+        name: "pubDate"
+        widget: "datetime"
+      - label: "Description"
+        name: "description"
+        widget: "string"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Additional Images"
+        name: "images"
+        widget: "list"
+        hint: "This will be displayed as a photo gallery at the end of the text."
+        required: false
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
   - name: "categories"
     label: "Categories"
     label_singular: "Category"
@@ -65,43 +197,6 @@ collections:
         name: "body"
         widget: "markdown"
         required: false
-  - name: "meeting" # Used in routes, e.g., /admin/collections/blog
-    label: "Meetings" # Used in the UI
-    label_singular: "Meeting"
-    folder: "src/content/meeting" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Date of Meeting"
-        name: "pubDate"
-        widget: "datetime"
-      - label: "Description"
-        name: "description"
-        widget: "string"
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        required: false
-      - label: "Additional Images"
-        name: "images"
-        widget: "list"
-        hint: "This will be displayed as a photo gallery at the end of the text."
-        required: false
-        field:
-          label: "Image"
-          name: "image"
-          widget: "image"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Used in the UI
     label_singular: "Page"
@@ -141,82 +236,12 @@ collections:
       - label: "Additional Images"
         name: "images"
         widget: "list"
-        summary: '{{fields.image}}'
         hint: "This will be displayed as a photo gallery at the end of the text."
         required: false
         field:
           label: "Image"
           name: "image"
           widget: "image"
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        hint: "Enter one or more tags for the article, separated by commas."
-        required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
-  - name: "articles" # Used in routes, e.g., /admin/collections/blog
-    label: "Articles" # Used in the UI
-    label_singular: "Article"
-    folder: "src/content/blog" # The path to the folder where the documents are stored
-    slug: "{{year}}-{{month}}-{{day}}-{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: false
-      - label: Author
-        name: author
-        widget: relation
-        collection: authors
-        value_field: "{{slug}}"
-        search_fields: [title]
-        display_fields: [title]
-        multiple: false
-        required: false
-        filters:
-          - field: draft
-            values: [false]
-        hint: "Select author of article."
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Date of Meeting"
-        name: "pubDate"
-        widget: "datetime"
-      - label: "Description"
-        name: "description"
-        widget: "string"
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        required: false
-      - label: "Additional Images"
-        name: "images"
-        widget: "list"
-        summary: '{{fields.image}}'
-        hint: "This will be displayed as a photo gallery at the end of the text."
-        required: false
-        field:
-          label: "Image"
-          name: "image"
-          widget: "image"
-      - label: Categories
-        name: categories
-        widget: relation
-        collection: categories
-        value_field: "{{slug}}"
-        search_fields: [title]
-        display_fields: [title]
-        multiple: true
-        required: false
-        filters:
-          - field: draft
-            values: [false]
-        hint: "Select one or more category for the article."
       - label: "Tags"
         name: "tags"
         widget: "list"
