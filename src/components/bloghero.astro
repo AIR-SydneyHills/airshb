@@ -12,7 +12,7 @@ export interface Props {
 
 const { post } = Astro.props
 
-let author = await getEntry('author', 'default')
+let author = await getEntry('author', 'air-sydney-hills')
 if (post.data.author) {
   author = await getEntry(post.data.author)
 }

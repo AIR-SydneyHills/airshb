@@ -1,6 +1,6 @@
 ---
 draft: false
-author: Wayne-Strandquist
+author: wayne-strandquist
 title: How much annual income will I need in retirement?
 pubDate: 2025-01-16T08:00:00.000+10:00
 description: One of the most frequent questions asked by pre-retirees is “How
@@ -9,7 +9,7 @@ description: One of the most frequent questions asked by pre-retirees is “How
   might say.
 image: ../../assets/images/2025-01-16-retirement-income.jpg
 categories:
-  - General
+  - general
 tags:
   - income
   - retirement

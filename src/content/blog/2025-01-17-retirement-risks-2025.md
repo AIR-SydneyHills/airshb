@@ -2,10 +2,10 @@
 title: Some important risks in retirement for 2025
 description: 'Three risks to consider for retirees in 2025.'
 pubDate: 2025-01-17T08:00:00.000+10:00
-author: Wayne-Strandquist
+author: wayne-strandquist
 image: ../../assets/images/2025-01-17-retirement-risks.jpg
 categories:
-  - General
+  - general
 tags:
   - retirement
   - risks
