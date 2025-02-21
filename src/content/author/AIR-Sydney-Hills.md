@@ -1,4 +1,5 @@
 ---
+draft: false
 title: 'AIR Sydney Hills'
 image: ../../assets/site/air.jpg
 contact: 'airsydneyhills@gmail.com'
