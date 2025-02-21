@@ -9,10 +9,10 @@ const blog = defineCollection({
   schema: ({ image }) =>
     rssSchema.extend({
       draft: z.boolean().optional(),
-      author: reference('author').optional(),
+      author: reference('author'),
       image: image().optional(),
       images: z.array(image()).optional(),
-      categories: z.array(reference('category')).optional(),
+      categories: z.array(reference('category')),
       tags: z.array(z.string()).optional(),
       minutesRead: z.string().optional()
     })
