@@ -31,9 +31,7 @@ const meeting = defineCollection({
 
 const next = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/next' }),
-  schema: rssSchema.extend({
-    draft: z.boolean().optional()
-  })
+  schema: rssSchema
 })
 
 const page = defineCollection({

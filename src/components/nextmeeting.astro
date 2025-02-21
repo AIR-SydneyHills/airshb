@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content'
 
-const next = (await getCollection('next', (next) => !next.data.draft))[0]
+const next = (await getCollection('next'))[0]
 const { Content } = await render(next)
 ---
 
