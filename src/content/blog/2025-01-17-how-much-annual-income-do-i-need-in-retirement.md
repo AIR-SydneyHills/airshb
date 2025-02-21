@@ -1,11 +1,15 @@
 ---
+draft: false
+author: Wayne-Strandquist
 title: How much annual income will I need in retirement?
-description: 'One of the most frequent questions asked by pre-retirees is “How much income will I need annually in retirement?“. However, retirement income is often very much an individual thing. How long is a piece of string? , you might say.'
 pubDate: 2025-01-16T08:00:00.000+10:00
-author: wayne-strandquist
+description: One of the most frequent questions asked by pre-retirees is “How
+  much income will I need annually in retirement?“. However, retirement income
+  is often very much an individual thing. How long is a piece of string? , you
+  might say.
 image: ../../assets/images/2025-01-16-retirement-income.jpg
 categories:
-  - general
+  - General
 tags:
   - income
   - retirement
