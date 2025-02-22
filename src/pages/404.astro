@@ -5,6 +5,7 @@ import PageHero from '../components/pagehero.astro'
 import { DefaultImage } from '../config'
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
+  draft: false,
   title: '404: Not found',
   description: "You just hit a route that doesn't exist... the sadness.",
   image: DefaultImage

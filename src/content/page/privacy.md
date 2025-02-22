@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Privacy Policy
 image: ../../assets/site/logo-wide.jpg
 ---

@@ -36,7 +36,6 @@ collections:
           - label: 'Body'
             name: 'body'
             widget: 'markdown'
-            required: true
   - name: 'meeting' # Used in routes, e.g., /admin/collections/blog
     label: 'Past Meetings' # Used in the UI
     label_singular: 'Meeting'
@@ -180,7 +179,7 @@ collections:
         search_fields: [title]
         display_fields: [title]
         multiple: true
-        required: false
+        min: 1
         filters:
           - field: draft
             values: [false]

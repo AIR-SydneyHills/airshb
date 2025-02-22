@@ -16,6 +16,7 @@ export interface Props {
 const { page } = Astro.props
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
+  draft: false,
   title:
     'Our Articles' +
     (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),

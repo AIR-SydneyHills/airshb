@@ -1,4 +1,5 @@
 ---
+draft: false
 title: About Us
 image: ../../assets/site/logo-wide.jpg
 ---

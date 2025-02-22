@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Terms and Conditions of Use
 image: ../../assets/site/logo-wide.jpg
 ---

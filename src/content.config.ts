@@ -8,7 +8,7 @@ const blog = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
   schema: ({ image }) =>
     rssSchema.extend({
-      draft: z.boolean().optional(),
+      draft: z.boolean(),
       author: reference('author'),
       image: image().optional(),
       images: z.array(image()).optional(),
@@ -22,7 +22,7 @@ const meeting = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/meeting' }),
   schema: ({ image }) =>
     rssSchema.extend({
-      draft: z.boolean().optional(),
+      draft: z.boolean(),
       image: image().optional(),
       images: z.array(image()).optional(),
       minutesRead: z.string().optional()
@@ -38,7 +38,7 @@ const page = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/page' }),
   schema: ({ image }) =>
     z.object({
-      draft: z.boolean().optional(),
+      draft: z.boolean(),
       title: z.string(),
       description: z.string().optional(),
       pubDate: z.date().optional(),
@@ -53,7 +53,7 @@ const category = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/category' }),
   schema: ({ image }) =>
     z.object({
-      draft: z.boolean().optional(),
+      draft: z.boolean(),
       title: z.string(),
       description: z.string(),
       image: image()
@@ -64,7 +64,7 @@ const author = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/author' }),
   schema: ({ image }) =>
     z.object({
-      draft: z.boolean().optional(),
+      draft: z.boolean(),
       title: z.string(),
       description: z.string(),
       image: image(),
