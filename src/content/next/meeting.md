@@ -1,21 +1,21 @@
 ---
-title: February 7th 2025
-pubDate: 2025-02-07T10:30:00+11:00
-description: Living Well with Parkinsons; Listed Investment Companies & Trusts
+title: March 7th 2025
+pubDate: 2025-03-07T10:30:00+11:00
+description: Beyond Blue; ACCC Financial & Investment Scams
 ---
 
-Our first meeting for 2025 will be held on Friday morning February 7th 2025 at Beecroft Presbyterian Church Hall at 10:30 for a 10:45 start.
+Our March meeting will be held on Friday March 7th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
-The Investors Discussion group will follow at 12:30pm after refreshments.
+The Investors Discussion group will follow at 11:30am after refreshments.
 
-### 10:45am: Social Contribution. Your way to wellbeing. Peter Carritt- Volunteer
+### 10:45am: Kathryn Hams: Beyond Blue
 
-![Social Contribution](../../assets/images/2025-02-07-1.png)
+![Beyond Blue](../../assets/images/2025-03-07-1.png)
 
-Peter Carritt, a volunteer to families in need, will show us how Social Contribution can be a great way to help the community and also improve your own happiness & wellbeing. There will be an opportunity to share your experience & its benefits.
+Volunteer Kathryn will share her personal experience of living with a mental health condition, talk about what Beyond Blue does and how the audience can seek help or receive support. There will be a Q&A + feedback session later.
 
-### 12:30pm: Financial discussion group – 2025 Economic & Investment Outlook
+### 12:30pm: Financial discussion group – ACCC Financial & Investment Scams
 
-![Angus Rodgers](../../assets/images/2025-02-07-2.jpg)
+![ACCC](../../assets/images/2025-03-07-2.png)
 
-Angus Rodgers (ranked in the top 1% of financial advisers in Australia) from Prime Advisory on Sydney’s North Shore and a member from his investment committee will be sharing their insights on the economic and investment outlook for 2025. They will also describe how they utilise a range of investment portfolios to support the varied requirements of their clients.
+The ACCC expert speaker Bob from ScamWatch will educate us on common and emerging types of Financial & Investment scams. How do you recognise them and how do you prevent them?
