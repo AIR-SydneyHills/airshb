@@ -1,11 +1,5 @@
 // uno.config.ts
-import {
-  defineConfig,
-  presetIcons,
-  presetAttributify,
-  presetTypography,
-  presetUno
-} from 'unocss'
+import { defineConfig, presetIcons, presetAttributify, presetTypography, presetWind3 } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -17,7 +11,7 @@ export default defineConfig({
       }
     }),
     presetAttributify(), // required when using attributify mode
-    presetUno(), // required
+    presetWind3(), // required
     presetTypography()
   ],
   safelist: [
@@ -31,6 +25,6 @@ export default defineConfig({
     'i-bi-instagram',
     'i-bi-linkedin',
     'i-bi-telephone',
-    'i-bi-twitter' 
+    'i-bi-twitter'
   ]
 })
