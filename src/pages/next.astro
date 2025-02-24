@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { getCollection, render } from 'astro:content'
+import { SiteMetadata } from '../config'
+import Base from '../layouts/base.astro'
+import image from '../assets/site/retirementahead.jpg'
+
+const frontmatter: CollectionEntry<'page'>['data'] = {
+  draft: false,
+  title: 'Next Meeting',
+  description: SiteMetadata.description,
+  image: image
+}
+
+const next = (await getCollection('next'))[0]
+const { Content } = await render(next)
+---
+
+<script is:inline slot="in-head" src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<Base frontmatter={frontmatter}>
+  <main class="bg-white dark:bg-gray-900 mx-auto max-w-screen-lg">
+    <h2 class="mb-4 text-3xl text-gray-900 font-bold tracking-tight dark:text-white">
+      Next Meeting: {next.data.title}
+    </h2>
+    <section class="lg:prose-xl prose prose-gray dark:prose-invert">
+      <Content />
+    </section>
+  </main>
+</Base>
