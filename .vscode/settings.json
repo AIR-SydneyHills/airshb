@@ -9,5 +9,8 @@
     "prettier.documentSelectors": ["**/*.astro"],
     "[astro]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdown.copyFiles.destination": {
+      "**/*": "src/assets/images/${fileName}"
     }
   }
