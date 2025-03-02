@@ -8,13 +8,13 @@ Our March meeting will be held on Friday March 7th 2025 at Beecroft Presbyterian
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
-### 10:45am: Kathryn Hams: Beyond Blue
+### 10:00am: Kathryn Hams: Beyond Blue
 
 ![Beyond Blue](../../assets/images/2025-03-07-1.jpg)
 
 Volunteer Kathryn will share her personal experience of living with a mental health condition, talk about what Beyond Blue does and how the audience can seek help or receive support. There will be a Q&A + feedback session later.
 
-### 12:30pm: Financial discussion group – Customer Service at Large Super Funds
+### 11:30am: Financial discussion group – Customer Service at Large Super Funds
 
 ![Customer Service](../../assets/images/2025-03-07-2.png)
 
