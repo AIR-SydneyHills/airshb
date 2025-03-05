@@ -34,7 +34,9 @@ export async function GET(context) {
           author: `${author.data.title} (${author.data.contact})`,
           pubDate: post.data.pubDate.toString(),
           // custom data for media. The url must be the full url (including https://)
-          customData: `<media:content
+          customData:
+            post.data.image &&
+            `<media:content
           type="image/${post.data.image.format == 'jpg' ? 'jpeg' : 'png'}"
           width="${post.data.image.width}"
           height="${post.data.image.height}"
