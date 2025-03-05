@@ -4,6 +4,7 @@ author: chris-tham
 title: Steps to manage your use of technology
 pubDate: 2025-03-05T11:26:00.000Z
 description: Some tips and techniques to manage our use of technology.
+image: ../../assets/images/managing-technology.jpeg
 categories:
   - general
 tags:
