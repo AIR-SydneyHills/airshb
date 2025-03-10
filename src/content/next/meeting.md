@@ -1,6 +1,6 @@
 ---
 title: March 7th 2025
-pubDate: 2025-03-07T10:00:00.000Z
+pubDate: 2025-03-10T16:07:00.000Z
 description: Finding the right Aged Care solution; ACCC Financial Scams
 ---
 Our March meeting will be held on Friday April 4th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
