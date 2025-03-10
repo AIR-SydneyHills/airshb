@@ -1,5 +1,5 @@
 ---
-title: April 4th 2025
+title: April 4th 2025 Next Meeting
 pubDate: 2025-03-10T16:07:00.000Z
 description: Finding the right Aged Care solution; ACCC Financial Scams
 ---
@@ -9,7 +9,7 @@ The Investors Discussion group will follow at 11:30am after refreshments.
 
 ### 10:00am: Danielle Robertson: Finding the right Aged Care solution.
 
-![Danielle Robertson](../../assets/images/danielle-robertson.jpg)
+![Danielle Robertson]()
 
 With 38 years experience, Danielle has identified a serious gap in meeting the unique requirements of people in need of Aged Care. Danielle now specialises in matching people all over Australia with the care facility they need.
 
