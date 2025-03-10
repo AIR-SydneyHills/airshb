@@ -9,7 +9,7 @@ The Investors Discussion group will follow at 11:30am after refreshments.
 
 ### 10:00am: Danielle Robertson: Finding the right Aged Care solution.
 
-![Danielle Robertson]()
+![Danielle Robertson](../../assets/images/danielle-robertson-small.jpg)
 
 With 38 years experience, Danielle has identified a serious gap in meeting the unique requirements of people in need of Aged Care. Danielle now specialises in matching people all over Australia with the care facility they need.
 
