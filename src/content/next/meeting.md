@@ -3,7 +3,7 @@ title: April 4th 2025 Next Meeting
 pubDate: 2025-03-10T16:07:00.000Z
 description: Finding the right Aged Care solution; ACCC Financial Scams
 ---
-Our March meeting will be held on Friday April 4th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
+Our next meeting will be held on Friday April 4th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
