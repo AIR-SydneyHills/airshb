@@ -5,6 +5,7 @@ title: Patient care in aged care homes
 pubDate: 2025-03-05T11:26:00.000Z
 description: Involves a holistic approach that encompasses various aspects of a
   resident's well-being
+image: ../../assets/images/2024-04-members.png
 images:
   - ../../assets/images/2024-04-members.png
 categories:
