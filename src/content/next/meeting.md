@@ -13,6 +13,8 @@ The Investors Discussion group will follow at 11:30am after refreshments.
 
 With 38 years experience, Danielle has identified a serious gap in meeting the unique requirements of people in need of Aged Care. Danielle now specialises in matching people all over Australia with the care facility they need.
 
+###### **Branch News & a delicious morning tea will follow Danielle's talk**
+
 ### 11:30am: Financial group – The key challenges for SMSF's in 2025
 
 ![Customer Service](../../assets/images/jason-spits-150x150.jpg)
