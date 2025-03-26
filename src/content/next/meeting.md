@@ -1,7 +1,7 @@
 ---
 title: April 4th 2025 Public Meeting
 pubDate: 2025-03-10T16:23:00.000Z
-description: Finding the right Aged Care solution; ACCC Financial Scams
+description: Finding the right Aged Care solution; key Challenges for SMSFs
 ---
 Our next meeting will be held on Friday April 4th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
