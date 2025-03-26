@@ -26,3 +26,6 @@ ATO changes to minimum pension drawdowns and subsequent problems are discussed, 
 Preference is given to questions emailed in advance to airsydneyhills@gmail.com. Questions have already been asked about when is a good time to wind-up an SMSF and rollover to an APRA fund?
 
 Please talk to Jason about our SMSF newsletter and other projects to educate our members.
+
+##### 
+We will adjourn to a local café around 12:30pm for a light lunch.
