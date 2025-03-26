@@ -1,5 +1,5 @@
 ---
-title: April 4th 2025 Next Meeting
+title: April 4th 2025 Public Meeting
 pubDate: 2025-03-10T16:23:00.000Z
 description: Finding the right Aged Care solution; ACCC Financial Scams
 ---
