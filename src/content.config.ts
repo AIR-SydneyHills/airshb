@@ -18,6 +18,20 @@ const blog = defineCollection({
     })
 })
 
+const news = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/news' }),
+  schema: ({ image }) =>
+    rssSchema.extend({
+      draft: z.boolean(),
+      author: reference('author'),
+      image: image().optional(),
+      images: z.array(image()).optional(),
+      categories: z.array(reference('category')),
+      tags: z.array(z.string()).optional(),
+      minutesRead: z.string().optional()
+    })
+})
+
 const meeting = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/meeting' }),
   schema: ({ image }) =>
@@ -80,6 +94,7 @@ const social = defineCollection({
 export const collections = {
   blog,
   meeting,
+  news,
   next,
   page,
   category,

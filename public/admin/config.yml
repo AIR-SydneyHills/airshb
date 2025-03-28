@@ -152,7 +152,7 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
-      - label: 'Date of Meeting'
+      - label: 'Date of Article'
         name: 'pubDate'
         widget: 'datetime'
       - label: 'Description'
@@ -162,6 +162,76 @@ collections:
         name: 'image'
         widget: 'image'
         required: false
+        hint: 'This will be displayed as a featured image at the top of the article.'
+      - label: 'Additional Images'
+        name: 'images'
+        widget: 'list'
+        hint: 'This will be displayed as a photo gallery at the end of the text.'
+        required: false
+        field:
+          label: 'Image'
+          name: 'image'
+          widget: 'image'
+      - label: Categories
+        name: categories
+        widget: relation
+        collection: categories
+        value_field: '{{slug}}'
+        search_fields: [title]
+        display_fields: [title]
+        multiple: true
+        min: 1
+        filters:
+          - field: draft
+            values: [false]
+        hint: 'Select one or more category for the article.'
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        hint: 'Enter one or more tags for the article, separated by commas.'
+        required: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+  - name: 'news' # Used in routes, e.g., /admin/collections/blog
+    label: 'News' # Used in the UI
+    label_singular: 'News'
+    folder: 'src/content/news' # The path to the folder where the documents are stored
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - label: 'Draft'
+        name: 'draft'
+        widget: 'boolean'
+        default: false
+      - label: Author
+        name: author
+        widget: relation
+        collection: authors
+        value_field: '{{slug}}'
+        search_fields: [title]
+        display_fields: [title]
+        multiple: false
+        required: true
+        filters:
+          - field: draft
+            values: [false]
+        hint: 'Select author of article.'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Date of Article'
+        name: 'pubDate'
+        widget: 'datetime'
+      - label: 'Description'
+        name: 'description'
+        widget: 'string'
+      - label: 'Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        hint: 'This will be displayed as a featured image at the top of the article.'
       - label: 'Additional Images'
         name: 'images'
         widget: 'list'
