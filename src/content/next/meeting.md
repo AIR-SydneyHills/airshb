@@ -9,13 +9,17 @@ The Investors Discussion group will follow at 11:30am after refreshments.
 
 ### 10:00am: Charles Fellner: Scam Awareness, your best defence against fraud.
 
-![Danielle Robertson](../../assets/images/danielle-robertson-small.jpg)
+![Charles Fellner](../../assets/images/fellnerc.jpg)
 
-With 38 years experience, Danielle has identified a serious gap in meeting the unique requirements of people in need of Aged Care. Danielle now specialises in matching people all over Australia with the care facility they need.
+A retired IT professional, Charles’ initial focus is on the more common scams. He explains what goes on behind these scams, the steps that one should take to avoid being scammed, and what one should do if they have been scammed. 
+
+After this Charles will focus the concerning rise of **Financial Scams.** He has a strong interest in the psychology of scamming and believe this is a very important and often neglected part of the puzzle. 
+
+
 
 ##### **Branch News & a delicious morning tea will follow Danielle's talk**
 
-### 11:30am: Financial group – The key challenges for SMSF's in 2025
+### 11:30am: Diversifying your investments to reduce volatility in today’s share market upheavals.
 
 ![Customer Service](../../assets/images/jason-spits-150x150.jpg)
 
