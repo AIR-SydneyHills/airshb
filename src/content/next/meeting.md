@@ -17,7 +17,7 @@ After this Charles will focus the concerning rise of **Financial Scams.** He has
 
 ##### **Branch News & a delicious morning tea will follow Danielle's talk**
 
-### 11:30am: Diversifying your investments to reduce volatility in today’s share market upheavals.
+### 11:30am: Diversifying your investments to reduce volatility in today’s share market upheavals
 
 ![Customer Service](../../assets/images/wayne-strandquist.jpg)
 
