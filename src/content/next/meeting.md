@@ -7,6 +7,8 @@ Our next meeting will be held on Friday May 2nd 2025 at Beecroft Presbyterian Ch
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
+We will learn how to handle Scams and Market uncertainty
+
 ### 10:00am: Danielle Robertson: Finding the right Aged Care solution.
 
 ![Danielle Robertson](../../assets/images/danielle-robertson-small.jpg)
