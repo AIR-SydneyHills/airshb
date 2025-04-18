@@ -19,7 +19,7 @@ After this Charles will focus the concerning rise of **Financial Scams.** He has
 
 ### 11:30am: Diversifying your investments to reduce volatility in today’s share market upheavals.
 
-![Customer Service](../../assets/images/wayne-strand.jpg)
+![Customer Service](../../assets/images/wayne-strandquist.jpg)
 
 With the recent large fluctuations in share markets in Australia and around the world, Wayne Strandquist will commence this important discussion with an anonymous survey on member’s level of investment diversification.  Wayne will then explore the benefits of diversification across various asset classes and also within each asset class, and how that can improve the resilience of our portfolios.
 
