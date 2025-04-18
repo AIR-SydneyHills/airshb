@@ -1,13 +1,11 @@
 ---
-title: May 22nd 2025 Public Meeting- How to handle Scams and Market uncertainty
-pubDate: 2025-05-02T03:23:00.000Z
+title: May 22nd 2025 Public Meeting - How to handle Scams and Market uncertainty
+pubDate: 2025-05-02T08:00:00.000Z
 description: How to handle Scams and Market uncertainty
 ---
 Our next meeting will be held on Friday May 2nd 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
 The Investors Discussion group will follow at 11:30am after refreshments.
-
-We will learn how to handle Scams and Market uncertainty
 
 ### 10:00am: Danielle Robertson: Finding the right Aged Care solution.
 
