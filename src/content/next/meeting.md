@@ -1,9 +1,9 @@
 ---
-title: April 4th 2025 Public Meeting
-pubDate: 2025-03-10T16:23:00.000Z
-description: Finding the right Aged Care solution; key Challenges for SMSFs
+title: May 22nd 2025 Public Meeting- How to handle Scams and Market uncertainty
+pubDate: 2025-05-02T03:23:00.000Z
+description: How to handle Scams and Market uncertainty
 ---
-Our next meeting will be held on Friday April 4th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
+Our next meeting will be held on Friday May 2nd 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
@@ -27,5 +27,4 @@ Preference is given to questions emailed in advance to airsydneyhills@gmail.com.
 
 Please talk to Jason about our SMSF newsletter and other projects to educate our members.
 
-##### 
 **We will adjourn to a local café around 12:30pm for a light lunch.**
