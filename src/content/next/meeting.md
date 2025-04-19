@@ -1,6 +1,6 @@
 ---
-title: May 22nd 2025 - How to handle Scams and Market uncertainty
-pubDate: 2025-05-02T08:00:00.000Z
+title: May 2nd 2025 - How to handle Scams and Market uncertainty
+pubDate: 2025-05-02T06:00:00.000Z
 description: How to handle Scams and Market uncertainty
 ---
 Our next meeting will be held on Friday May 2nd 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
