@@ -1,27 +1,29 @@
 ---
-title: May 2nd 2025 - How to handle Scams and Market uncertainty
-pubDate: 2025-05-02T06:00:00.000Z
-description: How to handle Scams and Market uncertainty
+title: June 6th 2025 - Older Driver Assessments and Private Equity investments
+pubDate: 2025-06-06T10:00:00.000Z
+description: Older Driver Assessments and Private Equity investments
 ---
-Our next meeting will be held on Friday May 2nd 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
+Our next meeting will be held on Friday June 6th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
-### 10:00am: Charles Fellner: Scam Awareness, your best defence against fraud.
+### 10:00am: Keith Payne - Older Driver Assessments.
 
-![Charles Fellner](../../assets/images/fellnerc.jpg)
+![Charles Fellner](../../assets/images/older-driver1.jpg)
 
-A retired IT professional, Charles’ initial focus is on the more common scams. He explains what goes on behind these scams, the steps that one should take to avoid being scammed, and what one should do if they have been scammed. 
+Keith has a long history in driver training and was part of various NSW government committees to oversee driver testing and traffic offender programs.
 
-After this Charles will focus the concerning rise of **Financial Scams.** He has a strong interest in the psychology of scamming and believe this is a very important and often neglected part of the puzzle. 
+Of special interest to us is Keith’s role is as an ‘accredited private assessor’ for the NSW Older Drivers Assessment Program. He brings a wealth of knowledge & experience and is the perfect person to help you understand the process of Older Driver Assessments. Keith can also answer your questions on Low-Risk Driving, Road Rules and Pedestrian Safety. 
 
-##### **Branch News & a delicious morning tea will follow Danielle's talk**
 
-### 11:30am: Diversifying your investments to reduce volatility in today’s share market upheavals
+
+##### **Branch News & a delicious morning tea will follow this talk.**
+
+### 11:30am: Alternative Investments. How to access Private Credit and Private Equity products to further diversify your portfolio.
 
 ![Investment diversity](../../assets/images/wayne-strand-smaller.jpg)
 
-With the recent large fluctuations in share markets in Australia and around the world, Wayne Strandquist will commence this important discussion with an anonymous survey on member’s level of investment diversification.  Wayne will then explore the benefits of diversification across various asset classes and also within each asset class, and how that can improve the resilience of our portfolios.
+Wayne Strandquist will introduce us to the alternative investment classes of Private Credit and Private Equity, that were previously not available to retail investors. We will explore what major brokers can offer us and what are the sensible limits of these investments.
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
