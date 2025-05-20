@@ -71,7 +71,7 @@ If malware has been downloaded on your Android phone
 
 •	Go to Google and type:
 
-Remove malware or unsafe software Android  then select: “Google Help” website 
+*Remove malware or unsafe software Android*  then select: “*Google Help*” website 
 
 If malware has been downloaded on your laptop 
 
@@ -111,7 +111,7 @@ To report a fake Profile to Facebook:
 
 •	Go to Google and type: 
 
-How to report a Facebook account or Page that's pretending to be me    
+*How to report a Facebook account or Page that's pretending to be me*    
 
  … and follow the instructions 
 
@@ -131,7 +131,7 @@ How to report a Facebook account or Page that's pretending to be me
 
 •	To find out about Facebook Marketplace Scams - go into Google and type: 
 
-18 Facebook Marketplace Scams | All About Cookies
+*18 Facebook Marketplace Scams | All About Cookies*
 
 
 
@@ -161,7 +161,7 @@ How to report a Facebook account or Page that's pretending to be me
 
 ### **Investment Scams:**
 
-Tips:
+**Tips:**
 
 •	Find the opportunity yourself by doing thorough research
 
@@ -185,9 +185,9 @@ Tips:
 
 •	To find what personal details from you are on the dark web as a result of breaches:
 
-haveibeenpwned.com
+*[haveibeenpwned.com](haveibeenpwned.com)*
 
-
+Enter your email address and see where and when it was uploaded to the Dark Web
 
 ### Identity Theft:
 
