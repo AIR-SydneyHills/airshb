@@ -189,7 +189,7 @@ To report a fake Profile to Facebook:
 
 Enter your email address and see where and when it was uploaded to the Dark Web. 
 
-If t was, make sure you **change any passwords** used with that email as dark web robots will just try every financial site possible with your credentials.
+If it was stolen, make sure you **change every password** connected to that email as soon as possible, such as any bank website where you log in with that compromised email.
 
 ### Identity Theft:
 
