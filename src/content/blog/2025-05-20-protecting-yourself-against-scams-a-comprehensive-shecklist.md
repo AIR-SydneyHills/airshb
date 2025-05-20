@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: mal-steel
 title: Protecting yourself against Scams.  A comprehensive shecklist
 pubDate: 2025-05-20T15:23:00.000Z
