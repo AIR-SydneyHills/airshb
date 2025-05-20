@@ -15,7 +15,7 @@ tags:
 ---
 ## **Scam Awareness – Your Best Defence**
 
-Helpful notes from Charles Fellner, our guest speaker . Please note that Charles has provided this as a courtesy. The contents of this document should be used as a general guide only.
+*Helpful notes from Charles Fellner, our guest speaker . Please note that Charles has provided this as a courtesy. The contents of this document should be used as a general guide only.*
 
 Every day we hear about some new scam. As a society, we need to be working together a lot more and reaching out to increase **our resilience to scamming**. All it takes is one lapse of judgement and your life savings could be gone. We also need to do a lot more to reach out to the most vulnerable in our society (e.g. those over 80, with dementia, or disabled) to help and support them through these times when scamming has become rampant. 
 
@@ -53,7 +53,7 @@ Credit/Debit Card Recommendations:
 
 •	Use a card with a small limit and no direct debits for purchases when overseas and also when using any websites that you are not familiar with
 
-•	Check your card for fraudulent transactions, **at least weekly**
+•	Check your card for fraudulent transactions **at least weekly**
 
 •	**Never** enter passwords or pins on **public wi-fi** when in airports or shopping centres 
 
