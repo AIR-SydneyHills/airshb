@@ -187,7 +187,9 @@ To report a fake Profile to Facebook:
 
 *[haveibeenpwned.com](haveibeenpwned.com)*
 
-Enter your email address and see where and when it was uploaded to the Dark Web
+Enter your email address and see where and when it was uploaded to the Dark Web. 
+
+If t was, make sure you **change any passwords** used with that email as dark web robots will just try every financial site possible with your credentials.
 
 ### Identity Theft:
 
