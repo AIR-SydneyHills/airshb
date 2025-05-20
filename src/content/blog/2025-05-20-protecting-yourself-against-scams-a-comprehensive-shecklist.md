@@ -17,11 +17,11 @@ tags:
 
 *Helpful notes from Charles Fellner, our guest speaker . Please note that Charles has provided this as a courtesy. The contents of this document should be used as a general guide only.*
 
+*Please note that AIR members are able to watch a video of this talk, supported by many useful graphics and illustrations.*
+
 Every day we hear about some new scam. As a society, we need to be working together a lot more and reaching out to increase **our resilience to scamming**. All it takes is one lapse of judgement and your life savings could be gone. We also need to do a lot more to reach out to the most vulnerable in our society (e.g. those over 80, with dementia, or disabled) to help and support them through these times when scamming has become rampant. 
 
 Down the track, if you do get scammed then, after reporting it to **Scamwatch**, if you wish, you can also contact me and let me know details. ***charlesfellner1@gmail.com.*** I will consider how that information can be used to potentially prevent the next person from being caught in a similar scam.
-
-
 
 ### Passwords/PINs:
 
@@ -45,8 +45,6 @@ Down the track, if you do get scammed then, after reporting it to **Scamwatch**,
 
 •	where you have reused the same password on other online accounts, change them
 
-
-
 ### Credit/Debit Cards:
 
 Credit/Debit Card Recommendations:
@@ -63,8 +61,6 @@ Credit/Debit Card Recommendations:
 
 •	Request a new one
 
-
-
 ### Malware:
 
 If malware has been downloaded on your Android phone 
@@ -77,9 +73,7 @@ If malware has been downloaded on your laptop
 
 •	use anti-virus software to remove it
 
-
-
-### Helping an elderly/vulnerable relative or friend become more scam-resilient: 
+### Helping an elderly/vulnerable relative or friend become more scam-resilient:
 
 •	Tell them **NEVER** to give out their password or PINs
 
@@ -102,8 +96,6 @@ If malware has been downloaded on your laptop
 •	Consider setting up call alerts and monitoring for their bank transactions.
 
 •	Consider instigating a permanent credit freeze for them. 
-
-
 
 ### Facebook Scams:
 
@@ -133,8 +125,6 @@ To report a fake Profile to Facebook:
 
 *18 Facebook Marketplace Scams | All About Cookies*
 
-
-
 ### Romance Scams:
 
 **The 9 Warning Signs**
@@ -157,8 +147,6 @@ To report a fake Profile to Facebook:
 
 •	Try to move the conversation off the dating site or app
 
-
-
 ### **Investment Scams:**
 
 **Tips:**
@@ -178,8 +166,6 @@ To report a fake Profile to Facebook:
 •	Check the investment prospectus is registered with ASIC
 
 •	If the returns on offer seem too good to be true be extra vigilant
-
-
 
 ### Large Data Breaches:
 
@@ -213,8 +199,6 @@ If it was stolen, make sure you **change every password** connected to that emai
 
 •	If you have a password notebook => keep it in a safe place
 
-
-
 ### **2 Factor Authentication:**
 
 •	**Act Now, Stay Secure–the govt website which explains 2 Factor Authentication**
@@ -224,8 +208,6 @@ https://www.cyber.gov.au/learn-basics/explore-basics/mfa
 •	**2 Factor Authentication Directory – shows which online accounts support 2FA**
 
 https://2fa.directory/au/
-
-
 
 #### **Helpful Online Resources:**
 
@@ -269,10 +251,6 @@ https://scampsychology.org/
 
 \    https://helpcenter.trendmicro.com/en-us/article/tmka-19300
 
-
-
-
-
 ### What To Do If You Have Been Scammed?
 
 **Follow the guidelines on Scamwatch which is under the ACCC:**
@@ -285,8 +263,6 @@ https://scampsychology.org/
 
 Consider creating a checklist listing the names and contact numbers of all your financial institutions and Scamwatch so that if you do get scammed, you don’t have to scramble under pressure 
 
-
-
 ### Where To Report a Scam?
 
 **Report it to Scamwatch:**
@@ -295,13 +271,10 @@ Consider creating a checklist listing the names and contact numbers of all your 
 
 *Scamwatch report a scam*
 
-
-
 ### Simple Things That You Can Do Today!
 
-1.	Passwords - Make your passwords for all your high-risk online accounts non-guessable and unique.
-
-2.	Create a scam monthly reminder list for yourself – you can do this on your iphone in the Reminders app. Here are some reminders to include:
+1. Passwords - Make your passwords for all your high-risk online accounts non-guessable and unique.
+2. Create a scam monthly reminder list for yourself – you can do this on your iphone in the Reminders app. Here are some reminders to include:
 
 •	Email/texts Scams – never open a link or an attachment in an email or text unless you are 100% sure it is legitimate.
 
@@ -313,9 +286,7 @@ Consider creating a checklist listing the names and contact numbers of all your 
 
 •	Investment Scams – Never trust a cold call. Always better to do your own research. Best to find a reputable organisation most of us have heard of.
 
-3.	Identity Theft – Find a safe place in your house for passports & password books.
-
-
+3. Identity Theft – Find a safe place in your house for passports & password books.
 
 ### To Do – Ongoing
 
@@ -332,8 +303,6 @@ Consider creating a checklist listing the names and contact numbers of all your 
 •	Then, if necessary, seek assistance first, and then make the necessary changes.
 
 •	Keep talking about scamming with your friends and relatives
-
-
 
 ### Helplines:
 
