@@ -183,7 +183,7 @@ To report a fake Profile to Facebook:
 
 ### Large Data Breaches:
 
-•	To find what personal details from you are on the dark web as a result of breaches:
+•	To find what personal details from you are on the dark web as a result of breaches search this site
 
 *haveibeenpwned.com*
 
