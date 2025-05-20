@@ -5,7 +5,7 @@ title: Protecting yourself against Scams.  A comprehensive checklist
 pubDate: 2025-05-20T15:23:00.000Z
 description: A courtesy checklist from recent guest speaker Charles Fellner with
   tips to protect you against all types of scams
-image: ../../assets/images/scammed.png
+image: ../../assets/images/surprised-senior-woman-putting-her-260nw-2480172575.jpg
 categories:
   - general
 tags:
