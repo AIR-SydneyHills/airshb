@@ -17,7 +17,7 @@ tags:
 
 *Helpful notes from Charles Fellner, our guest speaker . Please note that Charles has provided this as a courtesy. The contents of this document should be used as a general guide only.*
 
-***Please note that AIR members are able to watch a video of this talk, supported by many useful graphics and illustrations. You can join AIR [here](https://independentretirees.com/membership/join-air).***
+***Please note that AIR members are able to watch a video of this talk, supported by many useful graphics and illustrations. You can join AIR [here](https://independentretirees.com/membership/join-air) at our National website (https://independentretirees.com/membership/join-air).***
 
 Every day we hear about some new scam. As a society, we need to be working together a lot more and reaching out to increase **our resilience to scamming**. All it takes is one lapse of judgement and your life savings could be gone. We also need to do a lot more to reach out to the most vulnerable in our society (e.g. those over 80, with dementia, or disabled) to help and support them through these times when scamming has become rampant. 
 
