@@ -25,7 +25,7 @@ Down the track, if you do get scammed then, after reporting it to **Scamwatch**,
 
 ### Passwords/PINs:
 
-High-Risk online accounts – make sure each is non-guessable and unique :
+**High-Risk online accounts – make sure each is non-guessable and unique** :
 
 •	Banking/Investment accounts
 
@@ -39,7 +39,7 @@ High-Risk online accounts – make sure each is non-guessable and unique :
 
 •	any containing your personal medical data
 
-If you enter your password on a fraudulent site:
+**If you enter your password on a fraudulent site:**
 
 •	immediately change that password
 
@@ -47,17 +47,17 @@ If you enter your password on a fraudulent site:
 
 
 
-Credit/Debit Cards:
+### Credit/Debit Cards:
 
 Credit/Debit Card Recommendations:
 
 •	Use a card with a small limit and no direct debits for purchases when overseas and also when using any websites that you are not familiar with
 
-•	Check your card for fraudulent transactions, at least, weekly
+•	Check your card for fraudulent transactions, **at least weekly**
 
-•	Never enter passwords or pins on public wi-fi when in airports or shopping centres 
+•	**Never** enter passwords or pins on **public wi-fi** when in airports or shopping centres 
 
-If you enter your credit/debit card on a fraudulent site:
+**If you enter your credit/debit card on a fraudulent site:**
 
 •	Immediately contact bank concerned and have them shut down your credit card      
 
@@ -65,7 +65,7 @@ If you enter your credit/debit card on a fraudulent site:
 
 
 
-Malware:
+### Malware:
 
 If malware has been downloaded on your Android phone 
 
@@ -79,9 +79,9 @@ If malware has been downloaded on your laptop
 
 
 
-Helping an elderly/vulnerable relative or friend become more scam-resilient: 
+### Helping an elderly/vulnerable relative or friend become more scam-resilient: 
 
-•	Tell them NEVER to give out their password or PINs
+•	Tell them **NEVER** to give out their password or PINs
 
 •	Ask them to always know who they are communicating with. 
 
@@ -105,7 +105,7 @@ Helping an elderly/vulnerable relative or friend become more scam-resilient:
 
 
 
-Facebook Scams:
+### Facebook Scams:
 
 To report a fake Profile to Facebook:
 
@@ -115,7 +115,7 @@ How to report a Facebook account or Page that's pretending to be me
 
  … and follow the instructions 
 
-Important Facebook privacy settings:
+**Important Facebook privacy settings**:
 
 •	Date of Birth: 
 
@@ -127,7 +127,7 @@ Important Facebook privacy settings:
 
 \=> Change it to whatever you want, just make sure it is NOT Public.
 
-Facebook Marketplace:
+**Facebook Marketplace:**
 
 •	To find out about Facebook Marketplace Scams - go into Google and type: 
 
@@ -135,9 +135,9 @@ Facebook Marketplace:
 
 
 
-Romance Scams:
+### Romance Scams:
 
-The 9 Warning Signs
+**The 9 Warning Signs**
 
 •	You can’t find information about them online
 
@@ -159,7 +159,7 @@ The 9 Warning Signs
 
 
 
-Investment Scams:
+### **Investment Scams:**
 
 Tips:
 
@@ -181,7 +181,7 @@ Tips:
 
 
 
-Large Data Breaches:
+### Large Data Breaches:
 
 •	To find what personal details from you are on the dark web as a result of breaches:
 
@@ -189,9 +189,9 @@ haveibeenpwned.com
 
 
 
-Identity Theft:
+### Identity Theft:
 
-Being Ready:
+**Being Ready:**
 
 •	Be aware of which online accounts have your critical personal data
 
@@ -199,7 +199,7 @@ Being Ready:
 
 •	Log into each one and confirm what information they have on you.
 
-In Your Home:
+**In Your Home:**
 
 •	Protect your laptop with a Windows password or Login password
 
@@ -213,57 +213,57 @@ In Your Home:
 
 
 
-2 Factor Authentication:
+### **2 Factor Authentication:**
 
-•	Act Now, Stay Secure–the govt website which explains 2 Factor Authentication
+•	**Act Now, Stay Secure–the govt website which explains 2 Factor Authentication**
 
 https://www.cyber.gov.au/learn-basics/explore-basics/mfa
 
-•	2 Factor Authentication Directory – shows which online accounts support 2FA
+•	**2 Factor Authentication Directory – shows which online accounts support 2FA**
 
 https://2fa.directory/au/
 
 
 
-Helpful Online Resources:
+#### **Helpful Online Resources:**
 
-•	ACCC – National Anti-Scam Centre – Scamwatch – for reporting scams  
+•	ACCC – **National Anti-Scam Centre** – Scamwatch – for reporting scams  
 
 https://www.scamwatch.gov.au/
 
-•	ACCC – Little Black Book of Scams – The Scamwatch main reference document
+•	ACCC – **Little Black Book of Scams** – The Scamwatch main reference document
 
 https://www.accc.gov.au/about-us/publications/the-little-black-book-of-scams
 
-•	Australian Cyber Security Centre – Cyber Security incidents - Scam awareness basics
+•	**Australian Cyber Security Centre** – Cyber Security incidents - Scam awareness basics
 
 https://www.cyber.gov.au/learn-basics
 
-•	IDCare Learning Centre – supporting individuals & organisations impacted by recent data breaches & identity theft– free practical and behavioural support
+•	**IDCare Learning Centre** – supporting individuals & organisations impacted by recent data breaches & identity theft– free practical and behavioural support
 
 https://www.idcare.org/learning-centre
 
-•	Be Connected – increasing the confidence, skills & online safety of older Australians
+•	**Be Connected** – increasing the confidence, skills & online safety of older Australians
 
 https://beconnected.esafety.gov.au/topic-library/articles-and-tips/how-to-spot-a-scam
 
-•	NSW Fair Trade Commission Scams/Cybercrime. Scams related to buying of products
+•	**NSW Fair Trade Commission Scams/Cybercrime**. Scams related to buying of products
 
 https://www.fairtrading.nsw.gov.au/buying-products-and-services/scams
 
-•	MoneySmart.gov.au – for greater financial wellbeing. Protecting yourself from Scams
+•	**MoneySmart.gov.au –** for greater financial wellbeing. Protecting yourself from Scams
 
 https://moneysmart.gov.au/online-safety/protect-yourself-from-scams
 
-•	ESafetyCommissioner – independent regulator – relates to online personal safety
+•	**ESafetyCommissioner** – independent regulator – relates to online personal safety
 
 https://www.esafety.gov.au/key-issues/staying-safe/online-scams
 
-•	SCARS INSTITUTE Journal of Scam Psychology – psychology of scamming
+•	**SCARS INSTITUTE Journal of Scam Psychology** – psychology of scamming
 
 https://scampsychology.org/
 
-•	AI Video Scams - How to Spot, Respond and Avoid Falling Victim to Deepfake Videos
+•	**AI Video Scams** - How to Spot, Respond and Avoid Falling Victim to Deepfake Videos
 
 \    https://helpcenter.trendmicro.com/en-us/article/tmka-19300
 
@@ -271,13 +271,13 @@ https://scampsychology.org/
 
 
 
-What To Do If You Have Been Scammed?
+### What To Do If You Have Been Scammed?
 
-Follow the guidelines on Scamwatch which is under the ACCC:
+**Follow the guidelines on Scamwatch which is under the ACCC:**
 
 •	Go into Google and type: 
 
-Scamwatch what to do if you have been scammed
+*Scamwatch what to do if you have been scammed*
 
 	Contact your bank(s) or card provider immediately. Ask them to stop any transactions.
 
@@ -285,17 +285,17 @@ Consider creating a checklist listing the names and contact numbers of all your 
 
 
 
-Where To Report a Scam?
+### Where To Report a Scam?
 
-Report it to Scamwatch:
+**Report it to Scamwatch:**
 
 •	Go into Google and type: 
 
-Scamwatch report a scam
+*Scamwatch report a scam*
 
 
 
-Simple Things That You Can Do Today!
+### Simple Things That You Can Do Today!
 
 1.	Passwords - Make your passwords for all your high-risk online accounts non-guessable and unique.
 
@@ -315,7 +315,7 @@ Simple Things That You Can Do Today!
 
 
 
-To Do – Ongoing
+### To Do – Ongoing
 
 •	Always remember these two words when online: ‘Be Sceptical’ 
 
@@ -333,7 +333,7 @@ To Do – Ongoing
 
 
 
-Helplines:
+### Helplines:
 
 •	For all questions regarding scamming, related to scamming, or cyber security incidents you can ring the Australian Cyber Security Centre on 1300 292 371
 
