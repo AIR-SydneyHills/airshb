@@ -185,7 +185,7 @@ To report a fake Profile to Facebook:
 
 •	To find what personal details from you are on the dark web as a result of breaches:
 
-*[haveibeenpwned.com](haveibeenpwned.com)*
+*haveibeenpwned.com*
 
 Enter your email address and see where and when it was uploaded to the Dark Web. 
 
