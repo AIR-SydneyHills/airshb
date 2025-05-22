@@ -7,19 +7,19 @@ Our next meeting will be held on Friday June 6th 2025 at Beecroft Presbyterian C
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
-### 10:00am: Keith Payne - Older Driver Assessments.
+### 10:00am: Keith Payne - Older Driver Assessment Program and personal responsibility for your road safety.
 
-![Charles Fellner](../../assets/images/older-driver1.jpg)
+![Driver Training](../../assets/images/older-driver1.jpg)
 
-Keith has a long history in driver training and was part of various NSW government committees to oversee driver testing and traffic offender programs.
+Keith has a long history in driver training and was part of several NSW government programs to oversee driver testing, instructor training and traffic offender programs.
 
-Of special interest to us is Keith’s role is as an ‘accredited private assessor’ for the NSW Older Drivers Assessment Program. He brings a wealth of knowledge & experience and is the perfect person to help you understand the process of Older Driver Assessments. Keith can also answer your questions on Low-Risk Driving, Road Rules and Pedestrian Safety. 
+Of special interest to us is Keith’s role is as an ‘accredited private assessor’ for the NSW Older Drivers Assessment Program. He brings a wealth of knowledge & experience and is the perfect person to help you understand the process of Older Driver Assessments. Keith can also answer your questions on Low-Risk Driving, Road Rules, Pedestrian Safety and personal responsibility for your own safety. 
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
 ### 11:30am:  Andrew Gordon: Diversify your investments with Private Credit and Fixed Interest.
 
-![Investment diversity](../../assets/images/wayne-strand-smaller.jpg)
+![Investment diversity](../../assets/images/andrew-gordon.jpg)
 
 **Andrew Gordon**, the head of Debt Capital Markets at **Ord Minnett** will introduce us to the alternative investment class of **Private Credit**. We will explore what major brokers can offer us and what are the sensible limits of these investments.
 
