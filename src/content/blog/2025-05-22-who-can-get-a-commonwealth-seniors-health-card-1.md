@@ -2,7 +2,7 @@
 draft: false
 author: mal-steel
 title: Who can get a Commonwealth Seniors Health Card?
-pubDate: 2025-05-22T16:42:00.000Z
+pubDate: 2025-03-06T02:42:00.000Z
 description: Who can get a Commonwealth Seniors Health Card?
 image: ../../assets/images/2024-03-superguide.webp
 categories:
