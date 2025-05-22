@@ -15,15 +15,13 @@ Keith has a long history in driver training and was part of various NSW governme
 
 Of special interest to us is Keith’s role is as an ‘accredited private assessor’ for the NSW Older Drivers Assessment Program. He brings a wealth of knowledge & experience and is the perfect person to help you understand the process of Older Driver Assessments. Keith can also answer your questions on Low-Risk Driving, Road Rules and Pedestrian Safety. 
 
-
-
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am: Alternative Investments. How to access Private Credit and Private Equity products to further diversify your portfolio.
+### 11:30am:  Andrew Gordon: Diversify your investments with Private Credit and Fixed Interest.
 
 ![Investment diversity](../../assets/images/wayne-strand-smaller.jpg)
 
-Wayne Strandquist will introduce us to the alternative investment classes of Private Credit and Private Equity, that were previously not available to retail investors. We will explore what major brokers can offer us and what are the sensible limits of these investments.
+**Andrew Gordon**, the head of Debt Capital Markets at **Ord Minnett** will introduce us to the alternative investment class of **Private Credit**. We will explore what major brokers can offer us and what are the sensible limits of these investments.
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
