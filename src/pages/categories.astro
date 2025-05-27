@@ -4,6 +4,7 @@ import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import Base from '../layouts/base.astro'
 import PageHero from '../components/pagehero.astro'
+import CTA from '../components/cta.astro'
 import { DefaultImage } from '../config'
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
@@ -50,5 +51,6 @@ const categories = await getCollection('category')
         </div>
       </div>
     </div>
+    <CTA />
   </main>
 </Base>
