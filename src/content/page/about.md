@@ -39,4 +39,4 @@ Freedom to choose your:
 - Employment possibilities
 - Accommodation options.
 
-Want to find out more? **Join now**.
+Want to find out more? [**Join now**](https://www.independentretirees.com/membership/join-air).

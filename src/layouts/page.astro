@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/base.astro'
 import PageHero from '../components/pagehero.astro'
+import CTA from '../components/cta.astro'
 import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
@@ -22,5 +23,6 @@ const { frontmatter } = Astro.props
         <slot />
       </section>
     </article>
+    <CTA />
   </main>
 </Base>
