@@ -10,7 +10,7 @@ Welcome! We're excited you're considering speaking at the Australian Independent
 
 Beecroft Presbyterian Church Hall \
 6a Welham St \
-Beecroft
+Beecroft NSW 2119
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.271964802084!2d151.06199167584796!3d-33.753637373270934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a7db913270b3%3A0x74ff0135815d74de!2sBeecroft%20Presbyterian%20Church%20Hall!5e0!3m2!1sen!2sau!4v1748403239453!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -20,7 +20,7 @@ Beecroft
 | --: | :-- |
 | 9:30am | Room Setup |
 | 10:00am | Welcome/Introduction to our members and visitors |
-| 10:15am | meeting – Speaker/Topic 1 |
+| 10:15am | Meeting – Speaker/Topic 1 |
 | 11:00am | Question/Answers |
 | 11:20am | Branch News     |
 | 11:30am | Coffee/tea/refreshments |
@@ -31,7 +31,7 @@ Beecroft
 
 ## Before the Meeting
 
-*   **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or 11:30am if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
+*   **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or **11:30am** if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
 *   **Check-in:** Upon your arrival, please introduce yourself to our **Secretary or President**. They will be there to greet you and help with any setup.
 
 ## Your Presentation
