@@ -20,8 +20,8 @@ Cheltenham NSW 2119
 | Time    | Agenda Item                                      |
 | ------- | ------------------------------------------------ |
 | 9:30am  | Room Setup                                       |
-| 10:00am | Welcome/Introduction to our members and visitors |
-| 10:15am | Meeting – Speaker/Topic 1                        |
+| 9:55am  | Welcome/Introduction to our members and visitors |
+| 10:00am | Welcome & Introduction to Speaker 1 & Topic      |
 | 11:00am | Question/Answers                                 |
 | 11:20am | Branch News                                      |
 | 11:30am | Coffee/tea/refreshments                          |
