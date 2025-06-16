@@ -17,17 +17,17 @@ Cheltenham NSW 2119
 
 ## Typical Agenda for meeting
 
-| **Time**    | **Agenda Item**                          |
-| ----------- | ---------------------------------------- |
-| 9:30am      | Room Setup                               |
-| 9:55am      | Welcome to members & visitors            |
-| **10:00am** | **Speaker 1: allow 45 minutes plus Q&A** |
-| 10:45am     | Question/Answers -speaker 1              |
-| 11:00am     | Branch News                              |
-| 11:10am     | Coffee/tea/refreshments till 11:30am     |
-| **11:30pm** | **Fin Speaker: Allow 45 mins plus Q&A**  |
-| 12:15pm     | Question/Answers - Financial Speaker     |
-| 12:30pm     | Other Business & Close                   |
+| **Time**    | **Agenda Item**                        |
+| ----------- | -------------------------------------- |
+| 9:30am      | Room Setup                             |
+| 9:55am      | Welcome to members & visitors          |
+| **10:00am** | **Our Educational Speaker presents**   |
+| 10:45am     | Question/Answers -educational speaker  |
+| 11:00am     | Branch News                            |
+| 11:10am     | Coffee/tea/refreshments till 11:30am   |
+| **11:30pm** | **Our Financial Speaker presents**     |
+| 12:15pm     | Question/Answers - Financial Speaker   |
+| 12:30pm     | Other Business & Close                 |
 
 ## Before the Meeting
 
@@ -36,9 +36,9 @@ Cheltenham NSW 2119
 
 ## Your Presentation
 
-* **Duration:** We allocate approximately **40 minutes** for your presentation.
+* **Duration:** We allocate approximately **40-45 minutes** for your presentation.
 * **Q&A Session:** Following your talk, please be prepared for a Question & Answer session with our audience. This interaction is highly valued.
-* **Slides/Materials:** If you plan to use slides, please bring them on **your own laptop or on a USB stick**. We will have facilities for projection.
+* **Slides/Materials:** If you plan to use slides, please bring them on a  **USB stick**. We will have facilities for projection.
 
 ## The Audience & Meeting Format
 
