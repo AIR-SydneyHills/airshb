@@ -31,7 +31,7 @@ Cheltenham NSW 2119
 
 ## Before the Meeting
 
-* **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or **11:30am** if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
+* **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or **11:15am** if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
 * **Check-in:** Upon your arrival, please introduce yourself to our **Secretary or President**. They will be there to greet you and help with any setup.
 
 ## Your Presentation
