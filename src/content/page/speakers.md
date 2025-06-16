@@ -13,7 +13,7 @@ Molly's Pavilion-The Cheltenham Recreation Club\
 60-74 The Crescent\
 Cheltenham NSW 2119
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.271964802084!2d151.06199167584796!3d-33.753637373270934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a7db913270b3%3A0x74ff0135815d74de!2sBeecroft%20Presbyterian%20Church%20Hall!5e0!3m2!1sen!2sau!4v1748403239453!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.1347107386127!2d151.07496488491162!3d-33.757184644348506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a70047e8f39b%3A0x77f0cb31270424db!2sMolly&#39;s%20Pavilion!5e0!3m2!1sen!2sau!4v1750112020460!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## Typical Agenda for meeting
 
@@ -32,7 +32,7 @@ Cheltenham NSW 2119
 ## Before the Meeting
 
 * **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or **11:15am** if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
-* **Check-in:** Upon your arrival, please introduce yourself to our **Secretary or President**. They will be there to greet you and help with any setup.
+* **Check-in:** Upon your arrival, please introduce yourself to our **Secretary** or **President**. They will be there to greet you and help with any setup.
 
 ## Your Presentation
 
