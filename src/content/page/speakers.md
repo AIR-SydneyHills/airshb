@@ -17,18 +17,18 @@ Cheltenham NSW 2119
 
 ## Typical Agenda for meeting
 
-| Time    | Agenda Item                                      |
-| ------- | ------------------------------------------------ |
-| 9:30am  | Room Setup                                       |
-| 9:55am  | Welcome/Introduction to our members and visitors |
-| 10:00am | Welcome & Introduction to Speaker 1 & Topic      |
-| 11:00am | Question/Answers                                 |
-| 11:20am | Branch News                                      |
-| 11:30am | Coffee/tea/refreshments                          |
-| 12:00pm | Finance Discussion Meeting/Topic 2               |
-| 12:45pm | Question/Answers                                 |
-| 1:05pm  | Other Business                                   |
-| 1:30pm  | Close                                            |
+| **Time**    | **Agenda Item**                                  |
+| ----------- | ------------------------------------------------ |
+| 9:30am      | Room Setup                                       |
+| 9:55am      | Welcome/Introduction to our members and visitors |
+| **10:00am** | **Welcome & Introduction to Speaker 1 & Topic**  |
+| 10:45am     | Question/Answers                                 |
+| 11:00am     | Branch News                                      |
+| 11:10am     | Coffee/tea/refreshments                          |
+| **11:30pm** | **Welcome & Intro Finance Speaker & Topic**      |
+| 12:15pm     | Question/Answers                                 |
+| 12:30pm     | Other Business & Close                           |
+| 12:35pm     | Adjourn to lunch at Molly's                      |
 
 ## Before the Meeting
 
