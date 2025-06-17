@@ -1,28 +1,26 @@
 ---
-title: June 6th 2025 - Older Driver Assessments and Private Equity investments
+title: July 11th 2025 - Older Driver Assessments and Private Equity investments
 pubDate: 2025-06-06T10:00:00.000Z
-description: Older Driver Assessments and Private Equity investments
+description: How to trace your Family History and Making your income last longer
 ---
 Our next meeting will be held on Friday June 6th 2025 at Beecroft Presbyterian Church Hall at the **new time** 10:00 am.
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
-### 10:00am: Keith Payne - Older Driver Assessment Program and personal responsibility for your road safety.
+### 10:00am: Robert Allison – How to trace your Family History.
 
-![Driver Training](../../assets/images/older-driver1.jpg)
+![Family History](../../assets/images/robert-allison.jpg)
 
-Keith has a long history in driver training and was part of several NSW government programs to oversee driver testing, instructor training and traffic offender programs.
-
-Of special interest to us is Keith’s role is as an ‘accredited private assessor’ for the NSW Older Drivers Assessment Program. He brings a wealth of knowledge & experience and is the perfect person to help you understand the process of Older Driver Assessments. Keith can also answer your questions on Low-Risk Driving, Road Rules, Pedestrian Safety and personal responsibility for your own safety. 
+Robert is a member and volunteer at the Hornsby Shire Family History Group and will teach us...
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am:  Andrew Gordon: Diversify your investments with Private Credit and Fixed Interest.
+### 11:30am: Aaron Minney: Managing multiple sources of retirement income including lifetime pensions by income layering
 
-![Investment diversity](../../assets/images/andrew-gordon.jpg)
+![Lifetime Pensions](../../assets/images/aaron-minney-headshot.png)
 
-**Andrew Gordon**, the head of Debt Capital Markets at **Ord Minnett** will introduce us to the alternative investment class of **Private Credit**. We will explore what major brokers can offer us and what are the sensible limits of these investments.
+Our speaker is **Mr Aaron Minney**, Head of Retirement Income Research at **Challenger**. Most active retirees who are relying on Account Based Pensions from Superannuation are concerned about increasing longevity and *potentially running out of retirement savings*. Aaron’s presentation is aimed at giving AIR members a better idea of the financial implications of longevity risk and **have some strategies** to get the most out of their retirement.
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
-**We will adjourn to a local café around 12:30pm for a light lunch.**
+**We will finish around 12:30pm for a light lunch at Molly's.**
