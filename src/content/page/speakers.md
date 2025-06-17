@@ -38,7 +38,7 @@ Cheltenham NSW 2119
 
 * **Duration:** We allocate approximately **40-45 minutes** for your presentation.
 * **Q&A Session:** Following your talk, please be prepared for a Question & Answer session with our audience. This interaction is highly valued.
-* **Slides/Materials:** If you plan to use slides, please bring them on a  **USB stick**. We will have facilities for projection.
+* **Slides/Materials:** If you plan to use slides, please bring them on a  **USB stick or email them a few days before**. We will have facilities for projection.
 
 ## The Audience & Meeting Format
 
@@ -56,4 +56,4 @@ Please note our website is publicly accessible so please do not share any sensit
 
 ## Finally
 
-We look forward to welcoming you and hearing your presentation. If you have any questions before your scheduled talk, please don't hesitate to contact us.
+We look forward to welcoming you and hearing your presentation. If you have any questions before your scheduled talk, please don't hesitate to contact us. The branch email is **airsydneyhills@gmail.com**
