@@ -24,4 +24,4 @@ Our speaker is **Mr Aaron Minney**, Head of Retirement Income Research at **Chal
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
-**We will finish around 12:30pm for a light lunch at Molly's.**
+**We will finish around 12:30pm. Please stay & enjoy a yummy lunch at Molly's.**
