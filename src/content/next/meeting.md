@@ -3,7 +3,7 @@ title: July 11th 2025 - Older Driver Assessments and Private Equity investments
 pubDate: 2025-06-06T10:00:00.000Z
 description: How to trace your Family History and Making your income last longer
 ---
-Our July meeting will be held on s**pecial date of Friday July 11th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
+Our July meeting will be held on **special date of Friday July 11th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
 
 The Investors Discussion group will follow at 11:30am after refreshments.
 
