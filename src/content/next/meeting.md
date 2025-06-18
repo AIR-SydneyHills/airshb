@@ -12,11 +12,11 @@ The Investors Discussion group will follow at 11:30am after refreshments.
 
 ![Family History](../../assets/images/robert-allison.jpg)
 
-Robert is a member and volunteer at the Hornsby Shire Family History Group and will teach us...
+Robert is a member and volunteer at the Hornsby Shire Family History Group. His talk will assist those who wish to start recording their family history. It will include a guide to the main resources available and some advice on how to record your genealogy
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am: Aaron Minney: Managing multiple sources of retirement income including lifetime pensions by income layering
+### 11:30am: Aaron Minney: Managing multiple sources of retirement income, including lifetime pensions, by income layering
 
 ![Lifetime Pensions](../../assets/images/aaron-minney-headshot.png)
 
