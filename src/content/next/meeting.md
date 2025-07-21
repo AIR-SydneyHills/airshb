@@ -5,7 +5,7 @@ description: Obtaining appropriate financial advice followed by our AGM.
 ---
 Our August meeting will be held on **Friday August 1st 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
 
-This month there will be 1 fabulous speaker, The annual AGM will follow at 11:30am after refreshments.
+This month there will be 1 fabulous speaker. The annual AGM will follow at 11:30am after refreshments.
 
 ### 10:00am: Liam Shorte from Sonas Wealth - Obtaining appropriate financial advice.
 
