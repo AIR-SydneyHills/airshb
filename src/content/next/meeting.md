@@ -1,26 +1,27 @@
 ---
-title: July 11th 2025 - How to trace your Family History and Making your income
-  last longer
-pubDate: 2025-07-11T10:00:00.000Z
-description: How to trace your Family History and Making your income last longer
+title: August 1st 2025 - Obtaining appropriate financial advice followed by our AGM.
+pubDate: 2025-08-01T20:00:00.000+10:00
+description: Obtaining appropriate financial advice followed by our AGM.
 ---
-Our July meeting will be held on **special date of Friday July 11th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
+Our August meeting will be held on **Friday August 1st 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
 
-The Investors Discussion group will follow at 11:30am after refreshments.
+This month there will be 1 fabulous speaker, The annual AGM will follow at 11:30am after refreshments.
 
-### 10:00am: Robert Allison – How to trace your Family History.
+### 10:00am: Liam Shorte from Sonas Wealth - Obtaining appropriate financial advice.
 
-![Family History](../../assets/images/robert-allison.jpg)
+![](../../assets/images/liam_shorte_headshot-med.jpg "Liam Shorte")
 
-Robert is a member and volunteer at the Hornsby Shire Family History Group. His talk will assist those who wish to start recording their family history. It will include a guide to the main resources available and some advice on how to record your genealogy
+Liam is a very popular speaker at our branch and has returned at the special request of our members. In this talk, Liam will provide some useful guidance to ensure that retirees receive financial advice that meets their needs and is suitable to their circumstances.
+
+Retirees will gain some tips on how to prepare for meetings with their financial advisor, so that the advisor understands their current financial situation and their short and longer term financial goals and challenges. Liam will also explain how the advice process works and what good personal financial advice actually looks like. 
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am: Aaron Minney: Managing multiple sources of retirement income, including lifetime pensions, by income layering
+### 11:30am: Annual AGM
 
-![Lifetime Pensions](../../assets/images/aaron-minney-headshot.png)
 
-Our speaker is **Mr Aaron Minney**, Head of Retirement Income Research at **Challenger**. Most active retirees who are relying on Account Based Pensions from Superannuation are concerned about increasing longevity and *potentially running out of retirement savings*. Aaron’s presentation is aimed at giving AIR members a better idea of the financial implications of longevity risk and **have some strategies** to get the most out of their retirement.
+
+Members will participate in the annual AGM, selecting the office bearers and assisting with voluntary roles 
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
