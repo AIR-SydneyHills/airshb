@@ -19,7 +19,7 @@ He was the driving force behind the Branch's monthly talks, inspiring members to
 active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and would share many personal stories to emphasise that.  
 
 Peter connected well with people and cared about them; when he asked how you were, you knew he was
-genuinely interested.
+genuinely interested. xx
 
 Peter died peacefully in his sleep at home, on August 8th, aged 81.
 
