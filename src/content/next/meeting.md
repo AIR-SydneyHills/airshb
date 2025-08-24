@@ -7,7 +7,7 @@ description: Estate Planning -Wills, POA & Advance Care Directives PLUS
 ---
 Our September meeting will be held on **Friday September 5th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
 
-This month there will be a  great speaker on Estate Planning followed by the Financial discussion group will analyse Financial Literacy at 11:30am after refreshments.
+This month there will be a great speaker on Estate Planning followed by the Financial discussion group, who will analyse Financial Literacy at 11:30am, after refreshments.
 
 ### 10:00am: Tony Margiotta from Matthews, Dooley & Gibson, Solicitors- Estate Planning - Wills, Powers of Attorney & Advance Care Directives
 
