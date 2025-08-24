@@ -16,10 +16,11 @@ tags:
 Peter Graham was a highly respected member of the Sydney Hills District Branch (SHDB), whose dedication and warmth touched many.
 
 He was the driving force behind the Branch's monthly talks, inspiring members to embrace healthy and
-active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and would share many personal stories to emphasise that.  
+active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and even published a book on this topic. His motto was "Get up, dress up, show up & don't give up" & 
+he would share many personal stories to emphasise that. 
 
 Peter connected well with people and cared about them; when he asked how you were, you knew he was
-genuinely interested. xx
+genuinely interested. 
 
 Peter died peacefully in his sleep at home, on August 8th, aged 81.
 
