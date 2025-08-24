@@ -23,7 +23,7 @@ Tony will provide some useful guidance on key issues when having wills, powers o
 
 ![](../../assets/images/wayne-strand-smaller.jpg "Wayne")
 
-Members will participate in the annual AGM, selecting the office bearers and assisting with voluntary roles 
+Wayne will lead an interactive workshop session with members to identify the key financial literacy gaps & causes. We will look at the key differences in financial literacy issues in retirement when compared to working life, then identify ways to improve retirement focused financial understanding.
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
