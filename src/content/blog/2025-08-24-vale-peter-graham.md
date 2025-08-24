@@ -21,7 +21,7 @@ active retirements. He passionately believed that we all need to find our purpos
 Peter connected well with people and cared about them; when he asked how you were, you knew he was
 genuinely interested.
 
-Peter died peacefully at home, on August 8th, aged 81.
+Peter died peacefully in his sleep at home, on August 8th, aged 81.
 
 He will be missed by us all. 
 
