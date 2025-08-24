@@ -11,15 +11,17 @@ This month there will be a  great speaker on Estate Planning followed by the Fin
 
 ### 10:00am: Tony Margiotta from Matthews, Dooley & Gibson, Solicitors- Estate Planning - Wills, Powers of Attorney & Advance Care Directives
 
-![](../../assets/images/liam_shorte_headshot-med.jpg "Liam Shorte")
+Member surveys rank Estate Planning very highly on our meeting topics. Fully and Partly Self-funded retirees need to have well thought out Estate Plans in place to avoid any misunderstanding or confusion on their incapacity or passing. 
 
-Liam is a very popular speaker at our branch and has returned at the special request of our members. In this talk, Liam will provide some useful guidance to ensure that retirees receive financial advice that meets their needs and is suitable to their circumstances.
+Tony will provide some useful guidance on key issues when having wills, powers of attorney and advance care directives prepared.
 
-Retirees will gain some tips on how to prepare for meetings with their financial advisor, so that the advisor understands their current financial situation and their short and longer term financial goals and challenges. Liam will also explain how the advice process works and what good personal financial advice actually looks like. 
+
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am: Annual AGM
+### 11:30am: : Investment/Finance Discussion Group: Improving Financial Literacy for Retirement.
+
+![](../../assets/images/wayne-strand-smaller.jpg "Wayne")
 
 Members will participate in the annual AGM, selecting the office bearers and assisting with voluntary roles 
 
