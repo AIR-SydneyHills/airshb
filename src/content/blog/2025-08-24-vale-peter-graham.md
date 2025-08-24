@@ -5,7 +5,7 @@ title: Vale Peter Graham
 pubDate: 2025-08-24T01:23:00.000+10:00
 description: Members were stunned at the sudden passing of respected AIR member
   Mr Peter Graham on August 8th.
-image: ../../assets/images/peter-graham-vale.png
+image: ../../assets/images/peter-graham-vale-copy.png
 categories:
   - general
 tags:
