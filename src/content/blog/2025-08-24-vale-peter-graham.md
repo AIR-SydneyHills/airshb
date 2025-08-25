@@ -13,7 +13,7 @@ tags:
 ---
 ## **Vale Peter Graham**
 
-Peter Graham was a highly respected member of the Sydney Hills District Branch (SHDB), whose dedication and warmth touched many.
+Peter Graham was a highly respected member of the AIR Sydney Hills District Branch (SHDB), whose dedication and warmth touched many.
 
 He was the driving force behind the Branch's monthly talks, inspiring members to embrace healthy and
 active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and even published a book on this topic. His friends said that his motto was "Get up, dress up, show up & don't give up" & he certainly lived that belief.
@@ -27,4 +27,4 @@ He will be missed by us all.
 
 Vale Peter!
 
-![]()
+![](<>)
