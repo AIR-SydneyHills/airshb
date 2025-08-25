@@ -5,7 +5,7 @@ title: Vale Peter Graham
 pubDate: 2025-08-24T17:00:00.000+10:00
 description: Members were stunned at the sudden passing of respected AIR member
   Mr Peter Graham on August 8th.
-image: ../../assets/images/peter-graham-vale.png
+image: ../../assets/images/peter-graham-large.jpg
 categories:
   - general
 tags:
@@ -16,8 +16,7 @@ tags:
 Peter Graham was a highly respected member of the Sydney Hills District Branch (SHDB), whose dedication and warmth touched many.
 
 He was the driving force behind the Branch's monthly talks, inspiring members to embrace healthy and
-active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and even published a book on this. His motto was "Get up, dress up, show up & don't give up" & 
-he would share many personal stories to emphasise that. 
+active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and even published a book on this topic. His friends said that his motto was "Get up, dress up, show up & don't give up" & he certainly lived that belief.
 
 Peter connected well with people and cared about them; when he asked how you were, you knew he was
 genuinely interested. 
