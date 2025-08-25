@@ -11,11 +11,11 @@ This month there will be a great speaker on Estate Planning followed by the Fina
 
 ### 10:00am: Tony Margiotta from Matthews, Dooley & Gibson, Solicitors- Estate Planning - Wills, Powers of Attorney & Advance Care Directives
 
+![](../../assets/images/tony-margiotta-photo-2.jpg "Tony Margiotta")
+
 Member surveys rank Estate Planning very highly on our meeting topics. Fully and Partly Self-funded retirees need to have well thought out Estate Plans in place to avoid any misunderstanding or confusion on their incapacity or passing. 
 
 Tony will provide some useful guidance on key issues when having wills, powers of attorney and advance care directives prepared.
-
-
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
