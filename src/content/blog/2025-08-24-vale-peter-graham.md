@@ -5,7 +5,7 @@ title: Vale Peter Graham.
 pubDate: 2025-08-24T17:00:00.000+10:00
 description: Members were stunned at the sudden passing of respected AIR member
   Mr Peter Graham on August 8th.
-image: ../../assets/images/peter-graham-300x200.jpg
+image: ../../assets/images/2024-06-07-peter-graham.png
 categories:
   - general
 tags:
@@ -26,3 +26,5 @@ Peter died peacefully in his sleep at home, on August 8th, aged 81.
 He will be missed by us all. 
 
 Vale Peter!
+
+![](../../assets/images/peter-graham-300x200.jpg)
