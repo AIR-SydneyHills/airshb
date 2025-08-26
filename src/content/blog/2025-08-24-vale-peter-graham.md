@@ -5,7 +5,7 @@ title: Vale Peter Graham.
 pubDate: 2025-08-24T17:00:00.000+10:00
 description: Members were stunned at the sudden passing of respected AIR member
   Mr Peter Graham on August 8th.
-image: ../../assets/images/peter-graham-250x200.png
+image: ../../assets/images/Peter_Graham.png
 categories:
   - general
 tags:
@@ -19,11 +19,11 @@ He was the driving force behind the Branch's monthly talks, inspiring members to
 active retirements. He passionately believed that we all need to find our purpose in life and in retirement, and even published a book on this topic. His friends said that his motto was "Get up, dress up, show up & don't give up" & he certainly lived that belief.
 
 Peter connected well with people and cared about them; when he asked how you were, you knew he was
-genuinely interested. 
+genuinely interested.
 
 Peter died peacefully in his sleep at home, on August 8th, aged 81.
 
-He will be missed by us all. 
+He will be missed by us all.
 
 Vale Peter!
 
