@@ -9,6 +9,8 @@ This month, Peter Rheinberger, retired Magistrate, will talk about the working l
 
 ### 10:00am: Peter Rheinberger OAM, Retired Magistrate - The Working Life of a Magistrate
 
+![Peter Rheinberger](../../assets/images/rheinberger.jpg)
+
 Have you ever wondered what it would be like to be a court magistrate? Continuing our legal theme for speakers in the last couple of months, Peter Rheinberger will give us some insight on what it is like to work as a magistrate.
 
 This is our chance to hear about the good, bad and maybe the ugly in delivering justice and ask some penetrating questions of our own.
