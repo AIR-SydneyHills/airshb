@@ -16,21 +16,21 @@
     "refresh": "pnpm dlx @astrojs/upgrade ; pnpm up -L"
   },
   "devDependencies": {
-    "@astrojs/alpinejs": "^0.4.8",
-    "@astrojs/sitemap": "^3.5.1",
-    "@eslint/markdown": "^7.2.0",
+    "@astrojs/alpinejs": "^0.4.9",
+    "@astrojs/sitemap": "^3.6.0",
+    "@eslint/markdown": "^7.3.0",
     "@iconify-json/bi": "^1.2.6",
-    "@iconify-json/heroicons": "^1.2.2",
+    "@iconify-json/heroicons": "^1.2.3",
     "@iconify-json/logos": "^1.2.9",
     "@types/alpinejs": "^3.13.11",
-    "@types/node": "^24.3.0",
-    "@typescript-eslint/parser": "^8.41.0",
-    "@unocss/eslint-config": "66.4.2",
-    "@unocss/reset": "66.4.2",
-    "alpinejs": "^3.14.9",
-    "astro": "^5.13.3",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/parser": "^8.44.1",
+    "@unocss/eslint-config": "66.5.2",
+    "@unocss/reset": "66.5.2",
+    "alpinejs": "^3.15.0",
+    "astro": "^5.14.0",
     "astro-robots-txt": "^1.0.0",
-    "eslint": "^9.34.0",
+    "eslint": "^9.36.0",
     "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "exifr": "^7.1.3",
@@ -39,11 +39,11 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "reading-time": "^1.5.0",
-    "remark-emoji": "^5.0.1",
+    "remark-emoji": "^5.0.2",
     "schema-dts": "^1.1.5",
     "typescript": "^5.9.2",
     "unist-util-visit": "^5.0.0",
-    "unocss": "66.4.2"
+    "unocss": "66.5.2"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -51,10 +51,10 @@
     "astro-seo": "^0.8.4",
     "hero-patterns": "^2.1.0",
     "lunr": "^2.3.9",
-    "mermaid": "^11.10.1",
+    "mermaid": "^11.12.0",
     "photoswipe": "^5.4.4",
     "photoswipe-dynamic-caption-plugin": "^1.2.7",
-    "swiper": "^11.2.10"
+    "swiper": "^12.0.2"
   },
-  "packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b"
+  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a"
 }

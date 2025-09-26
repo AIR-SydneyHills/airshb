@@ -1,29 +1,25 @@
 ---
-title: September 5th 2025 - Estate Planning -Wills, POA & Advance Care
-  Directives PLUS Financial Literacy discussion group
-pubDate: 2025-09-05T10:00:00.000+10:00
-description: Estate Planning -Wills, POA & Advance Care Directives PLUS
-  Financial Literacy discussion group
+title: October 3rd 2025 - Working Life of a Magistrate, Using Moneysmart.gov.au
+pubDate: 2025-09-26T10:00:00.000+10:00
+description: The Working Life of a Magistrate, Using Moneysmart.gov.au to improve your financial literacy
 ---
-Our September meeting will be held on **Friday September 5th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am. 
+Our September meeting will be held on **Friday October 3rd 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am.
 
-This month there will be a great speaker on Estate Planning followed by the Financial discussion group, who will analyse Financial Literacy at 11:30am, after refreshments.
+This month, Peter Rheinberger, retired Magistrate, will talk about the working life of a court magistrate, followed by the Financial discussion group, which will be discussing using Moneysmart.gov.au to improve your financial literacy at 11:30am, after refreshments.
 
-### 10:00am: Tony Margiotta from Matthews, Dooley & Gibson, Solicitors- Estate Planning - Wills, Powers of Attorney & Advance Care Directives
+### 10:00am: Peter Rheinberger OAM, Retired Magistrate - The Working Life of a Magistrate
 
-![](../../assets/images/tony-margiotta-photo-2.jpg "Tony Margiotta")
+Have you ever wondered what it would be like to be a court magistrate? Continuing our legal theme for speakers in the last couple of months, Peter Rheinberger will give us some insight on what it is like to work as a magistrate.
 
-Member surveys rank Estate Planning very highly on our meeting topics. Fully and Partly Self-funded retirees need to have well thought out Estate Plans in place to avoid any misunderstanding or confusion on their incapacity or passing. 
-
-Tony will provide some useful guidance on key issues when having wills, powers of attorney and advance care directives prepared.
+This is our chance to hear about the good, bad and maybe the ugly in delivering justice and ask some penetrating questions of our own.
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am: : Investment/Finance Discussion Group: Improving Financial Literacy for Retirement.
+### 11:30am: : Investment/Finance Discussion Group: Using Moneysmart.gov.au to improve your financial literacy.
 
-![](../../assets/images/wayne-strand-smaller.jpg "Wayne")
+![Wayne](../../assets/images/wayne-strand-smaller.jpg)
 
-Wayne will lead an interactive workshop session with members to identify the key financial literacy gaps & causes. We will look at the key differences in financial literacy issues in retirement when compared to working life, then identify ways to improve retirement focused financial understanding.
+At last month’s discussion on Financial Literacy, finding good reliable sources of financial information was identified one as the biggest issues. At this month’s discussion, Wayne will take a close look at Moneysmart.gov.au which was developed by ASIC (Financial Services Regulator) to help people make smart choices about their finances.
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
