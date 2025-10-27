@@ -1,27 +1,26 @@
 ---
-title: October 3rd 2025 - Working Life of a Magistrate, Using Moneysmart.gov.au
-pubDate: 2025-09-26T10:00:00.000+10:00
-description: The Working Life of a Magistrate, Using Moneysmart.gov.au to improve your financial literacy
+title: "November 7th 2025 - Fixed Income-stability in retirement, Downsizing: A
+  financial perspective"
+pubDate: 2025-11-07T10:00:00.000+11:00
+description: "Fixed Income-stability in retirement, Downsizing: A financial perspective"
 ---
-Our September meeting will be held on **Friday October 3rd 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am.
+Our November meeting will be held on **Friday November 7th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am.
 
-This month, Peter Rheinberger, retired Magistrate, will talk about the working life of a court magistrate, followed by the Financial discussion group, which will be discussing using Moneysmart.gov.au to improve your financial literacy at 11:30am, after refreshments.
+This month, lair Dewhurst from the Australian Bond exchange has some  information on how the Bond market is changing and offering new opportunities to build a stable income, followed by the Financial discussion group will share experiences in downsizing and how it can positively impact your finances and super. at 11:30am, after refreshments.
 
-### 10:00am: Peter Rheinberger OAM, Retired Magistrate - The Working Life of a Magistrate
+### 10:00am: Mr Blair Dewhurst, Aust. Bond Exchange. Fixed Income-building stability for retirement.
 
-![Peter Rheinberger](../../assets/images/rheinberger.jpg)
+![Blair Dewhurst](../../assets/images/2024-06-07-blair-dewhurst.png)
 
-Have you ever wondered what it would be like to be a court magistrate? Continuing our legal theme for speakers in the last couple of months, Peter Rheinberger will give us some insight on what it is like to work as a magistrate.
-
-This is our chance to hear about the good, bad and maybe the ugly in delivering justice and ask some penetrating questions of our own.
+Blair will explain how bonds and other debt securities can form part of a diversified investment portfolio to deliver regular income in retirement. He will show how with structured maturity dates across a bond portfolio, investors can release capital to navigate varied economic environments. Find out why investors would choose to hold debt securities directly rather than in a bond fund or ETF and the differences between debt securities and other asset classes like shares and property.
 
 ##### **Branch News & a delicious morning tea will follow this talk.**
 
-### 11:30am: : Investment/Finance Discussion Group: Using Moneysmart.gov.au to improve your financial literacy.
+### 11:30am: : Finance Discussion Group Meeting- Downsizing: A financial perspective.
 
 ![Wayne](../../assets/images/wayne-strand-smaller.jpg)
 
-At last month’s discussion on Financial Literacy, finding good reliable sources of financial information was identified one as the biggest issues. At this month’s discussion, Wayne will take a close look at Moneysmart.gov.au which was developed by ASIC (Financial Services Regulator) to help people make smart choices about their finances.
+We have heard in previous talks about the many lifestyle benefits of downsizing our family home. In this discussion, Wayne will highlight the financial benefits that can be achieved through downsizing to a lower cost home in retirement. This includes contributions to superannuation and private savings with the potential to boost your retirement income.
 
 ***Please note that this information does NOT constitute Personal Financial Advice.***
 
