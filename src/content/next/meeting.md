@@ -6,7 +6,7 @@ description: "Fixed Income-stability in retirement, Downsizing: A financial pers
 ---
 Our November meeting will be held on **Friday November 7th 2025** at our new meeting location at Cheltenham Recreation Club’s **Mollys Bistro** at 10:00 am.
 
-This month, lair Dewhurst from the Australian Bond exchange has some  information on how the Bond market is changing and offering new opportunities to build a stable income, followed by the Financial discussion group will share experiences in downsizing and how it can positively impact your finances and super. at 11:30am, after refreshments.
+This month, Blair Dewhurst from the Australian Bond exchange has some  information on how the Bond market is changing and offering new opportunities to build a stable income, followed by the Financial discussion group will share experiences in downsizing and how it can positively impact your finances and super. at 11:30am, after refreshments.
 
 ### 10:00am: Mr Blair Dewhurst, Aust. Bond Exchange. Fixed Income-building stability for retirement.
 
