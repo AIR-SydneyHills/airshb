@@ -14,9 +14,9 @@ It is anticipated that the new membership system (Membership Pro) rollout is exp
 
 ## Policy and Advocacy.
 
-* AIR Pre Budget Submission has been submitted to Treasury and is available on the AIR website and will be mentioned in AIR Active. 
-  * Media releases prior to Federal election.
-* AIR recommendations such as review of Power of Attorney not addressed by government to be highlighted.
-  * Proposed policy development
-* APRA Regulated superannuation funds – Draft survey on customer service and     administration.
-  * Pensions There was a request for input from members and so to prepare a submission on a Performance audit, the Administration of the age pension.
+- AIR Pre Budget Submission has been submitted to Treasury and is available on the AIR website and will be mentioned in AIR Active. 
+  - Media releases prior to Federal election.
+- AIR recommendations such as review of Power of Attorney not addressed by government to be highlighted.
+  - Proposed policy development
+- APRA Regulated superannuation funds – Draft survey on customer service and administration.
+  - Pensions There was a request for input from members and so to prepare a submission on a Performance audit, the Administration of the age pension.

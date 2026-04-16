@@ -11,6 +11,7 @@ categories:
 tags:
   - Vale
 ---
+
 ## **Vale Peter Graham**
 
 Peter Graham was a highly respected member of the AIR Sydney Hills District Branch (SHDB), whose dedication and warmth touched many.
@@ -27,4 +28,4 @@ He will be missed by us all.
 
 Vale Peter!
 
-![](<>)
+![]()

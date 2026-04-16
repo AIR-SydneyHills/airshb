@@ -21,7 +21,7 @@ const { post, prev, next } = Astro.props
         <BlogHero post={post as CollectionEntry<'blog'>} />
       </header>
       <section
-        class="lg:prose-xl mx-auto my-8 max-w-screen-lg px-4 prose prose-gray lg:px-0 dark:prose-invert"
+        class="mx-auto my-8 max-w-screen-lg px-4 prose prose-gray lg:px-0 lg:prose-xl dark:prose-invert"
       >
         <slot />
       </section>

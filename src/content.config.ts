@@ -1,5 +1,6 @@
 // 1. Import your utilities and schemas
-import { z, defineCollection, reference } from 'astro:content'
+import { defineCollection, reference } from 'astro:content'
+import { z } from 'astro/zod'
 import { glob, file } from 'astro/loaders'
 import { rssSchema } from '@astrojs/rss'
 

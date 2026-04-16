@@ -3,6 +3,7 @@ draft: false
 title: Information for Potential Speakers
 image: ../../assets/images/speakers.png
 ---
+
 Welcome! We're excited you're considering speaking at the Australian Independent Retirees (AIR) Sydney Hills branch meeting. Our members greatly appreciate the diverse knowledge and perspectives our guest speakers bring. To help you prepare for your talk, here’s some key information:
 
 ## Meeting Location
@@ -31,20 +32,20 @@ Cheltenham NSW 2119
 
 ## Before the Meeting
 
-* **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or **11:15am** if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
-* **Check-in:** Upon your arrival, please introduce yourself to our **Secretary** or **President**. They will be there to greet you and help with any setup.
+- **Arrival Time:** Please aim to arrive by **9:45 am** (15 minutes before the meeting starts) if you are the first speaker, or **11:15am** if you are the second speaker. This allows time to get settled and for a quick pre-meeting chat.
+- **Check-in:** Upon your arrival, please introduce yourself to our **Secretary** or **President**. They will be there to greet you and help with any setup.
 
 ## Your Presentation
 
-* **Duration:** We allocate approximately **40-45 minutes** for your presentation.
-* **Q&A Session:** Following your talk, please be prepared for a Question & Answer session with our audience. This interaction is highly valued.
-* **Slides/Materials:** If you plan to use slides, please bring them on a  **USB stick or email them a few days before**. We will have facilities for projection.
+- **Duration:** We allocate approximately **40-45 minutes** for your presentation.
+- **Q&A Session:** Following your talk, please be prepared for a Question & Answer session with our audience. This interaction is highly valued.
+- **Slides/Materials:** If you plan to use slides, please bring them on a **USB stick or email them a few days before**. We will have facilities for projection.
 
 ## The Audience & Meeting Format
 
-* **In-Person Attendance:** You can typically expect an engaged audience of **20-30 members** at the hall.
-* **Zoom Participation:** The meeting is also broadcast live via **Zoom**, allowing more members to join remotely.
-* **Recording:** Please be aware that the entire meeting, including your presentation and the Q&A, will be **recorded via Zoom**. This recording is often shared with members who couldn't attend live.
+- **In-Person Attendance:** You can typically expect an engaged audience of **20-30 members** at the hall.
+- **Zoom Participation:** The meeting is also broadcast live via **Zoom**, allowing more members to join remotely.
+- **Recording:** Please be aware that the entire meeting, including your presentation and the Q&A, will be **recorded via Zoom**. This recording is often shared with members who couldn't attend live.
 
 ## Extend Your Reach: Share an Article
 

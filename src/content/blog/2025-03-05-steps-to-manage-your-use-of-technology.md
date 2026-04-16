@@ -12,6 +12,7 @@ tags:
   - tips
   - use
 ---
+
 Today our lives are increasingly dominated by modern technology. We are dependent on our smart phones, computers, tablets, and increasingly everything is becoming “smart”, such as TVs and even vehicles. Being connected to the Internet is a necessity. Increasingly, our personal data and information is stored “in the Cloud.” We watch videos and listen to music via streaming services. We use social media to keep in touch with our friends and follow celebrities and influencers. And now we are being told the future is AI - AI will do our jobs, write our emails, generate media, plan our trips, and in the future perhaps even cook our meals and clean our homes. People are even having relationships and falling in love with AI personas.
 
 Sounds like Utopia? Maybe it is, or maybe it is not.
@@ -33,5 +34,3 @@ Below are some tips and techniques to control our use of technology:
 3. Manage email effectively - Turn notifications off, and check email only once a day or even less often (preferably in the morning, and avoid checking email just before you go to bed). Try and impose a 24-hour waiting period before responding to important or critical email, to enable you to reflect on what you wish to say. Avoid sending emails when you are angry or emotional. Tell people if they wish to discuss something urgent, they should use phone or text messages. Ask your acquaintances not to send non-essential messages like jokes, photos, videos in order not to pollute your inbox.
 4. Use technology responsibly and purposefully, never out of boredom - there must be a reason to turn on the computer or the phone, which is to do something meaningful. Do not use technology as a source of entertainment. I still read books, listen to records, watch DVDs and Blu-Rays. I avoid using streaming services. Some people suggest watching or listening to streaming services can create “filter bubbles” - the recommender algorithms on these services will surround us with only the things we like and opinions we agree with, and after a while there is a risk our views will become more rigid and we will be less tolerant of others.
 5. Cybersecurity risks are real - don’t assume you won’t be hacked, almost all of us have had our personal details stolen at one point. Some estimate around 5% of personal devices such as phones have been compromised by spyware from firms such as Pegasus. Be careful about accepting cookies, or giving access to personal information.
-
-

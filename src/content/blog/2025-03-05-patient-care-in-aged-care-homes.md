@@ -15,6 +15,7 @@ tags:
   - aged
   - resident
 ---
+
 Patient care in aged care homes involves a holistic approach that encompasses various aspects of a resident's well-being. This includes clinical care, assistance with activities of daily living (ADLs), and social and emotional support. There must be a collaborative effort of clinical and non-clinical staff in providing comprehensive patient care.
 
 Clinical care involves:

@@ -7,12 +7,13 @@ description: Who can get a Commonwealth Seniors Health Card
 categories:
   - general
 tags:
-  - "#health"
-  - "#benefits"
+  - '#health'
+  - '#benefits'
 ---
-### 
-Commonwealth Seniors Health Card 
 
+###
+
+Commonwealth Seniors Health Card
 
 The Commonwealth Seniors Health Card (CSHC) provides a 75% discount on prescription medicines plus free ambulance. There is also a range of other benefits to CSHC holders including the NSW Government Senior’s energy rebate of $250 per year.
 
