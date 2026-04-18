@@ -10,6 +10,7 @@ export default tseslint.config(
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   ...eslintPluginAstro.configs['flat/recommended'],
+  unocss,
   {
     ...jsxA11y.flatConfigs.recommended,
     files: ['**/*.{js,ts,jsx,tsx}']
@@ -30,7 +31,8 @@ export default tseslint.config(
     },
     rules: {
       'simple-import-sort/imports': 'error',
-      'simple-import-sort/exports': 'error'
+      'simple-import-sort/exports': 'error',
+      'unocss/order': 'off'
     }
   },
   {
@@ -49,9 +51,6 @@ export default tseslint.config(
         project: true,
         tsconfigRootDir: import.meta.dirname
       }
-    },
-    rules: {
-      'unocss/order': 'off'
     }
   },
   {
@@ -62,10 +61,8 @@ export default tseslint.config(
     language: 'markdown/commonmark',
     rules: {
       'markdown/no-html': 'error',
-      ...tseslint.configs.disableTypeChecked.rules,
-      'unocss/order': 'off'
+      ...tseslint.configs.disableTypeChecked.rules
     }
   },
-  unocss,
   eslintConfigPrettier
 )
