@@ -11,27 +11,35 @@ import { Logo } from '../config'
       class="fixed z-50 mx-auto w-full border-b-2 border-orange-500 bg-white px-2 sm:px-6 lg:px-8 dark:border-orange-500 dark:bg-gray-800"
     >
       <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
-          <!-- Mobile menu button-->
-          <button
-            type="button"
-            data-menu-button
-            class="inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-orange-200 hover:text-gray-800 focus:ring-2 focus:ring-orange-300 focus:outline-none focus:ring-inset dark:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-gray-200 dark:focus:ring-orange-500"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <div data-menu-icon-bars class="i-heroicons-bars-3 block h-6 w-6" aria-hidden="true">
-            </div>
-            <div data-menu-icon-close class="i-heroicons-x-mark hidden h-6 w-6" aria-hidden="true">
-            </div>
-          </button>
-        </div>
-        <div class="ml-10 flex flex-1 items-center justify-start lg:ml-0 lg:items-stretch">
-          <div class="flex flex-shrink-0 items-center">
-            <img class="block h-12 dark:bg-gray-100" src={Logo.src} alt="Logo" />
+        <div class="flex items-center">
+          <div class="flex items-center xl:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              data-menu-button
+              class="inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-orange-200 hover:text-gray-800 focus:ring-2 focus:ring-orange-300 focus:outline-none focus:ring-inset dark:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-gray-200 dark:focus:ring-orange-500"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <div data-menu-icon-bars class="i-heroicons-bars-3 block h-6 w-6" aria-hidden="true">
+              </div>
+              <div
+                data-menu-icon-close
+                class="i-heroicons-x-mark hidden h-6 w-6"
+                aria-hidden="true"
+              >
+              </div>
+            </button>
           </div>
-          <div class="hidden lg:mx-4 lg:block">
+          <div class="mr-3 flex flex-shrink-0 items-center">
+            <img class="block h-8 sm:h-12 dark:bg-gray-100" src={Logo.src} alt="Logo" />
+          </div>
+          <Search />
+        </div>
+
+        <div class="flex items-center">
+          <div class="hidden xl:mr-4 xl:block">
             <div class="flex space-x-2">
               {
                 NavigationLinks.map((item) => (
@@ -55,14 +63,7 @@ import { Logo } from '../config'
               }
             </div>
           </div>
-        </div>
-        <div
-          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-        >
-          <Search />
           <Theme />
-
-          <!-- Right nav -->
         </div>
       </div>
     </div>

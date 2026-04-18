@@ -14,7 +14,7 @@
 ## Core Technologies
 
 - **Content Management:** Astro Content Collections with the new Loader API (`glob`, `file`).
-- **Search:** Local full-text search using [Lunr](https://lunrjs.com/).
+- **Search:** Dynamic "search-as-you-type" local search using [FlexSearch](https://github.com/nextapps-de/flexsearch) with client-side indexing and weighted field relevance. Content is optimized via markdown stripping.
 - **Image Handling:** [PhotoSwipe](https://photoswipe.com/) for galleries; [Exifr](https://mutiny.cz/exifr/) for EXIF data.
 - **SEO & Metadata:** `astro-seo` with explicit canonicals and schema-driven JSON-LD.
 - **CMS:** [DecapCMS](https://www.decapcms.org/) with Local Backend support and Editorial Workflow.
@@ -39,6 +39,13 @@ All content is managed via Astro Collections in `src/content/`. Schemas are defi
 - `blog` & `news`: Featured articles and updates.
 - `meeting`: Branch meetings (generates Schema.org `Event` data).
 - `social`: Managed via `src/social.json` with a Zod schema.
+
+### Search Indexing
+All site content is searchable via a client-side FlexSearch index bundled with the application.
+- **Data Source:** `src/pages/search-docs.json.js` aggregates content from all collections (`blog`, `news`, `meeting`, `page`, `next`).
+- **Optimization:** Content is stripped of markdown syntax to reduce payload size and improve matching accuracy.
+- **Dynamic UX:** Results are displayed in real-time as the user types, with weighted relevance for titles and descriptions.
+- **Bundling:** FlexSearch is imported and bundled via Vite, removing external CDN dependencies.
 
 ### Styling & UI
 - **Components:** Standardized UI elements (e.g., `Button.astro`) are used for consistent visual language.

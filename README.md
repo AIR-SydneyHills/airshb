@@ -13,7 +13,7 @@ Uses:
 - [Schema.org](https://schema.org/) and [JSON for Linking Data](https://json-ld.org/), type-checked using [schema-dts](https://github.com/google/schema-dts)
 - [Open Graph](https://ogp.me/) used by [Facebook](https://developers.facebook.com/docs/sharing/webmasters/#markup)
 - [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
-- Local full text search using [Lunr](https://lunrjs.com)
+- Dynamic local full-text search using bundled [FlexSearch](https://github.com/nextapps-de/flexsearch)
 - [reading-time](https://github.com/ngryman/reading-time)
 - [PhotoSwipe](https://photoswipe.com)
 - [exifr](https://mutiny.cz/exifr/)

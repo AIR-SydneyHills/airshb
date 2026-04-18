@@ -2,27 +2,26 @@
 
 ---
 
-<script is:inline src="https://unpkg.com/lunr/lunr.min.js"></script>
-<search-modal>
-  <div class="flex justify-center">
-    <div class="w-48">
+<search-modal class="flex flex-1 items-center">
+  <div class="flex w-full justify-center">
+    <div class="w-64">
       <div class="input-group relative flex w-full items-stretch">
         <input
           type="search"
           class="form-control relative m-0 block w-full max-w-xs min-w-0 flex-auto rounded border border-solid border-orange-500 bg-white bg-clip-padding px-3 py-1.5 text-base font-medium text-gray-700 transition ease-in-out focus:border-orange-600 focus:text-gray-700 focus:outline-none dark:border-orange-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-orange-600 dark:focus:text-gray-100"
-          id="lunrsearch"
+          id="search-box"
           name="q"
           maxlength="255"
           value=""
           placeholder="Search"
           aria-label="Search"
-          aria-describedby="lunrbutton"
+          aria-describedby="searchbutton"
         />
         <button
           class="btn inline-block items-center rounded bg-orange-600 px-2 py-2 text-xs leading-tight font-medium text-white uppercase shadow-md transition duration-150 ease-in-out hover:bg-orange-300 hover:text-orange-800 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:ring-0 focus:outline-none active:bg-orange-800 active:shadow-lg dark:bg-orange-500 dark:hover:bg-orange-300 dark:hover:text-orange-800"
           type="button"
           name="search"
-          id="lunrbutton"
+          id="search-button"
           aria-label="Search Button"
         >
           <svg
@@ -46,17 +45,20 @@
   </div>
   <div
     id="search-overlay"
-    class="relative z-50 hidden"
+    class="relative z-40 hidden"
     aria-labelledby="slide-over-title"
     role="dialog"
     aria-modal="true"
   >
-    <div id="search-backdrop" class="bg-opacity-75 fixed inset-0 bg-gray-500 transition-opacity">
+    <div
+      id="search-backdrop"
+      class="bg-opacity-75 fixed inset-x-0 top-16 bottom-0 bg-gray-500 transition-opacity"
+    >
     </div>
 
-    <div class="fixed inset-0 overflow-hidden">
+    <div class="fixed inset-x-0 top-16 bottom-0 overflow-hidden">
       <div class="absolute inset-0 overflow-hidden">
-        <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+        <div class="pointer-events-none fixed top-16 right-0 bottom-0 flex max-w-full pl-10">
           <div
             id="search-panel"
             class="pointer-events-auto relative w-screen max-w-md translate-x-full transform transition duration-500 ease-in-out sm:duration-700"
@@ -76,16 +78,13 @@
               class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl dark:bg-gray-800"
             >
               <div class="px-4 sm:px-6">
-                <h2
-                  class="text-lg font-medium text-gray-900 dark:text-gray-100"
-                  id="lunrsearchtitle"
-                >
+                <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100" id="search-title">
                   Search results
                 </h2>
               </div>
-              <div id="lunrsearchmodal" class="relative mt-6 flex-1 px-4 sm:px-6">
+              <div id="searchmodal" class="relative mt-6 flex-1 px-4 sm:px-6">
                 <div
-                  id="lunrsearchresults"
+                  id="search-results"
                   class="ring-opacity-5 overflow-hidden rounded-lg shadow-lg ring-1 ring-black"
                 >
                   <ul></ul>
@@ -100,21 +99,26 @@
 </search-modal>
 
 <script>
+  import FlexSearch from 'flexsearch'
+
   interface SearchDoc {
     url: string
     title: string
     description: string
+    author?: string
+    pubDate?: string
   }
 
   class SearchModal extends HTMLElement {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     private idx: any = null
     private doc: SearchDoc[] | null = null
+    private initPromise: Promise<void> | null = null
 
     constructor() {
       super()
-      const input = this.querySelector('#lunrsearch') as HTMLInputElement
-      const button = this.querySelector('#lunrbutton') as HTMLButtonElement
+      const input = this.querySelector('#search-box') as HTMLInputElement
+      const button = this.querySelector('#search-button') as HTMLButtonElement
       const overlay = this.querySelector('#search-overlay') as HTMLElement
       const panel = this.querySelector('#search-panel') as HTMLElement
       const closeBtn = this.querySelector('#search-close') as HTMLButtonElement
@@ -136,15 +140,39 @@
         }, 500)
       }
 
+      // Pre-load the search index when the user focuses on the input
+      input.addEventListener('focus', () => {
+        this.initSearch()
+      })
+
+      // Perform search dynamically as the user types
+      input.addEventListener('input', () => {
+        if (input.value.trim().length > 0) {
+          openModal()
+          this.performSearch(input.value)
+        } else {
+          closeModal()
+          const resultsContainer = this.querySelector('#search-results ul') as HTMLElement
+          const resultsTitle = this.querySelector('#search-title') as HTMLElement
+          if (resultsContainer) resultsContainer.innerHTML = ''
+          if (resultsTitle) resultsTitle.innerHTML = 'Search results'
+        }
+      })
+
       button.addEventListener('click', () => {
-        this.performSearch(input.value)
-        openModal()
+        if (input.value.trim().length > 0) {
+          openModal()
+          this.performSearch(input.value)
+        }
       })
 
       input.addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
           event.preventDefault()
-          button.click()
+          if (input.value.trim().length > 0) {
+            openModal()
+            this.performSearch(input.value)
+          }
         }
       })
 
@@ -152,36 +180,86 @@
       backdrop.addEventListener('click', closeModal)
     }
 
-    async performSearch(term: string) {
-      const resultsTitle = this.querySelector('#lunrsearchtitle') as HTMLElement
-      const resultsContainer = this.querySelector('#lunrsearchresults ul') as HTMLElement
+    async initSearch() {
+      if (this.initPromise) {
+        return this.initPromise
+      }
+      this.initPromise = (async () => {
+        if (!this.doc) {
+          const res = await fetch(`${import.meta.env.BASE_URL}search-docs.json`)
+          this.doc = (await res.json()) as SearchDoc[]
+        }
+        if (!this.idx && this.doc) {
+          // Initialize a FlexSearch index on the client
+          this.idx = new FlexSearch.Document({
+            document: {
+              id: 'url',
+              index: [
+                { field: 'title', tokenize: 'forward', resolution: 9 },
+                { field: 'description', tokenize: 'forward', resolution: 5 },
+                { field: 'author', tokenize: 'forward', resolution: 3 },
+                { field: 'categories', tokenize: 'forward', resolution: 7 },
+                { field: 'tags', tokenize: 'forward', resolution: 7 },
+                { field: 'content', tokenize: 'forward', resolution: 1 }
+              ],
+              store: false
+            }
+          })
 
-      if (!this.doc) {
-        const res = await fetch(`${import.meta.env.BASE_URL}search-docs.json`)
-        this.doc = (await res.json()) as SearchDoc[]
+          // Build the index by adding all fetched documents
+          this.doc.forEach((doc: any) => {
+            this.idx.add(doc)
+          })
+        }
+      })()
+      return this.initPromise
+    }
+
+    async performSearch(term: string) {
+      const resultsTitle = this.querySelector('#search-title') as HTMLElement
+      const resultsContainer = this.querySelector('#search-results ul') as HTMLElement
+
+      if (!this.idx || !this.doc) {
+        await this.initSearch()
       }
-      if (!this.idx) {
-        const res = await fetch(`${import.meta.env.BASE_URL}search-index.json`)
-        const data = await res.json()
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        this.idx = (window as any).lunr.Index.load(data)
-      }
+
+      if (!this.idx || !this.doc) return
 
       resultsContainer.innerHTML = ''
-      if (term && this.doc && this.idx) {
+      if (term) {
         resultsTitle.innerHTML = `Search results for '${term}'`
-        const results = this.idx.search(term)
+        // FlexSearch search options
+        const rawResults = this.idx.search(term, { limit: 20 })
+
+        // Flatten unique results from all indexed fields
+        const results = [...new Set(rawResults.flatMap((r: any) => r.result))]
+
         if (results.length > 0) {
-          results.forEach((result: { ref: string }) => {
-            const url = result.ref
+          results.forEach((url: any) => {
             const doc = this.doc?.find((d) => d.url === url)
+
             if (doc) {
               const li = document.createElement('li')
               li.className =
                 '-m-3 p-3 flex items-start rounded-lg hover:bg-orange-200 dark:hover:bg-orange-900'
+
+              const metadata = [
+                doc.author,
+                doc.pubDate
+                  ? new Date(doc.pubDate).toLocaleDateString(undefined, {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric'
+                    })
+                  : ''
+              ]
+                .filter(Boolean)
+                .join(' &bull; ')
+
               li.innerHTML = `
                 <a href="${url}">
                   <p class="text-base font-bold text-gray-900 dark:text-gray-100">${doc.title}</p>
+                  ${metadata ? `<p class="mt-1 text-xs text-gray-500 dark:text-gray-400 font-medium">${metadata}</p>` : ''}
                   <p class="mt-1 text-sm text-gray-700 font-medium dark:text-gray-400">${doc.description}</p>
                 </a>
               `
