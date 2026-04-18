@@ -1,9 +1,10 @@
 ---
 import type { CollectionEntry } from 'astro:content'
 import { getCollection, render } from 'astro:content'
+
+import image from '../assets/site/retirementahead.jpg'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
-import image from '../assets/site/retirementahead.jpg'
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   draft: false,

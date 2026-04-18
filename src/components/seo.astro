@@ -1,9 +1,9 @@
 ---
-import type { TwitterCardType } from 'astro-seo'
-import type { CollectionEntry } from 'astro:content'
-import { SEO } from 'astro-seo'
 import { getImage } from 'astro:assets'
+import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
+import type { TwitterCardType } from 'astro-seo'
+import { SEO } from 'astro-seo'
 import type {
   Article,
   BreadcrumbList,
@@ -12,7 +12,8 @@ import type {
   WebSite,
   WithContext
 } from 'schema-dts'
-import { SiteMetadata, DefaultImage, LogoImage } from '../config'
+
+import { DefaultImage, LogoImage, SiteMetadata } from '../config'
 
 export interface Props {
   frontmatter:
@@ -28,12 +29,12 @@ const siteurl = new URL(import.meta.env.BASE_URL, Astro.url)
 const type = Astro.url.toString().includes('blog') ? 'post' : 'page'
 const year = SiteMetadata.buildTime.getFullYear()
 const image = await getImage({
-  src: frontmatter.image || DefaultImage,
+  src: frontmatter.image ?? DefaultImage,
   width: 1200,
   format: 'jpg'
 })
 const logo = LogoImage
-const publishDate = frontmatter.pubDate || SiteMetadata.buildTime
+const publishDate = frontmatter.pubDate ?? SiteMetadata.buildTime
 const author = SiteMetadata.org.email
 const openGraph = {
   basic: {

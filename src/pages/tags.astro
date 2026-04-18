@@ -1,53 +1,95 @@
 ---
-import { getCollection } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
-import type { TagType } from '../config'
-import Base from '../layouts/base.astro'
-import PageHero from '../components/pagehero.astro'
-import CTA from '../components/cta.astro'
-import { DefaultImage } from '../config'
+import { getCollection } from 'astro:content'
 import {
-  jupiter,
-  cutout,
-  pianoMan,
-  pieFactory,
-  graphPaper,
-  charlieBrown,
-  autumn,
-  temple,
-  deathStar,
-  churchOnSunday,
-  overlappingHexagons,
-  bamboo,
-  bathroomFloor,
-  corkScrew,
-  happyIntersection,
-  kiwi,
-  lips,
-  lisbon,
-  steelBeams,
-  tinyCheckers,
-  fancyRectangles,
-  heavyRain,
-  cage,
-  connections,
-  flippedDiamonds,
-  houndstooth,
-  morphingDiamonds,
-  zigZag,
-  aztec,
-  bankNote,
-  boxes,
-  diagonalLines,
-  endlessClouds,
-  eyes,
-  groovy,
-  melt,
-  parkayFloor,
-  pixelDots,
-  signal,
-  wallpaper
+  autumn as _autumn,
+  aztec as _aztec,
+  bamboo as _bamboo,
+  bankNote as _bankNote,
+  bathroomFloor as _bathroomFloor,
+  boxes as _boxes,
+  cage as _cage,
+  charlieBrown as _charlieBrown,
+  churchOnSunday as _churchOnSunday,
+  connections as _connections,
+  corkScrew as _corkScrew,
+  cutout as _cutout,
+  deathStar as _deathStar,
+  diagonalLines as _diagonalLines,
+  endlessClouds as _endlessClouds,
+  eyes as _eyes,
+  fancyRectangles as _fancyRectangles,
+  flippedDiamonds as _flippedDiamonds,
+  graphPaper as _graphPaper,
+  groovy as _groovy,
+  happyIntersection as _happyIntersection,
+  heavyRain as _heavyRain,
+  houndstooth as _houndstooth,
+  jupiter as _jupiter,
+  kiwi as _kiwi,
+  lips as _lips,
+  lisbon as _lisbon,
+  melt as _melt,
+  morphingDiamonds as _morphingDiamonds,
+  overlappingHexagons as _overlappingHexagons,
+  parkayFloor as _parkayFloor,
+  pianoMan as _pianoMan,
+  pieFactory as _pieFactory,
+  pixelDots as _pixelDots,
+  signal as _signal,
+  steelBeams as _steelBeams,
+  temple as _temple,
+  tinyCheckers as _tinyCheckers,
+  wallpaper as _wallpaper,
+  zigZag as _zigZag
 } from 'hero-patterns'
+
+const autumn = _autumn
+const aztec = _aztec
+const bamboo = _bamboo
+const bankNote = _bankNote
+const bathroomFloor = _bathroomFloor
+const boxes = _boxes
+const cage = _cage
+const charlieBrown = _charlieBrown
+const churchOnSunday = _churchOnSunday
+const connections = _connections
+const corkScrew = _corkScrew
+const cutout = _cutout
+const deathStar = _deathStar
+const diagonalLines = _diagonalLines
+const endlessClouds = _endlessClouds
+const eyes = _eyes
+const fancyRectangles = _fancyRectangles
+const flippedDiamonds = _flippedDiamonds
+const graphPaper = _graphPaper
+const groovy = _groovy
+const happyIntersection = _happyIntersection
+const heavyRain = _heavyRain
+const houndstooth = _houndstooth
+const jupiter = _jupiter
+const kiwi = _kiwi
+const lips = _lips
+const lisbon = _lisbon
+const melt = _melt
+const morphingDiamonds = _morphingDiamonds
+const overlappingHexagons = _overlappingHexagons
+const parkayFloor = _parkayFloor
+const pianoMan = _pianoMan
+const pieFactory = _pieFactory
+const pixelDots = _pixelDots
+const signal = _signal
+const steelBeams = _steelBeams
+const temple = _temple
+const tinyCheckers = _tinyCheckers
+const wallpaper = _wallpaper
+const zigZag = _zigZag
+
+import CTA from '../components/cta.astro'
+import PageHero from '../components/pagehero.astro'
+import type { TagType } from '../config'
+import { DefaultImage } from '../config'
+import Base from '../layouts/base.astro'
 
 const patterns = [
   steelBeams('#9c92ac', 0.5),
@@ -106,7 +148,7 @@ const latestPosts = posts.sort((a, b) =>
   a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
 )
 
-const tagmap: Map<string, TagType> = new Map()
+const tagmap = new Map<string, TagType>()
 
 latestPosts.forEach((post) => {
   post.data.tags?.forEach((tag) => {

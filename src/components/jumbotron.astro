@@ -1,6 +1,7 @@
 ---
-import { getCollection } from 'astro:content'
 import { Image } from 'astro:assets'
+import { getCollection } from 'astro:content'
+
 import { FeaturedImage } from '../config'
 
 const social = await getCollection('social')
@@ -59,21 +60,17 @@ const social = await getCollection('social')
       </a>
       <span class="mt-2 inline-flex grow justify-center lg:ml-auto lg:mt-0 lg:justify-end">
         {
-          social.map((s) =>
-            s.data.link ? (
-              <a
-                href={s.data.link}
-                class="ml-3 text-orange-600 dark:text-orange-500 hover:text-orange-300 dark:hover:text-orange-300"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <div class={'h-8 w-8 i-bi-' + s.data.icon} />
-                <span class="sr-only">{s.data.name}</span>
-              </a>
-            ) : (
-              ''
-            )
-          )
+          social.map((s) => (
+            <a
+              href={s.data.link}
+              class="ml-3 text-orange-600 dark:text-orange-500 hover:text-orange-300 dark:hover:text-orange-300"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class={`i-bi-${s.data.icon} h-8 w-8`} />
+              <span class="sr-only">{s.data.name}</span>
+            </a>
+          ))
         }
       </span>
     </div>

@@ -1,5 +1,6 @@
 import rss from '@astrojs/rss'
 import { getCollection, getEntry } from 'astro:content'
+
 import { SiteMetadata } from '../config'
 
 export async function GET(context) {

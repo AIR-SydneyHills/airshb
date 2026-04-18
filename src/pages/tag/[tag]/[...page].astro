@@ -1,13 +1,14 @@
 ---
-import type { PaginateFunction, Page } from 'astro'
+import type { Page, PaginateFunction } from 'astro'
 import type { CollectionEntry } from 'astro:content'
-import { PAGE_SIZE } from '../../../config'
 import { getCollection } from 'astro:content'
-import Base from '../../../layouts/base.astro'
-import PageHero from '../../../components/pagehero.astro'
+
 import BlogRoll from '../../../components/blogroll.astro'
+import PageHero from '../../../components/pagehero.astro'
 import PaginateControl from '../../../components/paginatecontrol.astro'
+import { PAGE_SIZE } from '../../../config'
 import { DefaultImage } from '../../../config'
+import Base from '../../../layouts/base.astro'
 
 export interface Props {
   page: Page<CollectionEntry<'blog'>>

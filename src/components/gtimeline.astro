@@ -46,8 +46,7 @@ let latest = true
                 )}
             </h3>
             <time class="mb-2 block text-sm text-gray-400 font-normal leading-none dark:text-gray-500">
-              {meeting.data.pubDate &&
-                meeting.data.pubDate.toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })}
+              {meeting.data.pubDate?.toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })}
             </time>
             <p class="mb-4 text-base text-gray-500 font-normal dark:text-gray-400">
               {meeting.data.description}

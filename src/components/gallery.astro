@@ -1,5 +1,6 @@
 ---
 import exifr from 'exifr'
+
 import Lightbox from './lightbox.astro'
 
 export interface Props {
@@ -16,9 +17,9 @@ const folderFiles = Object.keys(imageFiles).filter((image) => image.search(folde
 const imageSrcs = folderFiles.map((image) => imageFiles[image])
 const gallery = 'gallery-' + folder
 
-const exifs = [] as Record<string, any>[]
-for (let i in folderFiles) {
-  const exif = await exifr.parse(folderFiles[i].replace('../', './src/'))
+const exifs = [] as Record<string, unknown>[]
+for (const file of folderFiles) {
+  const exif = (await exifr.parse(file.replace('../', './src/'))) as Record<string, unknown>
   exifs.push(exif)
 }
 ---

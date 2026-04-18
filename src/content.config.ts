@@ -1,8 +1,8 @@
 // 1. Import your utilities and schemas
-import { defineCollection, reference } from 'astro:content'
-import { z } from 'astro/zod'
-import { glob, file } from 'astro/loaders'
 import { rssSchema } from '@astrojs/rss'
+import { file, glob } from 'astro/loaders'
+import { z } from 'astro/zod'
+import { defineCollection, reference } from 'astro:content'
 
 // 2. Define your collections
 const blog = defineCollection({
@@ -88,7 +88,13 @@ const author = defineCollection({
 })
 
 const social = defineCollection({
-  loader: file('src/social.json', { parser: (text) => JSON.parse(text) })
+  loader: file('src/social.json', { parser: (text) => JSON.parse(text) }),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    link: z.string(),
+    icon: z.string()
+  })
 })
 
 // 3. Export multiple collections to register them

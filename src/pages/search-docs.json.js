@@ -30,7 +30,7 @@ documents = documents.concat(
   })
 )
 
-export async function GET() {
+export function GET() {
   return new Response(JSON.stringify(documents), {
     status: 200,
     headers: {

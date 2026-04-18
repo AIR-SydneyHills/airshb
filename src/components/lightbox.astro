@@ -1,12 +1,13 @@
 ---
 import 'photoswipe/style.css'
 import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
+
 import { Image } from 'astro:assets'
 
 export interface Props {
   id: string
   images: ImageMetadata[]
-  exifs?: Record<string, any>[]
+  exifs?: Record<string, unknown>[]
 }
 
 const { id, images, exifs } = Astro.props
@@ -62,7 +63,7 @@ const imagetitles = images.map((image) => image.src.split('/').reverse()[0].spli
         </a>
         <figcaption itemprop="caption description" class="rounded">
           {imagetitles[i]}
-          {exifs && exifs[i] && <span>{' (' + exifs[i].Make + ' ' + exifs[i].Model + ')'}</span>}
+          {exifs?.[i] && <span>{` (${String(exifs[i].Make)} ${String(exifs[i].Model)})`}</span>}
         </figcaption>
       </figure>
     ))

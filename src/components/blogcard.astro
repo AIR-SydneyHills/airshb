@@ -1,7 +1,8 @@
 ---
+import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import { getEntry } from 'astro:content'
-import { Image } from 'astro:assets'
+
 import Categories from '../components/categories.astro'
 import Tags from '../components/tags.astro'
 
@@ -15,7 +16,7 @@ let cat = await getEntry('category', 'general')
 if (post.data.categories) {
   cat = await getEntry(post.data.categories[0])
 }
-const image = post.data.image || (post.data.images && post.data.images[0]) || cat!.data.image
+const image = post.data.image ?? post.data.images?.[0] ?? cat!.data.image
 let author = await getEntry('author', 'air-sydney-hills')
 if (post.data.author) {
   author = await getEntry(post.data.author)

@@ -1,9 +1,11 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import SEO from '../components/seo.astro'
-import Header from '../components/header.astro'
+import { ClientRouter } from 'astro:transitions'
+
 import Footer from '../components/footer.astro'
+import Header from '../components/header.astro'
 import Images from '../components/images.astro'
+import SEO from '../components/seo.astro'
 
 export interface Props {
   frontmatter: CollectionEntry<'page'>['data'] | CollectionEntry<'blog'>['data']
@@ -26,6 +28,7 @@ const { frontmatter } = Astro.props
     <link rel="alternate" type="application/rss+xml" title="RSS" href={`${Astro.site}rss.xml`} />
     <meta name="generator" content={Astro.generator} />
     <SEO frontmatter={frontmatter} />
+    <ClientRouter />
     <script is:inline>
       const setDarkMode = () => {
         if (
@@ -39,12 +42,8 @@ const { frontmatter } = Astro.props
       }
       setDarkMode() //initial navigation
       document.addEventListener('astro:after-swap', setDarkMode) // Runs on view transitions navigation
+      document.addEventListener('theme-changed', setDarkMode) // Runs when theme is toggled
     </script>
-    <style is:inline>
-      [x-cloak] {
-        display: none !important;
-      }
-    </style>
     <slot name="in-head" />
   </head>
   <body class="dark:bg-gray-900">

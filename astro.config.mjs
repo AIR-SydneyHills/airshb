@@ -1,7 +1,6 @@
 import { EventEmitter } from 'node:events'
 import { defineConfig } from 'astro/config'
 import sitemap from '@astrojs/sitemap'
-import alpinejs from '@astrojs/alpinejs'
 import robotsTxt from 'astro-robots-txt'
 import remarkEmoji from 'remark-emoji'
 import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs'
@@ -18,7 +17,6 @@ export default defineConfig({
       injectReset: true // or a path to the reset file
     }),
     sitemap(),
-    alpinejs(),
     robotsTxt()
   ],
   markdown: {

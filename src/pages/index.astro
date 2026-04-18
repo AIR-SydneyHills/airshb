@@ -1,14 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
+
+import image from '../assets/site/retirementahead.jpg'
+import CTA from '../components/cta.astro'
+import GTimeline from '../components/gtimeline.astro'
+import Jumbotron from '../components/jumbotron.astro'
+import LatestArticles from '../components/latestarticles.astro'
+import NextMeeting from '../components/nextmeeting.astro'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
-import Jumbotron from '../components/jumbotron.astro'
-import NextMeeting from '../components/nextmeeting.astro'
-import LatestArticles from '../components/latestarticles.astro'
-import GTimeline from '../components/gtimeline.astro'
-import CTA from '../components/cta.astro'
-import image from '../assets/site/retirementahead.jpg'
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   draft: false,

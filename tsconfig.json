@@ -5,6 +5,9 @@
     "**/*"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "eslint.config.mjs",
+    "astro.config.mjs",
+    "uno.config.ts"
   ]
 }
