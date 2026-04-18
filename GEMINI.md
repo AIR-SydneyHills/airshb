@@ -5,18 +5,19 @@
 **AIR Sydney Hills** is the official website for the Australian Independent Retirees (A.I.R.) Sydney Hills Branch. It is built using **Astro 6** and serves as a content-driven platform featuring news, articles, and meeting information for retirees.
 
 - **Primary URL:** [https://airsydneyhills.netlify.app](https://airsydneyhills.netlify.app)
-- **Framework:** [Astro](https://astro.build/)
-- **Language:** TypeScript
+- **Framework:** [Astro](https://astro.build/) (v6.x)
+- **Language:** TypeScript (Type-aware linting enabled)
 - **Styling:** [UnoCSS](https://unocss.dev/) (Wind3, Icons, Attributify, Typography)
-- **Interactivity:** Vanilla JS Custom Elements (Web Components)
+- **Interactivity:** Vanilla JS Custom Elements (Web Components) - Zero framework dependencies for UI interactivity.
+- **View Transitions:** Enabled via `<ClientRouter />` for smooth, SPA-like navigation.
 
 ## Core Technologies
 
-- **Content Management:** Astro Content Collections (Markdown/MDX).
+- **Content Management:** Astro Content Collections with the new Loader API (`glob`, `file`).
 - **Search:** Local full-text search using [Lunr](https://lunrjs.com/).
 - **Image Handling:** [PhotoSwipe](https://photoswipe.com/) for galleries; [Exifr](https://mutiny.cz/exifr/) for EXIF data.
-- **SEO & Metadata:** `astro-seo`, `astro-robots-txt`, `@astrojs/sitemap`.
-- **Utilities:** `reading-time` for estimated reading times, `remark-emoji` for Markdown emoji support.
+- **SEO & Metadata:** `astro-seo` with explicit canonicals and schema-driven JSON-LD.
+- **CMS:** [DecapCMS](https://www.decapcms.org/) with Local Backend support and Editorial Workflow.
 
 ## Building and Running
 
@@ -27,42 +28,37 @@ This project uses `pnpm` as the package manager.
 | `pnpm install` | Install dependencies. |
 | `pnpm dev` | Start the local development server (defaults to `localhost:4321`). |
 | `pnpm build` | Build the production site to the `dist/` directory. |
-| `pnpm preview` | Preview the production build locally. |
+| `pnpm run cms` | Start the local DecapCMS proxy for content editing. |
+| `pnpm run lint` | Run Prettier and ESLint (Flat Config). |
 | `pnpm check` | Run `astro check` for type-checking and diagnostics. |
-| `pnpm lint` | Format code with Prettier and run ESLint. |
 
 ## Development Conventions
 
 ### Content Collections
 All content is managed via Astro Collections in `src/content/`. Schemas are defined in `src/content.config.ts`.
-- `blog`: Main articles and blog posts.
-- `news`: Branch and national news updates.
-- `meeting`: Information about upcoming and past meetings.
-- `next`: Future events or "what's next" section.
-- `page`: Static pages (About, Terms, Privacy, etc.).
-- `author` & `category`: Referenced by blog and news items.
+- `blog` & `news`: Featured articles and updates.
+- `meeting`: Branch meetings (generates Schema.org `Event` data).
+- `social`: Managed via `src/social.json` with a Zod schema.
 
-### Styling with UnoCSS
-The project uses UnoCSS for atomic styling. 
-- Configuration is in `uno.config.ts`.
-- It uses the `presetWind3` (Tailwind-compatible) and `presetAttributify` (attribute-based classes).
-- Icons are handled via the `presetIcons` (e.g., `i-heroicons-sparkles`).
+### Styling & UI
+- **Components:** Standardized UI elements (e.g., `Button.astro`) are used for consistent visual language.
+- **Accessibility:** Body text defaults to `text-lg` (18px) for readability. Contrast ratios are enforced to WCAG AA/AAA standards.
+- **Transitions:** Layouts use the `ClientRouter` for persistent state (like theme) across pages.
 
-### Site Configuration
-- Global metadata (title, author, org details) is located in `src/config.ts`.
-- Navigation links are defined in `src/config.ts`.
-- Social media links are managed in `src/social.json`.
+### CMS Workflow
+- **Local Backend:** Use `pnpm run cms` then visit `/admin` to edit local content without pushing to Git.
+- **Editorial Workflow:** Production CMS uses an editorial workflow (Draft -> Review -> Ready) to ensure content quality.
+- **Validation:** Critical fields (Title, Date, Image) have `allow_empty: false` to prevent build failures.
 
 ### Coding Standards
-- **Linting:** ESLint with `eslint-plugin-astro` and `unocss` config.
-- **Formatting:** Prettier with `prettier-plugin-astro` and `prettier-plugin-tailwindcss` (for UnoCSS class sorting).
-- **Markdown:** HTML is discouraged in Markdown files (enforced by ESLint).
+- **Linting:** ESLint Flat Config with `typescript-eslint` (type-aware), `simple-import-sort`, and `jsx-a11y`.
+- **Formatting:** Prettier with `prettier-plugin-tailwindcss` for UnoCSS class sorting.
+- **Imports:** Automatically sorted via `eslint-plugin-simple-import-sort`.
 
 ## Directory Structure
 
-- `src/assets/`: Images, logos, and documents.
-- `src/components/`: Reusable Astro components.
-- `src/layouts/`: Base layouts for different page types.
-- `src/pages/`: File-based routes.
-- `src/content/`: Source files for content collections.
-- `remark-plugins/`: Custom plugins for Markdown processing.
+- `public/admin/`: DecapCMS configuration and entry point.
+- `src/assets/`: Optimized images and site assets.
+- `src/components/`: Pure Astro & Web Component (Custom Element) blocks.
+- `src/layouts/`: Base layouts (base, blog, page).
+- `src/content/`: Source files and collection configuration.

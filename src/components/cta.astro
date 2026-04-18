@@ -1,24 +1,20 @@
 ---
-
+import Button from './button.astro'
 ---
 
 <section class="bg-white dark:bg-gray-900">
-  <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 sm:py-16">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
     <div class="mx-auto max-w-screen-sm text-center">
       <h2
-        class="mb-4 text-4xl text-gray-900 font-extrabold leading-tight tracking-tight dark:text-white"
+        class="mb-4 text-4xl leading-tight font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
         Interested? Join AIR today
       </h2>
-      <p class="mb-6 text-gray-500 font-light md:text-lg dark:text-gray-400">
+      <p class="mb-6 font-light text-gray-700 md:text-lg dark:text-gray-400">
         Membership of AIR is open to anyone over 50 who is or planning to be fully or partly
         self-funded in their retirement.
       </p>
-      <a
-        href="https://www.independentretirees.com/membership/join-air"
-        class="dark:hover:bg-orange-00 mb-2 mr-2 rounded-lg bg-orange-600 px-5 py-2.5 text-sm text-white font-medium dark:bg-orange-600 hover:bg-orange-300 focus:outline-none focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-500"
-        >Join</a
-      >
+      <Button href="https://www.independentretirees.com/membership/join-air">Join</Button>
     </div>
   </div>
 </section>

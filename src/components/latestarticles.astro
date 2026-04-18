@@ -4,6 +4,7 @@ import type { CollectionEntry } from 'astro:content'
 
 // import Categories from '../components/categories.astro'
 import { DefaultImage } from '../config'
+import Button from './button.astro'
 
 export interface Props {
   posts: CollectionEntry<'blog'>[]
@@ -16,32 +17,25 @@ const otherPosts = posts.slice(1, 5)
 ---
 
 <div class="bg-white dark:bg-gray-900">
-  <div class="mx-auto max-w-7xl px-4 lg:px-8 sm:px-6">
-    <div class="mx-auto max-w-2xl py-8 lg:max-w-none lg:py-16 sm:py-12">
-      <div class="flex flex-row items-center">
-        <h2 class="text-2xl text-orange-800 font-extrabold md:text-4xl dark:text-orange-200">
-          Our Latest Articles
-        </h2>
-        <a
-          href={import.meta.env.BASE_URL + 'blog'}
-          class="ml-4 mt-2 inline-block rounded-md bg-orange-600 px-2 py-2 text-base text-white font-bold dark:bg-orange-300 hover:bg-orange-500 md:px-6 md:py-3 md:text-lg dark:text-black dark:hover:bg-orange-400"
-        >
-          All Articles
-        </a>
-        <a
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl py-8 sm:py-12 lg:max-w-none lg:py-16">
+      <h2 class="text-2xl font-extrabold text-orange-800 md:text-4xl dark:text-orange-200">
+        Articles
+      </h2>
+      <div class="flex">
+        <Button href={import.meta.env.BASE_URL + 'blog'} class="mt-2 ml-4"> All Articles </Button>
+        <Button
+          variant="secondary"
           href={import.meta.env.BASE_URL + 'categories'}
-          class="ml-4 mt-2 inline-block rounded-md bg-orange-100 px-2 py-2 text-base text-orange-800 font-bold dark:bg-orange-900 hover:bg-orange-200 md:px-6 md:py-3 md:text-lg dark:text-orange-100 dark:hover:bg-orange-800"
+          class="mt-2 ml-4"
         >
           Categories
-        </a>
-        <a
-          href={import.meta.env.BASE_URL + 'tags'}
-          class="ml-4 mt-2 inline-block rounded-md bg-orange-100 px-2 py-2 text-base text-orange-800 font-bold dark:bg-orange-900 hover:bg-orange-200 md:px-6 md:py-3 md:text-lg dark:text-orange-100 dark:hover:bg-orange-800"
-        >
+        </Button>
+        <Button variant="secondary" href={import.meta.env.BASE_URL + 'tags'} class="mt-2 ml-4">
           Tags
-        </a>
+        </Button>
       </div>
-      <div class="mt-6 lg:grid lg:grid-cols-2 lg:gap-x-6 space-y-12 lg:space-y-0">
+      <div class="mt-6 space-y-12 lg:grid lg:grid-cols-2 lg:space-y-0 lg:gap-x-6">
         <div class="relative mb-4 block rounded p-4 lg:mb-0 lg:p-0">
           <a href={import.meta.env.BASE_URL + 'blog/' + newestPost.id}>
             <span class="sr-only">{newestPost.data.title}</span>
@@ -57,44 +51,32 @@ const otherPosts = posts.slice(1, 5)
           </div> -->
           <a href={import.meta.env.BASE_URL + 'blog/' + newestPost.id}>
             <h1
-              class="mt-2 text-3xl text-orange-700 font-bold leading-tight dark:text-orange-300 hover:text-orange-600 dark:hover:text-orange-400"
+              class="mt-2 text-3xl leading-tight font-bold text-orange-700 hover:text-orange-600 dark:text-orange-300 dark:hover:text-orange-400"
             >
               {newestPost.data.title}
             </h1>
           </a>
           {
             newestPost.data.pubDate && (
-              <p class="mb-4 text-gray-600 dark:text-gray-400">
+              <p class="mb-4 text-gray-700 dark:text-gray-400">
                 {newestPost.data.pubDate.toLocaleDateString('en-AU', {
                   timeZone: 'Australia/Sydney'
                 })}
               </p>
             )
           }
-          <p class="mb-4 text-gray-600 dark:text-gray-400">
+          <p class="mb-4 text-gray-700 dark:text-gray-400">
             {newestPost.data.description}
           </p>
-          <a
+          <Button
+            variant="secondary"
             href={import.meta.env.BASE_URL + 'blog/' + newestPost.id}
-            class="inline-flex rounded-md bg-orange-100 p-2 text-sm text-orange-700 dark:bg-orange-900 hover:bg-orange-200 dark:text-orange-300 dark:hover:bg-orange-800"
+            class="!px-2 !py-2 !text-sm"
           >
-            <svg
-              class="mr-2 h-4 w-4"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"
-              ></path>
-              <path
-                d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-              ></path>
-            </svg>
+            <div class="i-heroicons-arrow-down-tray mr-2 h-4 w-4"></div>
             Read more
             <span class="sr-only">{newestPost.data.title}</span>
-          </a>
+          </Button>
         </div>
         <div class="w-full">
           {
@@ -104,43 +86,35 @@ const otherPosts = posts.slice(1, 5)
                   <Image
                     src={post.data.image ?? DefaultImage}
                     alt={post.data.title + ' featured image'}
-                    class="block w-full rounded-md bg-orange-100 object-cover p-4 lg:block dark:bg-orange-800 md:p-0"
+                    class="block w-full rounded-md bg-orange-100 object-cover p-4 md:p-0 lg:block dark:bg-orange-800"
                     loading="lazy"
                   />
                 </a>
                 <div class="bg-white px-4 md:col-span-2 dark:bg-gray-900">
                   <a href={import.meta.env.BASE_URL + 'blog/' + post.id}>
-                    <div class="text-xl text-gray-800 font-semibold md:mt-1 dark:text-gray-100">
+                    <div class="text-xl font-semibold text-gray-800 md:mt-1 dark:text-gray-100">
                       {post.data.title}
                     </div>
                   </a>
                   {post.data.pubDate && (
-                    <p class="block text-sm text-gray-600 dark:text-gray-300">
+                    <p class="block text-sm text-gray-700 dark:text-gray-300">
                       {post.data.pubDate.toLocaleDateString('en-AU', {
                         timeZone: 'Australia/Sydney'
                       })}
                     </p>
                   )}
-                  <p class="block text-sm text-gray-600 md:hidden dark:text-gray-300">
+                  <p class="block text-sm text-gray-700 md:hidden dark:text-gray-300">
                     {post.data.description}
                   </p>
-                  <a
+                  <Button
+                    variant="secondary"
                     href={import.meta.env.BASE_URL + 'blog/' + post.id}
-                    class="mt-2 inline-flex rounded-md bg-orange-100 p-2 text-sm text-orange-700 dark:bg-orange-900 hover:bg-orange-200 dark:text-orange-300 dark:hover:bg-orange-800"
+                    class="mt-2 !px-2 !py-2 !text-sm"
                   >
-                    <svg
-                      class="mr-2 h-4 w-4"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
-                      <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
-                    </svg>
+                    <div class="i-heroicons-arrow-down-tray mr-2 h-4 w-4" />
                     Read more
                     <span class="sr-only">{newestPost.data.title}</span>
-                  </a>
+                  </Button>
                 </div>
               </div>
             ))

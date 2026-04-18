@@ -8,26 +8,26 @@ const { Content } = await render(next)
 <section class="bg-white dark:bg-gray-900">
   <div class="mx-auto max-w-screen-xl px-4 py-4">
     <div class="max-w-screen-lg sm:text-lg">
-      <h2 class="mb-4 text-2xl text-orange-800 font-extrabold md:text-4xl dark:text-orange-200">
+      <h2 class="mb-4 text-2xl font-extrabold text-orange-800 md:text-4xl dark:text-orange-200">
         Monthly Meetings
       </h2>
-      <p class="mb-4 text-gray-700 dark:text-gray-300">
+      <p class="mb-4 text-gray-800 dark:text-gray-200">
         Every month, we hold two meetings. The first meeting starts at 10:00am covers a range of
         topics including Health, Aged Care, Travel, Technology, Retirement services, etc.
       </p>
-      <p class="mb-4 text-gray-700 dark:text-gray-300">
+      <p class="mb-4 text-gray-800 dark:text-gray-200">
         After some refreshments, our second meeting at 11:30am covers financial and investment
         topics including Superannuation, Retirement income, Investment Markets, Financial Trends,
         etc.
       </p>
-      <p class="mb-4 text-gray-700 font-bold dark:text-gray-300">
+      <p class="mb-4 font-bold text-gray-800 dark:text-gray-200">
         If you are retired or approaching retirement, come along, meet new friends and receive
         useful information to help your retirement.
       </p>
-      <h2 class="mb-4 text-3xl text-gray-900 font-bold tracking-tight dark:text-white">
+      <h2 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
         Next Meeting: {next.data.title}
       </h2>
-      <section class="mx-auto max-w-screen-lg prose prose-gray lg:prose-xl dark:prose-invert">
+      <section class="prose prose-gray lg:prose-xl dark:prose-invert mx-auto max-w-screen-lg">
         <Content />
       </section>
     </div>

@@ -46,7 +46,7 @@ const { frontmatter } = Astro.props
     </script>
     <slot name="in-head" />
   </head>
-  <body class="dark:bg-gray-900">
+  <body class="text-lg text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-200">
     <Header />
     <slot />
     {frontmatter.images && <Images images={frontmatter.images} />}

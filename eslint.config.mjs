@@ -49,6 +49,9 @@ export default tseslint.config(
         project: true,
         tsconfigRootDir: import.meta.dirname
       }
+    },
+    rules: {
+      'unocss/order': 'off'
     }
   },
   {
@@ -58,7 +61,9 @@ export default tseslint.config(
     },
     language: 'markdown/commonmark',
     rules: {
-      'markdown/no-html': 'error'
+      'markdown/no-html': 'error',
+      ...tseslint.configs.disableTypeChecked.rules,
+      'unocss/order': 'off'
     }
   },
   unocss,
