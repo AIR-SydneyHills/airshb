@@ -1,10 +1,12 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 
-# This line should *not* be indented
-media_folder: 'src/assets/images' # Media files will be stored in the repo under images/uploads
-public_folder: '../../assets/images' # The src attribute for uploaded media will begin with /images/uploads
+local_backend: true
+# publish_mode: editorial_workflow
+
+media_folder: 'src/assets/images'
+public_folder: '../../assets/images'
 
 site_url: https://airsydneyhills.netlify.app
 logo_url: https://airsydneyhills.netlify.app/air.png
@@ -24,118 +26,72 @@ collections:
         file: 'src/content/next/meeting.md'
         create: false
         fields:
-          - label: 'Title'
-            name: 'title'
-            widget: 'string'
-          - label: 'Date of Meeting'
-            name: 'pubDate'
-            widget: 'datetime'
-          - label: 'Description'
-            name: 'description'
-            widget: 'string'
-          - label: 'Body'
-            name: 'body'
-            widget: 'markdown'
-  - name: 'meeting' # Used in routes, e.g., /admin/collections/blog
-    label: 'Past Meetings' # Used in the UI
+          - { label: 'Title', name: 'title', widget: 'string', required: true }
+          - { label: 'Date of Meeting', name: 'pubDate', widget: 'datetime', required: true }
+          - { label: 'Description', name: 'description', widget: 'string', required: true }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'meeting'
+    label: 'Past Meetings'
     label_singular: 'Meeting'
-    folder: 'src/content/meeting' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    folder: 'src/content/meeting'
+    create: true
     preview_path_date_field: 'pubDate'
-    preview_path: 'meeting/{{filename}}.{{extension}}'
-    slug: '{{year}}-{{month}}-{{day}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - label: 'Draft'
-        name: 'draft'
-        widget: 'boolean'
-        default: false
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Date of Meeting'
-        name: 'pubDate'
-        widget: 'datetime'
-      - label: 'Description'
-        name: 'description'
-        widget: 'string'
+    preview_path: 'meeting/{{filename}}'
+    slug: '{{year}}-{{month}}-{{day}}'
+    fields:
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date of Meeting', name: 'pubDate', widget: 'datetime', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: true }
       - label: 'Image'
         name: 'image'
         widget: 'image'
         required: false
+        allow_empty: false
       - label: 'Additional Images'
         name: 'images'
         widget: 'list'
         hint: 'This will be displayed as a photo gallery at the end of the text.'
         required: false
-        field:
-          label: 'Image'
-          name: 'image'
-          widget: 'image'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-        required: false
+        field: { label: 'Image', name: 'image', widget: 'image', allow_empty: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - name: 'categories'
     label: 'Categories'
     label_singular: 'Category'
     folder: 'src/content/category'
     create: true
     fields:
-      - label: 'Draft'
-        name: 'draft'
-        widget: 'boolean'
-        default: false
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Description'
-        name: 'description'
-        widget: 'string'
-      - label: 'Image'
-        name: 'image'
-        widget: 'image'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-        required: false
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: true }
+      - { label: 'Image', name: 'image', widget: 'image', required: true, allow_empty: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - name: 'authors'
     label: 'Authors'
     label_singular: 'Author'
     folder: 'src/content/author'
     create: true
     fields:
-      - label: 'Draft'
-        name: 'draft'
-        widget: 'boolean'
-        default: false
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Description'
-        name: 'description'
-        widget: 'string'
-      - label: 'Image'
-        name: 'image'
-        widget: 'image'
-      - label: 'Contact'
-        name: 'contact'
-        widget: 'string'
-        hint: 'Phone or email'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-        required: false
-  - name: 'articles' # Used in routes, e.g., /admin/collections/blog
-    label: 'Articles' # Used in the UI
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: true }
+      - { label: 'Image', name: 'image', widget: 'image', required: true, allow_empty: false }
+      - {
+          label: 'Contact',
+          name: 'contact',
+          widget: 'string',
+          required: true,
+          hint: 'Phone or email'
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+  - name: 'articles'
+    label: 'Articles'
     label_singular: 'Article'
-    folder: 'src/content/blog' # The path to the folder where the documents are stored
-    slug: '{{year}}-{{month}}-{{day}}-{{title}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - label: 'Draft'
-        name: 'draft'
-        widget: 'boolean'
-        default: false
+    folder: 'src/content/blog'
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    create: true
+    fields:
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - label: Author
         name: author
         widget: relation
@@ -146,32 +102,21 @@ collections:
         multiple: false
         required: true
         filters:
-          - field: draft
-            values: [false]
-        hint: 'Select author of article.'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Date of Article'
-        name: 'pubDate'
-        widget: 'datetime'
-      - label: 'Description'
-        name: 'description'
-        widget: 'string'
+          - { field: draft, values: [false] }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date of Article', name: 'pubDate', widget: 'datetime', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: true }
       - label: 'Image'
         name: 'image'
         widget: 'image'
         required: false
-        hint: 'This will be displayed as a featured image at the top of the article.'
+        allow_empty: false
       - label: 'Additional Images'
         name: 'images'
         widget: 'list'
         hint: 'This will be displayed as a photo gallery at the end of the text.'
         required: false
-        field:
-          label: 'Image'
-          name: 'image'
-          widget: 'image'
+        field: { label: 'Image', name: 'image', widget: 'image', allow_empty: false }
       - label: Categories
         name: categories
         widget: relation
@@ -182,29 +127,17 @@ collections:
         multiple: true
         min: 1
         filters:
-          - field: draft
-            values: [false]
-        hint: 'Select one or more category for the article.'
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        hint: 'Enter one or more tags for the article, separated by commas.'
-        required: false
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-        required: false
-  - name: 'news' # Used in routes, e.g., /admin/collections/blog
-    label: 'News' # Used in the UI
+          - { field: draft, values: [false] }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+  - name: 'news'
+    label: 'News'
     label_singular: 'News'
-    folder: 'src/content/news' # The path to the folder where the documents are stored
-    slug: '{{year}}-{{month}}-{{day}}-{{title}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - label: 'Draft'
-        name: 'draft'
-        widget: 'boolean'
-        default: false
+    folder: 'src/content/news'
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    create: true
+    fields:
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - label: Author
         name: author
         widget: relation
@@ -215,32 +148,21 @@ collections:
         multiple: false
         required: true
         filters:
-          - field: draft
-            values: [false]
-        hint: 'Select author of article.'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Date of Article'
-        name: 'pubDate'
-        widget: 'datetime'
-      - label: 'Description'
-        name: 'description'
-        widget: 'string'
+          - { field: draft, values: [false] }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date of Article', name: 'pubDate', widget: 'datetime', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: true }
       - label: 'Image'
         name: 'image'
         widget: 'image'
         required: false
-        hint: 'This will be displayed as a featured image at the top of the article.'
+        allow_empty: false
       - label: 'Additional Images'
         name: 'images'
         widget: 'list'
         hint: 'This will be displayed as a photo gallery at the end of the text.'
         required: false
-        field:
-          label: 'Image'
-          name: 'image'
-          widget: 'image'
+        field: { label: 'Image', name: 'image', widget: 'image', allow_empty: false }
       - label: Categories
         name: categories
         widget: relation
@@ -251,28 +173,16 @@ collections:
         multiple: true
         min: 1
         filters:
-          - field: draft
-            values: [false]
-        hint: 'Select one or more category for the article.'
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        hint: 'Enter one or more tags for the article, separated by commas.'
-        required: false
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-        required: false
-  - name: 'pages' # Used in routes, e.g., /admin/collections/blog
-    label: 'Pages' # Used in the UI
+          - { field: draft, values: [false] }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+  - name: 'pages'
+    label: 'Pages'
     label_singular: 'Page'
-    folder: 'src/content/page' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - label: 'Draft'
-        name: 'draft'
-        widget: 'boolean'
-        default: false
+    folder: 'src/content/page'
+    create: true
+    fields:
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - label: Author
         name: author
         widget: relation
@@ -283,39 +193,16 @@ collections:
         multiple: false
         required: false
         filters:
-          - field: draft
-            values: [false]
-        hint: 'Select author of article.'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Date'
-        name: 'pubDate'
-        widget: 'datetime'
-        required: false
-      - label: 'Description'
-        name: 'description'
-        widget: 'string'
-        required: false
-      - label: 'Image'
-        name: 'image'
-        widget: 'image'
-        required: false
+          - { field: draft, values: [false] }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date', name: 'pubDate', widget: 'datetime', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', required: false, allow_empty: false }
       - label: 'Additional Images'
         name: 'images'
         widget: 'list'
         hint: 'This will be displayed as a photo gallery at the end of the text.'
         required: false
-        field:
-          label: 'Image'
-          name: 'image'
-          widget: 'image'
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        hint: 'Enter one or more tags for the article, separated by commas.'
-        required: false
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-        required: false
+        field: { label: 'Image', name: 'image', widget: 'image', allow_empty: false }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }

@@ -13,6 +13,7 @@
     "lint:prettier": "prettier --write  \"src/**/*.{js,jsx,ts,tsx,md,mdx,astro}\"",
     "lint:eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
     "astro": "astro",
+    "cms": "decap-server",
     "refresh": "pnpm dlx @astrojs/upgrade ; pnpm up -L"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "@unocss/reset": "66.6.8",
     "astro": "^6.1.7",
     "astro-robots-txt": "^1.0.0",
+    "decap-server": "^3.7.0",
     "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^1.7.0",
