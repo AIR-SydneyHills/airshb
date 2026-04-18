@@ -7,6 +7,7 @@ import { SEO } from 'astro-seo'
 import type {
   Article,
   BreadcrumbList,
+  Event,
   Organization,
   Person,
   WebSite,
@@ -26,7 +27,14 @@ const { frontmatter } = Astro.props
 
 const social = await getCollection('social')
 const siteurl = new URL(import.meta.env.BASE_URL, Astro.url)
-const type = Astro.url.toString().includes('blog') ? 'post' : 'page'
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+
+// Determine content type for schema and meta
+const isBlog = Astro.url.toString().includes('/blog/')
+const isNews = Astro.url.toString().includes('/news/')
+const isMeeting = Astro.url.toString().includes('/meeting/')
+const type = isBlog || isNews ? 'post' : 'page'
+
 const year = SiteMetadata.buildTime.getFullYear()
 const image = await getImage({
   src: frontmatter.image ?? DefaultImage,
@@ -35,29 +43,35 @@ const image = await getImage({
 })
 const logo = LogoImage
 const publishDate = frontmatter.pubDate ?? SiteMetadata.buildTime
-const author = SiteMetadata.org.email
+
 const openGraph = {
   basic: {
-    title: frontmatter.title!,
-    type: 'website',
+    title: frontmatter.title ?? SiteMetadata.title,
+    type: isBlog || isNews ? 'article' : 'website',
     image: new URL(image.src, Astro.url).toString()
   },
   optional: {
-    description: frontmatter.description,
-    siteName: SiteMetadata.title
+    description: frontmatter.description ?? SiteMetadata.description,
+    siteName: SiteMetadata.title,
+    locale: 'en_AU'
   },
   image: {
-    alt: frontmatter.title,
+    alt: frontmatter.title ?? SiteMetadata.title,
     height: image.attributes.height,
     width: image.attributes.width
   },
-  article: {
-    author: author,
-    publishedTime: SiteMetadata.buildTime.toISOString()
-  }
+  article:
+    isBlog || isNews
+      ? {
+          author: SiteMetadata.author.name,
+          publishedTime: publishDate.toISOString(),
+          tags: (frontmatter as CollectionEntry<'blog'>['data']).tags
+        }
+      : undefined
 }
+
 const twitter = {
-  card: frontmatter.image ? 'summary_large_image' : ('summary' as TwitterCardType),
+  card: (frontmatter.image ? 'summary_large_image' : 'summary') as TwitterCardType,
   site: SiteMetadata.org.twitter,
   creator: SiteMetadata.author.twitter
 }
@@ -85,7 +99,7 @@ const website: WithContext<WebSite> = {
     '@type': 'ImageObject',
     url: new URL(image.src, Astro.url).toString()
   },
-  inLanguage: 'en',
+  inLanguage: 'en-AU',
   name: SiteMetadata.title,
   publisher: {
     '@id': SiteMetadata.org.url
@@ -97,17 +111,33 @@ const organization: WithContext<Organization> = {
   '@context': 'https://schema.org',
   '@id': SiteMetadata.org.url,
   '@type': 'Organization',
-  address: SiteMetadata.location,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: SiteMetadata.location
+  },
   contactPoint: {
     '@type': 'ContactPoint',
-    email: SiteMetadata.org.email
+    email: SiteMetadata.org.email,
+    contactType: 'customer support'
   },
   description: SiteMetadata.org.summary,
   email: SiteMetadata.org.email,
   founder: {
     '@id': SiteMetadata.author.email
   },
-  location: SiteMetadata.location,
+  location: {
+    '@type': 'Place',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: SiteMetadata.location
+    },
+    name: 'Meeting Location',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: SiteMetadata.latlng[0],
+      longitude: SiteMetadata.latlng[1]
+    }
+  },
   image: {
     '@type': 'ImageObject',
     url: new URL(logo.src, siteurl).toString()
@@ -117,7 +147,7 @@ const organization: WithContext<Organization> = {
     url: new URL(logo.src, siteurl).toString()
   },
   name: SiteMetadata.org.name,
-  sameAs: Object.values(social.map((social) => social.data.link)),
+  sameAs: social.map((s) => s.data.link),
   url: SiteMetadata.org.url
 }
 
@@ -158,43 +188,78 @@ const person: WithContext<Person> = {
   }
 }
 
-const article: WithContext<Article> = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  articleSection: type,
-  author: {
-    '@id': SiteMetadata.author.url
-  },
-  copyrightHolder: {
-    '@id': SiteMetadata.org.url
-  },
-  copyrightYear: year,
-  creativeWorkStatus: 'Published',
-  creator: {
-    '@id': SiteMetadata.author.url
-  },
-  dateCreated: publishDate.toISOString(),
-  dateModified: SiteMetadata.buildTime.toISOString(),
-  datePublished: publishDate.toISOString(),
-  description: frontmatter.description,
-  headline: frontmatter.title,
-  image: {
-    '@type': 'ImageObject',
-    url: new URL(image.src, Astro.url).toString()
-  },
-  inLanguage: 'en',
-  mainEntityOfPage: SiteMetadata.org.url,
-  name: frontmatter.title,
-  publisher: {
-    '@id': SiteMetadata.org.url
-  },
-  url: siteurl.toString()
+// Conditional Article Schema
+let article: WithContext<Article> | undefined
+if (isBlog || isNews) {
+  article = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    articleSection: type,
+    author: {
+      '@type': 'Person',
+      name: SiteMetadata.author.name,
+      url: SiteMetadata.author.url
+    },
+    copyrightHolder: {
+      '@id': SiteMetadata.org.url
+    },
+    copyrightYear: year,
+    creativeWorkStatus: 'Published',
+    creator: {
+      '@id': SiteMetadata.author.url
+    },
+    dateCreated: publishDate.toISOString(),
+    dateModified: SiteMetadata.buildTime.toISOString(),
+    datePublished: publishDate.toISOString(),
+    description: frontmatter.description,
+    headline: frontmatter.title,
+    image: {
+      '@type': 'ImageObject',
+      url: new URL(image.src, Astro.url).toString()
+    },
+    inLanguage: 'en-AU',
+    mainEntityOfPage: SiteMetadata.org.url,
+    name: frontmatter.title,
+    publisher: {
+      '@id': SiteMetadata.org.url
+    },
+    url: siteurl.toString()
+  }
+}
+
+// Conditional Event Schema for Meetings
+let event: WithContext<Event> | undefined
+if (isMeeting) {
+  event = {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: frontmatter.title ?? 'AIR Sydney Hills Meeting',
+    description: frontmatter.description,
+    startDate: publishDate.toISOString(),
+    location: {
+      '@type': 'Place',
+      name: "Molly's Pavilion (The Cheltenham Recreation Club)",
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '60-74 The Crescent',
+        addressLocality: 'Cheltenham',
+        addressRegion: 'NSW',
+        postalCode: '2119',
+        addressCountry: 'AU'
+      }
+    },
+    image: new URL(image.src, Astro.url).toString(),
+    organizer: {
+      '@id': SiteMetadata.org.url
+    }
+  }
 }
 ---
 
 <SEO
   title={SiteMetadata.title + ' | ' + frontmatter.title}
   description={frontmatter.description}
+  canonical={canonicalURL}
   {openGraph}
   {twitter}
 />
@@ -202,4 +267,5 @@ const article: WithContext<Article> = {
 <script is:inline set:html={JSON.stringify(organization)} type="application/ld+json" />
 <script is:inline set:html={JSON.stringify(breadcrumbList)} type="application/ld+json" />
 <script is:inline set:html={JSON.stringify(person)} type="application/ld+json" />
-<script is:inline set:html={JSON.stringify(article)} type="application/ld+json" />
+{article && <script is:inline set:html={JSON.stringify(article)} type="application/ld+json" />}
+{event && <script is:inline set:html={JSON.stringify(event)} type="application/ld+json" />}
