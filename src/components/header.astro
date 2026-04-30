@@ -45,10 +45,10 @@ import { NavigationLinks, Logo } from '../config'
                   <a
                     href={import.meta.env.BASE_URL + item.href}
                     class:list={[
-                      'rounded-md px-2 py-2 text-lg font-medium',
+                      'nav-link',
                       item.href.length > 0 && Astro.url.toString().includes(item.href)
-                        ? 'bg-orange-200 text-gray-800 dark:bg-orange-600 dark:text-gray-200'
-                        : 'text-orange-600 hover:bg-orange-200 hover:text-orange-800 dark:text-orange-500 dark:hover:bg-orange-600 dark:hover:text-gray-200'
+                        ? 'nav-link-active'
+                        : ''
                     ]}
                     aria-current={
                       item.href.length > 0 && Astro.url.toString().includes(item.href)

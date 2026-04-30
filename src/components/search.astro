@@ -178,6 +178,13 @@
 
       closeBtn.addEventListener('click', closeModal)
       backdrop.addEventListener('click', closeModal)
+
+      // Close modal on Escape key
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !overlay.classList.contains('hidden')) {
+          closeModal()
+        }
+      })
     }
 
     async initSearch() {
@@ -271,7 +278,7 @@
             }
           })
         } else {
-          resultsContainer.innerHTML = '<li class="p-3">No results found...</li>'
+          resultsContainer.innerHTML = '<li class="p-3">No results found…</li>'
         }
       }
     }
