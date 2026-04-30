@@ -1,8 +1,9 @@
 ---
 import { Image } from 'astro:assets'
-import type { CollectionEntry } from 'astro:content'
 
 import { DefaultImage } from '../config'
+
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   frontmatter: CollectionEntry<'page'>['data']

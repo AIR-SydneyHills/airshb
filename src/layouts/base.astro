@@ -1,11 +1,12 @@
 ---
-import type { CollectionEntry } from 'astro:content'
 import { ClientRouter } from 'astro:transitions'
 
 import Footer from '../components/footer.astro'
 import Header from '../components/header.astro'
 import Images from '../components/images.astro'
 import SEO from '../components/seo.astro'
+
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   frontmatter: CollectionEntry<'page'>['data'] | CollectionEntry<'blog'>['data']
@@ -17,7 +18,7 @@ const { frontmatter } = Astro.props
 <!doctype html>
 <html lang="en-AU">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href={`${Astro.site}favicon.ico`} sizes="any" />
@@ -31,14 +32,12 @@ const { frontmatter } = Astro.props
     <ClientRouter />
     <script is:inline>
       const setDarkMode = () => {
-        if (
+        document.documentElement.classList.toggle(
+          'dark',
           localStorage.theme === 'dark' ||
-          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        ) {
-          document.documentElement.classList.add('dark')
-        } else {
-          document.documentElement.classList.remove('dark')
-        }
+            (!('theme' in localStorage) &&
+              globalThis.matchMedia('(prefers-color-scheme: dark)').matches)
+        )
       }
       setDarkMode() //initial navigation
       document.addEventListener('astro:after-swap', setDarkMode) // Runs on view transitions navigation

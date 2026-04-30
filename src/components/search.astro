@@ -207,7 +207,7 @@
           })
 
           // Build the index by adding all fetched documents
-          this.doc.forEach((doc: any) => {
+          this.doc.forEach((doc: SearchDoc) => {
             this.idx.add(doc)
           })
         }
@@ -229,13 +229,17 @@
       if (term) {
         resultsTitle.innerHTML = `Search results for '${term}'`
         // FlexSearch search options
-        const rawResults = this.idx.search(term, { limit: 20 })
+        interface FlexResult {
+          field: string
+          result: string[]
+        }
+        const rawResults = this.idx.search(term, { limit: 20 }) as FlexResult[]
 
         // Flatten unique results from all indexed fields
-        const results = [...new Set(rawResults.flatMap((r: any) => r.result))]
+        const results = [...new Set(rawResults.flatMap((r) => r.result))]
 
         if (results.length > 0) {
-          results.forEach((url: any) => {
+          results.forEach((url) => {
             const doc = this.doc?.find((d) => d.url === url)
 
             if (doc) {
@@ -263,7 +267,7 @@
                   <p class="mt-1 text-sm text-gray-700 font-medium dark:text-gray-400">${doc.description}</p>
                 </a>
               `
-              resultsContainer.appendChild(li)
+              resultsContainer.append(li)
             }
           })
         } else {

@@ -7,9 +7,9 @@
 export function cleanContent(text: string | undefined): string {
   if (!text) return ''
   return text
-    .replace(/<!--[\s\S]*?-->/g, '') // Remove HTML comments
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Replace markdown links with just the link text
-    .replace(/[#*`_~>\[\]]/g, '') // Remove markdown formatting characters
-    .replace(/\s+/g, ' ') // Squash multiple spaces/newlines into a single space
+    .replaceAll(/<!--[\s\S]*?-->/g, '') // Remove HTML comments
+    .replaceAll(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Replace markdown links with just the link text
+    .replaceAll(/[#*`_~>\[\]]/g, '') // Remove markdown formatting characters
+    .replaceAll(/\s+/g, ' ') // Squash multiple spaces/newlines into a single space
     .trim()
 }

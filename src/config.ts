@@ -25,7 +25,7 @@ export const SiteMetadata = {
       'The Australian Independent Retirees (A.I.R.) Limited is a volunteer organisation working to advance and protect the interests and independent lifestyle of Australians aged 50+ who are, or plan to be, fully or partly self-funded in retirement. The Association is a national not-for-profit organisation formed in 1990. AIR does not support any one political party but works towards ensuring all parties recognise the issues that are important to retirees.'
   },
   location: 'Beecroft Presbyterian Church, 1a Mary St, Beecroft NSW 2119 Australia',
-  latlng: [-33.753737, 151.064758] as [number, number],
+  latlng: [-33.753_737, 151.064_758] as [number, number],
   repository: 'https://github.com/ChristineTham/airsydneyhills',
   buildTime: new Date()
 }

@@ -1,9 +1,12 @@
 ---
-import { getImage } from 'astro:assets'
-import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
-import type { TwitterCardType } from 'astro-seo'
 import { SEO } from 'astro-seo'
+import { getImage } from 'astro:assets'
+import { getCollection } from 'astro:content'
+
+import { DefaultImage, LogoImage, SiteMetadata } from '../config'
+
+import type { TwitterCardType } from 'astro-seo'
+import type { CollectionEntry } from 'astro:content'
 import type {
   Article,
   BreadcrumbList,
@@ -13,8 +16,6 @@ import type {
   WebSite,
   WithContext
 } from 'schema-dts'
-
-import { DefaultImage, LogoImage, SiteMetadata } from '../config'
 
 export interface Props {
   frontmatter:

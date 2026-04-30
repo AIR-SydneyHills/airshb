@@ -1,12 +1,13 @@
 ---
 import { Image } from 'astro:assets'
-import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
 import CTA from '../components/cta.astro'
 import PageHero from '../components/pagehero.astro'
 import { DefaultImage, LogoImage } from '../config'
 import Base from '../layouts/base.astro'
+
+import type { CollectionEntry } from 'astro:content'
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   draft: false,

@@ -4,3 +4,12 @@
 declare module 'hero-patterns'
 declare module 'photoswipe-dynamic-caption-plugin'
 declare module '@akebifiky/remark-simple-plantuml'
+
+interface Window {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  netlifyIdentity: any
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, no-var
+declare var netlifyIdentity: any
+

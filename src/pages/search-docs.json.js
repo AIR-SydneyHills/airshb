@@ -66,7 +66,7 @@ const nextDocs = nexts.map((next) => ({
 const documents = [...blogDocs, ...newsDocs, ...meetingDocs, ...pageDocs, ...nextDocs]
 
 export function GET() {
-  return new Response(JSON.stringify(documents), {
+  return Response.json(documents, {
     status: 200,
     headers: {
       'Content-Type': 'application/json'

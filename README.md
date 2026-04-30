@@ -45,15 +45,15 @@ Inside of your Astro project, you'll see the following folders and files:
 
 All commands are run from the root of the project, from a terminal:
 
-| Command | Action |
-| :--- | :--- |
-| `pnpm install` | Installs dependencies |
-| `pnpm dev` | Starts local dev server at `localhost:4321` |
-| `pnpm build` | Build your production site to `./dist/` |
-| `pnpm preview` | Preview your build locally, before deploying |
-| `pnpm run cms` | Start the local DecapCMS proxy server |
-| `pnpm run lint` | Run Prettier and ESLint (Fixes available) |
-| `pnpm check` | Check the source code for errors |
+| Command          | Action                                             |
+| :--------------- | :------------------------------------------------- |
+| `pnpm install`   | Installs dependencies                              |
+| `pnpm dev`       | Starts local dev server at `localhost:4321`        |
+| `pnpm build`     | Build your production site to `./dist/`            |
+| `pnpm preview`   | Preview your build locally, before deploying       |
+| `pnpm run cms`   | Start the local DecapCMS proxy server              |
+| `pnpm run lint`  | Run Prettier and ESLint (Fixes available)          |
+| `pnpm check`     | Check the source code for errors                   |
 | `pnpm astro ...` | Run CLI commands like `astro add`, `astro preview` |
 
 ## ♿ Accessibility & SEO

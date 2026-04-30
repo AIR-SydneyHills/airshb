@@ -26,6 +26,7 @@
       class="relative cursor-default py-2 pr-4 pl-2 text-gray-900 select-none hover:bg-orange-600 hover:text-white dark:bg-gray-700 dark:text-white dark:hover:bg-orange-300 dark:hover:text-gray-900"
       data-theme-option="system"
       role="option"
+      aria-selected="false"
     >
       <div class="flex items-center">
         <div class="i-heroicons-star h-6 w-6"></div>
@@ -42,6 +43,7 @@
       class="relative cursor-default py-2 pr-4 pl-2 text-gray-900 select-none hover:bg-orange-600 hover:text-white dark:bg-gray-700 dark:text-white dark:hover:bg-orange-300 dark:hover:text-gray-900"
       data-theme-option="light"
       role="option"
+      aria-selected="false"
     >
       <div class="flex items-center">
         <div class="i-heroicons-sun h-6 w-6"></div>
@@ -58,6 +60,7 @@
       class="relative cursor-default py-2 pr-4 pl-2 text-gray-900 select-none hover:bg-orange-600 hover:text-white dark:bg-gray-700 dark:text-white dark:hover:bg-orange-300 dark:hover:text-gray-900"
       data-theme-option="dark"
       role="option"
+      aria-selected="false"
     >
       <div class="flex items-center">
         <div class="i-heroicons-moon-solid h-6 w-6"></div>
@@ -98,13 +101,13 @@
 
         options.forEach((option) => {
           option.addEventListener('click', () => {
-            const theme = option.getAttribute('data-theme-option')
+            const theme = (option as HTMLElement).dataset.themeOption
             if (theme === 'system') {
               localStorage.removeItem('theme')
             } else if (theme) {
               localStorage.theme = theme
             }
-            window.dispatchEvent(new CustomEvent('theme-changed'))
+            globalThis.dispatchEvent(new CustomEvent('theme-changed'))
             toggleMenu()
           })
         })
@@ -126,7 +129,7 @@
       const currentTheme = localStorage.theme || 'system'
       const options = this.querySelectorAll('[data-theme-option]')
       options.forEach((option) => {
-        const theme = option.getAttribute('data-theme-option')
+        const theme = (option as HTMLElement).dataset.themeOption
         const text = option.querySelector('span')
         const check = option.querySelector('[data-check]')
 

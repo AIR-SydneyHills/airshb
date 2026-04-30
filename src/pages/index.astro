@@ -1,5 +1,4 @@
 ---
-import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
 import image from '../assets/site/retirementahead.jpg'
@@ -11,6 +10,8 @@ import NextMeeting from '../components/nextmeeting.astro'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
 
+import type { CollectionEntry } from 'astro:content'
+
 const frontmatter: CollectionEntry<'page'>['data'] = {
   draft: false,
   title: 'Welcome',
@@ -19,18 +20,12 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
 }
 
 const posts = await getCollection('blog', (post) => !post.data.draft)
-const latestPosts = posts.sort((a, b) => +b.data.pubDate! - +a.data.pubDate!)
+const latestPosts = posts.toSorted((a, b) => +b.data.pubDate! - +a.data.pubDate!)
 
 const allMeetings = await getCollection('meeting', (meeting) => !meeting.data.draft)
-const meetings = allMeetings.sort((a, b) =>
+const meetings = allMeetings.toSorted((a, b) =>
   a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
 )
-
-declare global {
-  interface Window {
-    netlifyIdentity: any
-  }
-}
 ---
 
 <script is:inline slot="in-head" src="https://identity.netlify.com/v1/netlify-identity-widget.js"
@@ -45,10 +40,10 @@ declare global {
   <CTA />
   <div class="bg-white p-24 md:p-12 dark:bg-black"></div>
   <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', (user: string) => {
+    if (globalThis.netlifyIdentity) {
+      globalThis.netlifyIdentity.on('init', (user: string) => {
         if (!user) {
-          window.netlifyIdentity.on('login', () => {
+          globalThis.netlifyIdentity.on('login', () => {
             document.location.href = '/admin/'
           })
         }

@@ -1,6 +1,4 @@
 ---
-import type { Page, PaginateFunction } from 'astro'
-import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
 import DefaultImage from '../../assets/images/articles.jpg'
@@ -9,6 +7,9 @@ import PageHero from '../../components/pagehero.astro'
 import PaginateControl from '../../components/paginatecontrol.astro'
 import { PAGE_SIZE } from '../../config'
 import Base from '../../layouts/base.astro'
+
+import type { Page, PaginateFunction } from 'astro'
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   page: Page<CollectionEntry<'blog'>>
@@ -30,7 +31,7 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
   const allPosts = await getCollection('blog', ({ data }) => {
     return data.draft !== true
   })
-  const posts = allPosts.sort((a, b) =>
+  const posts = allPosts.toSorted((a, b) =>
     a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
   )
 

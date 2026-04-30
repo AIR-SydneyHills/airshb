@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetIcons, presetAttributify, presetTypography, presetWind3 } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetTypography, presetWind3 } from 'unocss'
 
 export default defineConfig({
   presets: [

@@ -1,6 +1,5 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
+import { type CollectionEntry, getCollection } from 'astro:content'
 import {
   autumn as _autumn,
   aztec as _aztec,
@@ -87,9 +86,10 @@ const zigZag = _zigZag
 
 import CTA from '../components/cta.astro'
 import PageHero from '../components/pagehero.astro'
-import type { TagType } from '../config'
 import { DefaultImage } from '../config'
 import Base from '../layouts/base.astro'
+
+import type { TagType } from '../config'
 
 const patterns = [
   steelBeams('#9c92ac', 0.5),
@@ -144,7 +144,7 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
 const posts = await getCollection('blog', ({ data }) => {
   return data.draft !== true
 })
-const latestPosts = posts.sort((a, b) =>
+const latestPosts = posts.toSorted((a, b) =>
   a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
 )
 
@@ -163,7 +163,7 @@ latestPosts.forEach((post) => {
   })
 })
 
-const tags = Array.from(tagmap.values())
+const tags = [...tagmap.values()]
 ---
 
 <Base frontmatter={frontmatter}>
@@ -176,7 +176,7 @@ const tags = Array.from(tagmap.values())
     >
       {
         tags
-          .sort((a, b) => b.count - a.count)
+          .toSorted((a, b) => b.count - a.count)
           .map((tag, i) => (
             <a href={`${import.meta.env.BASE_URL}tag/${tag.tag}/`} class="group">
               <section

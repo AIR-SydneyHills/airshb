@@ -12,7 +12,7 @@ export interface Props {
 
 const { id, images, exifs } = Astro.props
 
-const imagetitles = images.map((image) => image.src.split('/').reverse()[0].split('.')[0])
+const imagetitles = images.map((image) => image.src.split('/').toReversed()[0].split('.')[0])
 ---
 
 <style>

@@ -1,16 +1,10 @@
 {
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      "astro",
-      "typescript",
-      "typescriptreact"
-    ],
-    "prettier.documentSelectors": ["**/*.astro"],
-    "[astro]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "markdown.copyFiles.destination": {
-      "**/*": "src/assets/images/${fileName}"
-    }
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdown.copyFiles.destination": {
+    "**/*": "src/assets/images/${fileName}"
   }
+}

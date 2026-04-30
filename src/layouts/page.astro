@@ -1,9 +1,9 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-
 import CTA from '../components/cta.astro'
 import PageHero from '../components/pagehero.astro'
 import Base from '../layouts/base.astro'
+
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   frontmatter: CollectionEntry<'page'>['data']

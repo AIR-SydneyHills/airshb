@@ -1,13 +1,4 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    ".astro/types.d.ts",
-    "**/*"
-  ],
-  "exclude": [
-    "dist",
-    "eslint.config.mjs",
-    "astro.config.mjs",
-    "uno.config.ts"
-  ]
+  "exclude": ["dist", "node_modules", ".astro"]
 }

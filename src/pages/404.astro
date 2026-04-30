@@ -1,9 +1,9 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-
 import PageHero from '../components/pagehero.astro'
 import { DefaultImage } from '../config'
 import Base from '../layouts/base.astro'
+
+import type { CollectionEntry } from 'astro:content'
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   draft: false,

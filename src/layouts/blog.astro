@@ -1,10 +1,10 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-
 import BlogHero from '../components/bloghero.astro'
 import CTA from '../components/cta.astro'
 import NextPrev from '../components/nextprev.astro'
 import Base from '../layouts/base.astro'
+
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   post: CollectionEntry<'blog'> | CollectionEntry<'meeting'>

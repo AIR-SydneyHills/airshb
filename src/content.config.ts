@@ -88,8 +88,10 @@ const author = defineCollection({
 })
 
 const social = defineCollection({
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   loader: file('src/social.json', { parser: (text) => JSON.parse(text) }),
   schema: z.object({
+
     id: z.string(),
     name: z.string(),
     link: z.string(),

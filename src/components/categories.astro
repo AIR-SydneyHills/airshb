@@ -1,6 +1,7 @@
 ---
-import type { CollectionEntry } from 'astro:content'
 import { getEntries } from 'astro:content'
+
+import type { CollectionEntry } from 'astro:content'
 
 const { categories } = Astro.props
 const cats = (await getEntries(categories)) as CollectionEntry<'category'>[]

@@ -1,14 +1,14 @@
 ---
-import type { Page, PaginateFunction } from 'astro'
-import type { CollectionEntry } from 'astro:content'
-import { getEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
+import { getEntry, getCollection } from 'astro:content'
 
 import BlogRoll from '../../../components/blogroll.astro'
 import PageHero from '../../../components/pagehero.astro'
 import PaginateControl from '../../../components/paginatecontrol.astro'
 import { PAGE_SIZE } from '../../../config'
 import Base from '../../../layouts/base.astro'
+
+import type { Page, PaginateFunction } from 'astro'
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   page: Page<CollectionEntry<'blog'>>
@@ -34,7 +34,7 @@ const currentPage = Astro.url.pathname.replace(/(\/\d*)?\/$/, '')
 export async function getStaticPaths({ paginate }: { paginate: PaginateFunction }) {
   const categories = await getCollection('category')
   const allPosts = await getCollection('blog', (post) => !post.data.draft)
-  const posts = allPosts.sort((a, b) =>
+  const posts = allPosts.toSorted((a, b) =>
     a.data.pubDate && b.data.pubDate ? +b.data.pubDate - +a.data.pubDate : 0
   )
 

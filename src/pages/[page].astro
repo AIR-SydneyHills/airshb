@@ -1,8 +1,9 @@
 ---
-import type { CollectionEntry } from 'astro:content'
 import { getCollection, render } from 'astro:content'
 
 import Layout from '../layouts/page.astro'
+
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
   page: CollectionEntry<'page'>
